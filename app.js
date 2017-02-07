@@ -14,6 +14,7 @@ var myProfile = require('./routes/myProfile');
 var messages = require('./routes/messages');
 var contactUs = require('./routes/contactUs');
 var logout = require('./routes/logout');
+var createEvents = require('./routes/createEvents');
 
 // Example route
 // var user = require('./routes/user');
@@ -47,6 +48,7 @@ app.get('/myProfile', myProfile.view);
 app.get('/messages', messages.view);
 app.get('/contactUs', contactUs.view);
 app.get('/logout', logout.view);
+app.get('/createEvents', createEvents.view);
 
 // Example route
 // app.get('/users', user.list);
