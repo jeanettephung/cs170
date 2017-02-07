@@ -15,7 +15,9 @@ var messages = require('./routes/messages');
 var contactUs = require('./routes/contactUs');
 var logout = require('./routes/logout');
 var createEvents = require('./routes/createEvents');
+var createdEventDetail = require('./routes/createdEventDetail');
 var joinedEvents = require('./routes/joinedEvents');
+var findEvents = require('./routes/findEvents');
 
 // Example route
 // var user = require('./routes/user');
@@ -50,7 +52,9 @@ app.get('/messages', messages.view);
 app.get('/contactUs', contactUs.view);
 app.get('/logout', logout.view);
 app.get('/createEvents', createEvents.view);
+app.get('/createdEventDetail', createdEventDetail.view);
 app.get('/joinedEvents', joinedEvents.view);
+app.get('/findEvents', findEvents.view);
 
 // Example route
 // app.get('/users', user.list);
