@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="height: 100%">
+<html>
 
 <head>
     <title>CS170 APP</title>
@@ -11,72 +11,11 @@
     <script src="js/libraries/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-
-    <style>
-        .rectangle {
-            height: 20px;
-            width: 20px;
-            background-color: red;
-            margin: 20px;
-        }
-
-        .innerRectangle {
-            height: 20px;
-            width: 20px;
-            background-color: blue;
-            margin: 20px;
-        }
-
-        .rowFlexContainer {
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            justify-content: center;
-        }
-        .columnFlexContainer {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 
-<body style="height: 100%;">
-    <div style="height:100%" class="columnFlexContainer">
-        <div class="rowFlexContainer">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle">
-            </div>
-            <div class="rectangle"> </div>
-            <div class="rectangle"> </div>
-        </div>
-        <div>
-            <div class="innerRectangle"> </div>
-            <div class="innerRectangle"> </div>
-            <div class="innerRectangle"> </div>
-        </div>
-    </div>
+<body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {{!-- <!-- NAVIGATION BAR -->
+    <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -116,7 +55,7 @@
                     <div class="form-group">
                         <label for="example-text-input">Event Name </label>
                         <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                        <textarea class="form-control" id="example-text-input" rows="3"></textarea>
+                        {{!-- <textarea class="form-control" id="example-text-input" rows="3"></textarea> --}}
                     </div>
 
                     <div class="form-group">
@@ -162,7 +101,7 @@
             <div class="col-md-3"> </div>
 
         </div>
-    </div> --}}
+    </div>
 </body>
 
 </html>
