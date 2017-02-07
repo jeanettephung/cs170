@@ -1,0 +1,14 @@
+/* NAVIVATION BAR */
+.navbar-right {
+	padding-top: 5px;
+	padding-right: 30px;
+}
+.navbar-collapse.collapse.in ul li, .navbar-collapse.collapsing ul li {
+	text-align: center;
+	font-size: 25px;
+	margin: 20px;
+}
+
+.container {
+	margin-top: 50px;
+}
