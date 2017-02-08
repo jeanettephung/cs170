@@ -1,5 +1,5 @@
 exports.view = function(req, res){
-  res.render('myProfile', {
+  res.render('unjoinEvent', {
      
   });
 };
