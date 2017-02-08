@@ -5,6 +5,9 @@ _MACOSX/*
 .idea/*
 .idea
 
+public/.DS_Store
+.DS_Store
+
 # /css/*
 # css
 # css/*
@@ -47,9 +50,6 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
-
-
-
 
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template
