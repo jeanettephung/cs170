@@ -9,7 +9,6 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var project = require('./routes/project');
 var myProfile = require('./routes/myProfile');
 var messages = require('./routes/messages');
 var contactUs = require('./routes/contactUs');
@@ -27,7 +26,7 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+app.engine('handlebars', handlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -45,16 +44,37 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/index', index.view);
-app.get('/myProfile', myProfile.view);
-app.get('/messages', messages.view);
-app.get('/contactUs', contactUs.view);
-app.get('/logout', logout.view);
-app.get('/createEvents', createEvents.view);
-app.get('/createdEventDetail', createdEventDetail.view);
-app.get('/joinedEvents', joinedEvents.view);
-app.get('/findEvents', findEvents.view);
+app.get('/', function (req, res) {
+    res.render('index');
+});
+app.get('/index', function (req, res) {
+    res.render('index');
+});
+app.get('/myProfile', function (req, res) {
+    res.render('myProfile');
+});
+app.get('/messages', function (req, res) {
+    res.render('messages');
+});
+app.get('/contactUs', function (req, res) {
+    res.render('contactUs');
+});
+app.get('/logout', function (req, res) {
+    res.render('logout');
+});
+app.get('/createEvents', function (req, res) {
+    res.render('createEvents');
+});
+app.get('/createdEventDetail', function (req, res) {
+    res.render('createdEventDetail');
+});
+app.get('/joinedEvents', function (req, res) {
+    res.render('joinedEvents');
+});
+app.get('/findEvents', function (req, res) {
+    res.render('findEvents');
+});
+
 
 // Example route
 // app.get('/users', user.list);

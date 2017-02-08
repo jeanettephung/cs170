@@ -1,106 +1,66 @@
-<!DOCTYPE html>
-<html>
+<div class="container" id="CreateEvents">
+	<div class="row">
+			<div class="col-md-3"> </div>
+			<div class="col-md-6">
+					<h1 class ="text-center lead"><strong>CREATE EVENT</strong></h1>
+					<div class="panel-heading">
+							<p>insert picture</p>
+					</div>
+			</div>
+			<div class="col-md-3"> </div>
+	</div>
+	<div class="row">
+			<div class="col-md-3"> </div>
+			<div class="col-md-6">
+					<form>
+							<div class="form-group">
+									<label for="example-text-input">Event Name </label>
+									<input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+									{{!-- <textarea class="form-control" id="example-text-input" rows="3"></textarea> --}}
+							</div>
 
-<head>
-    <title>CS170 APP</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+							<div class="form-group">
+									<label for="exampleSelect1">Start Time</label>
+									<select class="form-control" id="exampleSelect1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+									</select>
+							</div>
 
-<body>
+							<div class="form-group">
+									<label for="exampleSelect1">End Time</label>
+									<select class="form-control" id="exampleSelect1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+									</select>
+							</div>
 
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/index">Home</a></li>
-                <li><a href="/myProfile">My Profile</a></li>
-                <li><a href="/messages">Messages</a></li>
-                <li><a href="/contactUs">Contact Us</a></li>
-                <li><a href="/logout">Logout</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- NAVIGATION BAR END-->
+							<div class="form-group">
+									<label for="exampleTextarea">Event Description </label>
+									<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							</div>
 
-    <div class="container" id="CreateEvents">
-        <div class="row">
-            <div class="col-md-3"> </div>
-            <div class="col-md-6">
-                <h1 class ="text-center lead"><strong>CREATE EVENT</strong></h1>
-                <div class="panel-heading">
-                    <p>insert picture</p>
-                </div>
-            </div>
-            <div class="col-md-3"> </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"> </div>
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="example-text-input">Event Name </label>
-                        <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
-                        {{!-- <textarea class="form-control" id="example-text-input" rows="3"></textarea> --}}
-                    </div>
+							<fieldset class="form-group">
+									<div class="form-check">
+											<label class="form-check-label">
+													<input class="form-check-input" type="checkbox" value="">
+													I am mentoring
+											</label>
+									</div>
+							</fieldset>
 
-                    <div class="form-group">
-                        <label for="exampleSelect1">Start Time</label>
-                        <select class="form-control" id="exampleSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+							<button type="submit" class="btn btn-primary btn-lg center-block">Submit</button>
+					</form>
 
-                    <div class="form-group">
-                        <label for="exampleSelect1">End Time</label>
-                        <select class="form-control" id="exampleSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+			</div>
+			<div class="col-md-3"> </div>
 
-                    <div class="form-group">
-                        <label for="exampleTextarea">Event Description </label>
-                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                    </div>
+	</div>
+</div>
 
-                    <fieldset class="form-group">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox" value="">
-                                I am mentoring
-                            </label>
-                        </div>
-                    </fieldset>
-
-                    <button type="submit" class="btn btn-primary btn-lg center-block">Submit</button>
-                </form>
-
-            </div>
-            <div class="col-md-3"> </div>
-
-        </div>
-    </div>
-</body>
-
-</html>
