@@ -9,8 +9,21 @@
 	margin: 20px;
 }
 
-.container {
-	margin-top: 100px;
+/* BOTTOM NAVIGATION BAR */
+
+#btmNav .navbar-nav>li, #btmNav .navbar-nav {
+  float: none !important;
+}
+
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
 }
 
 /* EVENTS */
@@ -28,6 +41,10 @@
 }
 
 /* GENERAL STYLES */
+.container {
+	margin: 75px 0;
+}
+
 .margin-top {
 	margin-top: 15px;
 }
