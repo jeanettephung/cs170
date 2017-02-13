@@ -1,5 +1,5 @@
 {
-	"myProfile": [
+	"myProfile":
 		{
 			"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 			"username": "itsjen",
@@ -12,7 +12,7 @@
 				{"eventName": "Sushi Stop"}
 			]
 		}
-	],
+	,
 	"events": [
 		{
 			"eventId": "eventid1",
@@ -24,7 +24,7 @@
 			"mentoring": "yes",
 			"created": true,
 			"joined": false,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 					"name": "Jen",
@@ -37,7 +37,6 @@
 						{"eventName": "Sushi Stop"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid2",
@@ -49,7 +48,7 @@
 			"mentoring": "yes",
 			"created": true,
 			"joined": false,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 					"name": "Jen",
@@ -62,7 +61,6 @@
 						{"eventName": "Sushi Stop"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid3",
@@ -74,7 +72,7 @@
 			"mentoring": "no",
 			"created": true,
 			"joined": false,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 					"name": "Jen",
@@ -87,7 +85,6 @@
 						{"eventName": "Sushi Stop"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid4",
@@ -99,7 +96,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
 					"name": "ONE",
@@ -112,7 +109,6 @@
 						{"eventName": "ONE"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid5",
@@ -124,7 +120,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
 					"name": "Grace",
@@ -135,7 +131,6 @@
 						{"eventName": "Potato Chip Hike"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid6",
@@ -147,7 +142,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
 					"name": "Allen",
@@ -160,7 +155,6 @@
 						{"eventName": "twilight zone"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid7",
@@ -172,7 +166,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "/images/profile-placeholder.png",
 					"name": "Joe",
@@ -183,7 +177,6 @@
 						{"eventName": "Math test study group"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid8",
@@ -195,7 +188,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
-			"creator": [
+			"creator":
 				{
 					"imageURL": "/images/profile-placeholder.png",
 					"name": "Newll",
@@ -208,7 +201,6 @@
 						{"eventName": "Wine testing 3"}
 					]
 				}
-			]
 		},
 		{
 			"eventId": "eventid9",
@@ -219,8 +211,8 @@
 			"description": "Birdie",
 			"mentoring": "no",
 			"created": false,
-			"joined": false,
-			"creator": [
+			"joined": true,
+			"creator":
 				{
 					"imageURL": "/images/profile-placeholder.png",
 					"name": "Cynthia",
@@ -232,7 +224,6 @@
 						{"eventName": "bowling"}
 					]
 				}
-			]
 		}
 	],
     "editEvent":[
@@ -243,7 +234,21 @@
 			"end time": "1pm",
 			"mentoring": "yes",
 			"created": "yes",
-			"joined": "no"
+			"joined": "no",
+			"creator":
+				{
+					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
+					"name": "Rodney Pepperbottom",
+					"username": "donkeyMan",
+					"expertise": "food",
+					"aboutMe": "I like to eat sushi",
+					"eventsMentored": [
+						{"eventName": "Sushi Ki"},
+						{"eventName": "Gin Sushi"},
+						{"eventName": "Sushi Stop"}
+					]
+				}
+
         }
 
     ]
