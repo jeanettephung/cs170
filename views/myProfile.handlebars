@@ -20,7 +20,7 @@
 	<div class="event-container col-xs-12">
 		{{#each myProfile.eventsMentored}}
 		<div class="profile-event">
-			<p>{{myProfile.eventName}}<p>
+			<p>{{eventName}}<p>
 		</div>
 		{{/each}}
 	</div>
@@ -29,6 +29,5 @@
 		<span><strong>About Me: </strong></span>
 		{{myProfile.aboutMe}}
 	</div>
-	{{/each}}
 	<a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
 </div>
