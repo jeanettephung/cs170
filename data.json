@@ -14,34 +14,94 @@
 	],
 	"events": [
 		{
-			"name": "Doug Engelbart",
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
+			"name": "created one",
+			"start time": "1am",
+			"end time": "1pm",
 			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"mentoring": "yes",
+			"created": "yes",
+			"joined": "no"
 		},
 		{
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",			
 			"name": "Ivan Sutherland",
+			"start time": "2am",
+			"end time": "2pm",
 			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"mentoring": "yes",
+			"created": "yes",
+			"joined": "no"
 		},
 		{
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg",
 			"name": "Lucy Suchman",
+			"start time": "3am",
+			"end time": "3pm",
 			"description": "Loves Trukese navigators",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
+			"mentoring": "no",
+			"created": "yes",
+			"joined": "no"		
 		},
 		{
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
 			"name": "Vannevar Bush",
+			"start time": "4am",
+			"end time": "4pm",
 			"description": "Has stellar associative memory",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
+			"mentoring": "no",
+			"created": "no",
+			"joined": "yes"				
 		},
 		{
+			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
 			"name": "Grace Hopper",
+			"start time": "5am",
+			"end time": "5pm",
 			"description": "Only friend with a Navy ship named after them",
-			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg"
+			"mentoring": "no",
+			"created": "no",
+			"joined": "yes"		
 		},
 		{
+			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
 			"name": "Allen Newell",
+			"start time": "6am",
+			"end time": "6pm",
 			"description": "Really into psychology",
-			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
+			"mentoring": "no",
+			"created": "no",
+			"joined": "yes"
+		},
+		{
+			"imageURL": "/images/profile-placeholder.png",
+			"name": "Allen Newell",
+			"start time": "7am",
+			"end time": "7pm",
+			"description": "Really into psychology",
+			"mentoring": "no",
+			"created": "no",
+			"joined": "no"
+		},
+		{
+			"imageURL": "/images/profile-placeholder.png",
+			"name": "Allen Newell",
+			"start time": "8am",
+			"end time": "8pm",
+			"description": "Really into psychology",
+			"mentoring": "no",
+			"created": "no",
+			"joined": "no"
+		},
+		{
+			"imageURL": "/images/profile-placeholder.png",
+			"name": "Allen Newell",
+			"start time": "9am",
+			"end time": "9pm",
+			"description": "Really into psychology",
+			"mentoring": "no",
+			"created": "no",
+			"joined": "no"
 		}
 	]
 }
