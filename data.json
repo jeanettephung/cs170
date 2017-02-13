@@ -7,13 +7,25 @@
 			"aboutMe": "I like to eat sushi",
 			"eventsMentored": [
 				{"eventName": "Sushi Ki"},
-				{"eventName": "Gin Sushi"},
-				{"eventName": "Sushi Stop"}
-			]
-		}
-	],
-	"events": [
-		{
+                {"eventName": "Gin Sushi"},
+                {"eventName": "Sushi Stop"}
+            ]
+        }
+    ],
+    "editEvent":[
+        {
+            "name": "Hiking with Botanist" ,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus vel mauris blandit egestas et ut leo. Phasellus vel orci ante. Nulla vestibulum risus ut libero ultrices varius. Proin maximus justo nec ex efficitur mollis. Nunc sit amet justo id nisi tristique dictum sed sit amet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent quis est nec nulla rhoncus tempor id eget ligula. Nullam leo dui, condimentum tempus odio in, porttitor cconsectetur nisi. Nullam venenatis dui ac tristique bibendum. Duis facilisis mauris pulvinar nibh cursus, vitae sagittis mauris consequat. Aenean sapien mauris, ultrices ac urna ut, ullamcorper varius velit. Aenean sed sem ac ligula vulputate posuere. Nam ac purus tincidunt,I consequat sapien vel, commodo ipsum.",
+			"start time": "1am",
+			"end time": "1pm",
+			"mentoring": "yes",
+			"created": "yes",
+			"joined": "no"
+        }
+
+    ],
+    "events": [
+        {
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
 			"name": "created one",
 			"start time": "1am",
@@ -24,7 +36,7 @@
 			"joined": "no"
 		},
 		{
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
 			"name": "Ivan Sutherland",
 			"start time": "2am",
 			"end time": "2pm",
@@ -41,7 +53,7 @@
 			"description": "Loves Trukese navigators",
 			"mentoring": "no",
 			"created": "yes",
-			"joined": "no"		
+			"joined": "no"
 		},
 		{
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
@@ -51,7 +63,7 @@
 			"description": "Has stellar associative memory",
 			"mentoring": "no",
 			"created": "no",
-			"joined": "yes"				
+			"joined": "yes"
 		},
 		{
 			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
@@ -61,7 +73,7 @@
 			"description": "Only friend with a Navy ship named after them",
 			"mentoring": "no",
 			"created": "no",
-			"joined": "yes"		
+			"joined": "yes"
 		},
 		{
 			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",

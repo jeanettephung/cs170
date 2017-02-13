@@ -84,9 +84,10 @@ app.get('/createEvents', function (req, res) {
 app.get('/createdEventDetail', function (req, res) {
     res.render('createdEventDetail');
 });
-app.get('/editEvent', function (req, res) {
-    res.render('editEvent');
-});
+app.get('/editEvent', editEvent.view);
+// app.get('/editEvent', function (req, res) {
+//     res.render('editEvent');
+// });
 app.get('/cancelEvent', function (req, res) {
     res.render('cancelEvent');
 });

@@ -1,5 +1,9 @@
+
+var data = require('../data.json');
+
 exports.view = function(req, res){
-  res.render('editEventDetail', {
-     
-  });
+    console.log("HELLOS");
+    console.log(data);
+    res.render('editEvent', data);
+
 };
