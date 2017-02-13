@@ -67,9 +67,9 @@ app.get('/messages', function (req, res) {
 app.get('/contactUs', function (req, res) {
     res.render('contactUs');
 });
-app.get('/login', function (req, res) {
-    res.render('login');
-});
+
+app.get('/login',login.view);
+
 app.get('/logout', function (req, res) {
     res.render('logout');
 });
