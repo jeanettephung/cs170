@@ -79,17 +79,17 @@ app.get('/createEvents', function (req, res) {
 app.get('/createdEventDetail', function (req, res) {
     res.render('createdEventDetail');
 });
+
 app.get('/editEvent', editEvent.view);
-// app.get('/editEvent', function (req, res) {
-//     res.render('editEvent');
-// });
+
 app.get('/cancelEvent', function (req, res) {
     res.render('cancelEvent');
 });
+
 app.get('/joinedEvents', joinedEvents.view);
-app.get('/joinedEventDetail', function (req, res) {
-    res.render('joinedEventDetail');
-});
+
+app.get('/joinedEventDetail', joinedEventDetail.view);
+
 app.get('/unjoinEvent', function (req, res) {
     res.render('unjoinEvent');
 });

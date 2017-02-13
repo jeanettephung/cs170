@@ -229,9 +229,10 @@
     "editEvent":[
         {
             "name": "Hiking with Botanist" ,
+			"imageURL": "http://tylercuddy.com/blog/35mm-3827.jpg",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus vel mauris blandit egestas et ut leo. Phasellus vel orci ante. Nulla vestibulum risus ut libero ultrices varius. Proin maximus justo nec ex efficitur mollis. Nunc sit amet justo id nisi tristique dictum sed sit amet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent quis est nec nulla rhoncus tempor id eget ligula. Nullam leo dui, condimentum tempus odio in, porttitor cconsectetur nisi. Nullam venenatis dui ac tristique bibendum. Duis facilisis mauris pulvinar nibh cursus, vitae sagittis mauris consequat. Aenean sapien mauris, ultrices ac urna ut, ullamcorper varius velit. Aenean sed sem ac ligula vulputate posuere. Nam ac purus tincidunt,I consequat sapien vel, commodo ipsum.",
-			"start time": "1am",
-			"end time": "1pm",
+			"startTime": "10am",
+			"endTime": "1pm",
 			"mentoring": "yes",
 			"created": "yes",
 			"joined": "no",
