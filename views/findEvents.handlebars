@@ -1,3 +1,35 @@
-<div class="container">Find Events</div>
-<li><a href="/resultEventDetail">Result Event Detail</a></li>
-<li><a href="/joinedEvents">Home</a></li>
+<div class="container" id="findEvents">
+    <div class="row">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6">
+            <h1 class ="text-center lead"><strong>FIND EVENT</strong></h1>
+        </div>
+        <div class="col-md-3"> </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="exampleSelect1">Searching By: </label>
+                    <select class="form-control" id="exampleSelect1">
+                        <option>Professionalism</option>
+                        <option>Outdoor Activities</option>
+                        <option>Indoor Activities</option>
+                        <option>Time</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleTextarea">Keywords: </label>
+                    <input type="text" class="form-control" id="exampleTextarea">
+                </div>
+
+            </form>
+            <a href="/index"><button type="submit" class="btn btn-primary btn-lg col-xs-12" id="findEvents_submit">Create Event</button></a>
+
+        </div>
+        <div class="col-md-3"> </div>
+
+    </div>
+</div>
