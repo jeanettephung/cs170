@@ -56,16 +56,11 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', function (req, res) {
-    res.render('index');
-});
-app.get('/index', function (req, res) {
-    res.render('index');
-});
+app.get('/', index.view);
+app.get('/index', index.view);
+app.get('/profile', profile.view);
 app.get('/myProfile', myProfile.view);
-app.get('/editProfile', function (req, res) {
-    res.render('editProfile');
-});
+app.get('/editProfile', editProfile.view);
 app.get('/messages', function (req, res) {
     res.render('messages');
 });
@@ -90,9 +85,7 @@ app.get('/editEvent', function (req, res) {
 app.get('/cancelEvent', function (req, res) {
     res.render('cancelEvent');
 });
-app.get('/joinedEvents', function (req, res) {
-    res.render('joinedEvents');
-});
+app.get('/joinedEvents', joinedEvents.view);
 app.get('/joinedEventDetail', function (req, res) {
     res.render('joinedEventDetail');
 });
@@ -110,9 +103,6 @@ app.get('/forgotPassword', function (req, res) {
 });
 app.get('/resultEventDetail', function (req, res) {
     res.render('resultEventDetail');
-});
-app.get('/profile', function (req, res) {
-    res.render('profile');
 });
 
 

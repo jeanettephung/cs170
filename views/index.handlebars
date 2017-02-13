@@ -4,36 +4,18 @@
 				<li><a href="/joinedEvents">Joined Events</a></li>
 		</ul>
 	
-	<div class="event-container">
-		<a href="/createdEventDetail">
-			<div class="event">
-				<h4>Event Name</h4>
-				<h5>Time of Event</h5>
-				<p> Short Description</p>
+	{{#each events}}
+		{{#if created}}
+			<div class="event-container">
+				<a href="/createdEventDetail">
+					<div class="event">
+						<h4>{{name}}</h4>
+						<h5>{{startTime}} to {{endTime}}</h5>
+						<p>{{description}}</p>
+					</div>
+				</a>
 			</div>
-		</a>
-	</div>
-	
-	<div class="event-container">
-		<a href="/createdEventDetail">
-			<div class="event">
-				<h4>Event Name</h4>
-				<h5>Time of Event</h5>
-				<p> Short Description</p>
-			</div>
-		</a>
-	</div>
-	
-	<div class="event-container">
-		<a href="/createdEventDetail">
-			<div class="event">
-				<h4>Event Name</h4>
-				<h5>Time of Event</h5>
-				<p> Short Description</p>
-			</div>
-		</a>
-	</div>
-
-	
+		{{/if}}
+	{{/each}}
 	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
 </div>
