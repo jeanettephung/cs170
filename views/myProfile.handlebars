@@ -1,27 +1,35 @@
 <div id="myProfile" class="container col-xs-12">
+	{{#each myProfile}}
+	<center><img src={{imageURL}} class="img-circle img-responsive profile-image"></center>
 	
-	<center><img src="/images/profile-placeholder.png" class="img-circle img-responsive profile-image"></center>
 	<h3><center>MyUsername</center></h3>
+	
 	<div class="col-xs-12">
 		<span><strong>Name: </strong></span>
-		Hill Woods
+		{{name}}
 	</div>
+	
 	<div class="col-xs-12">
 		<span><strong>Expertise: </strong></span>
-		Hiking
+		{{expertise}}
 	</div>
+	
 	<div class="col-xs-12">
 		<span><strong>Events Mentored: </strong></span>
 	</div>
+	
 	<div class="event-container col-xs-12">
+		{{#each eventsMentored}}
 		<div class="profile-event">
-			<p>Event Name<p>
+			<p>{{eventName}}<p>
 		</div>
-	</div>
-	<div class="col-xs-12">
-		<span><strong>About Me: </strong></span>
-		Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. Hi, I love hiking and mentoring. 
+		{{/each}}
 	</div>
 	
+	<div class="col-xs-12">
+		<span><strong>About Me: </strong></span>
+		{{aboutMe}}
+	</div>
+	{{/each}}
 	<a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
 </div>

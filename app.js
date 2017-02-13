@@ -2,6 +2,7 @@
 /**
  * Module dependencies.
  */
+var data = require("./data.json");
 
 var express = require('express');
 var http = require('http');
@@ -10,7 +11,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var myProfile = require('./routes/myProfile');
-var myProfile = require('./routes/editProfile');
+var editProfile = require('./routes/editProfile');
 var messages = require('./routes/messages');
 var contactUs = require('./routes/contactUs');
 var login = require('./routes/login');
@@ -61,9 +62,7 @@ app.get('/', function (req, res) {
 app.get('/index', function (req, res) {
     res.render('index');
 });
-app.get('/myProfile', function (req, res) {
-    res.render('myProfile');
-});
+app.get('/myProfile', myProfile.view);
 app.get('/editProfile', function (req, res) {
     res.render('editProfile');
 });
