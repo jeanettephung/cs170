@@ -1,17 +1,16 @@
 <div id="myProfile" class="container col-xs-12">
-	{{#each myProfile}}
-	<center><img src={{imageURL}} class="img-circle img-responsive profile-image"></center>
+	<center><img src={{myProfile.imageURL}} class="img-circle img-responsive profile-image"></center>
 	
-	<h3><center>{{username}}</center></h3>
+	<h3><center>{{myProfile.username}}</center></h3>
 	
 	<div class="col-xs-12">
 		<span><strong>Name: </strong></span>
-		{{name}}
+		{{myProfile.name}}
 	</div>
 	
 	<div class="col-xs-12">
 		<span><strong>Expertise: </strong></span>
-		{{expertise}}
+		{{myProfile.expertise}}
 	</div>
 	
 	<div class="col-xs-12">
@@ -19,16 +18,16 @@
 	</div>
 	
 	<div class="event-container col-xs-12">
-		{{#each eventsMentored}}
+		{{#each myProfile.eventsMentored}}
 		<div class="profile-event">
-			<p>{{eventName}}<p>
+			<p>{{myProfile.eventName}}<p>
 		</div>
 		{{/each}}
 	</div>
 	
 	<div class="col-xs-12">
 		<span><strong>About Me: </strong></span>
-		{{aboutMe}}
+		{{myProfile.aboutMe}}
 	</div>
 	{{/each}}
 	<a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
