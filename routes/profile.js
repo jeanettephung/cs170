@@ -1,13 +1,13 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-  res.render('profile', data);
+	var username = req.params.username;
+	var name = req.params.name;
+	var aboutMe = req.params.aboutMe;
+	
+	res.render('profile', {
+		"username": username,
+		"name": name,
+		"aboutMe": aboutMe
+	});
 };
-
-//exports.viewProject = function(req, res) {
-//	var name = req.params.name;
-//	console.log("The project name is: " + name);
-//	res.render('project', {
-//			'projectName' : name
-//	});
-//};

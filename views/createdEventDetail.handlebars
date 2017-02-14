@@ -1,5 +1,26 @@
-<div class="container">Event Detail</div>
-<li><a href="/editEvent">Edit Event</a></li>
-<li><a href="/cancelEvent">Cancel Event</a></li>
-<li><a href="/index">Back (Home)</a></li>
+<div id="createdEventDetail" class="container col-xs-12">
 
+		<h3><center>{{eventName}}</center></h3>
+		<center><img src="/images/profile-placeholder.png" class=" img-responsive"></center>
+
+		<div class="col-xs-12 margin-top">
+			<span><strong>Time: </strong></span>
+			{{startTime}} to {{endTime}}
+		</div>
+
+		<div class="col-xs-12">
+			<span><strong>Category: </strong></span>
+			{{category}}
+		</div>
+
+		<div class="col-xs-12">
+			<span><strong>Description: </strong></span>
+			{{description}}
+		</div>
+
+
+
+	<a href="/editEvent"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Event</button></a>
+	<a href="/cancelEvent"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel Event</button></a>
+	<a href="/index"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back</button></a>
+</div>

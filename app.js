@@ -7,7 +7,10 @@ var data = require("./data.json");
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
+
+//var mongoose = require('mongoose');
+//mongoose.connect('mongodb://localhost/myappdatabase');
 
 var index = require('./routes/index');
 var myProfile = require('./routes/myProfile');
@@ -76,9 +79,12 @@ app.get('/logout', function (req, res) {
 app.get('/createEvents', function (req, res) {
     res.render('createEvents');
 });
-app.get('/createdEventDetail', function (req, res) {
-    res.render('createdEventDetail');
-});
+//app.get('/createdEventDetail', function (req, res) {
+//    res.render('createdEventDetail');
+//});
+
+app.get('/createdEventDetail/:name/:startTime/:endTime/:category/:description', createdEventDetail.viewCreatedEventDetail);
+
 app.get('/editEvent', editEvent.view);
 // app.get('/editEvent', function (req, res) {
 //     res.render('editEvent');
