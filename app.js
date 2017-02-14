@@ -96,9 +96,9 @@ app.get('/unjoinEvent', function (req, res) {
 app.get('/findEvents', function (req, res) {
     res.render('findEvents');
 });
-app.get('/signup', function (req, res) {
-    res.render('signup');
-});
+
+app.get('/signup', signup.view);
+
 app.get('/forgotPassword', function (req, res) {
     res.render('forgotPassword');
 });
