@@ -20,4 +20,4 @@ exports.addEvent = function(req, res) {
 
 	data.events.push(newEvent);
 	console.log(newEvent);
-}
+}E
