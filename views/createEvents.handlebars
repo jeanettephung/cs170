@@ -12,16 +12,17 @@
     <div class="row">
         <div class="col-md-3"> </div>
         <div class="col-md-6">
-            <form id="addCreatedEventForm" role="form" method="get" action="/addCreatedEvent" data-toggle="validator">
+					
+            <form id="addCreatedEventForm" role="form" method="get" action="/addEvent" data-toggle="validator">
 					
                 <div class="form-group">
-                    <label for="example-text-input">Event Name </label>
-                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                    <label for="name">Event Name </label>
+                    <input class="form-control" type="text" id="name" name="name">
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleSelect1">Start Time</label>
-                    <select class="form-control" id="exampleSelect1">
+                    <label for="startTime">Start Time</label>
+                    <select class="form-control" id="startTime" name="startTime">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -31,8 +32,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="exampleSelect1">End Time</label>
-                    <select class="form-control" id="exampleSelect1">
+                    <label for="endTime">End Time</label>
+                    <select class="form-control" id="endTime" name="endTime">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -41,9 +42,14 @@
                     </select>
                 </div>
 
+							  <div class="form-group">
+                    <label for="category">Event Name </label>
+                    <input class="form-control" type="text" id="category" name="category">
+                </div>
+							
                 <div class="form-group">
-                    <label for="exampleTextarea">Event Description </label>
-                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    <label for="description">Event Description </label>
+                    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                 </div>
 
                 {{!-- <fieldset class="form-group">

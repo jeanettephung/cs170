@@ -112,9 +112,8 @@ app.get('/resultEventDetail', function (req, res) {
 });
 
 // routes (dealing with data)
-//var add = require('./routes/addEvent');
-//app.get('/addEvent', addEvent.addEvent)
-
+var add = require('./routes/addEvent');
+app.get('/addEvent', add.addEvent)
 
 
 // Example route

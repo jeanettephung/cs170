@@ -2,7 +2,6 @@ var data = require('../data.json');
   	
  exports.viewCreatedEventDetail = function(req, res) {		
 		var eventName = req.params.name;		 	
-		var eventId = req.params.eventId;
 		var startTime = req.params.startTime;		
 		var endTime = req.params.endTime;		
 		var category = req.params.category;		
@@ -14,7 +13,8 @@ var data = require('../data.json');
 			"startTime": startTime,
 			"endTime": endTime,
 			"category": category,
-			"description": description
+			"description": description,
+			"imageURL": "http://lorempixel.com/400/400/people",			
 		});
  };
 
