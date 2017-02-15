@@ -1,29 +1,26 @@
 <div class="container" id="contactUs">
     <h1 class ="text-center lead"><strong>CONTACT US</strong></h1>
-    <div class="row">
-        <div class="form-group">
+    <form class="form-group" id="contact_form">
+        <div class="row">
             <div class="col-md-4">
-                <input class="form-control" type="text" id="contact_name"><label for="contact_name">Name: </label>
+                <label for="contact_name">Name: </label><input class="form-control" type="text" id="contact_name">
             </div>
             <div class="col-md-4">
-                <input class="form-control" type="tel" id="contact_phone"><label for="contact_phone">Phone: </label>
+                <label for="contact_phone">Phone: </label><input class="form-control customphone" type="text" id="contact_phone">
             </div>
             <div class="col-md-4">
-                <input class="form-control" type="email" id="contact_email"><label for="contact_phone">Email: </label>
+                <label for="contact_phone">Email: </label><input class="form-control" type="email" id="contact_email">
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="form-group">
+        <div class="row">
             <div class="col-md-12">
                 <label for="contact_message">Message: </label>
-                <textarea class="form-control" id="contact_message" rows="3" ></textarea>
+                <textarea class="form-control" id="contact_message" rows="3" required></textarea>
             </div>
         </div>
-    </div>
+    </form>
 
     <a href="#"><button type="submit" class="btn btn-primary btn-lg col-xs-12" id="contactUs_submit">Send Message</button></a>
 
 </div>
-
