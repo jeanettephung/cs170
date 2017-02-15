@@ -5,9 +5,8 @@
 		</ul>
 	
 	{{#each events}}
-		{{#if created}}
 			<div class="event-container">
-				<a href="/createdEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}">
+				<a href="/createdEventDetail/{{eventId}}">
 					<div class="event">
 						<h4>{{name}}</h4>
 						<h5>{{startTime}} to {{endTime}}</h5>
@@ -15,7 +14,6 @@
 					</div>
 				</a>
 			</div>
-		{{/if}}
 	{{/each}}
 	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
 </div>
