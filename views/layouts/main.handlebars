@@ -5,34 +5,34 @@
     <title>CS170 APP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <script src="/js/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/js/bootstrap.js"></script>
-<<<<<<< HEAD
-	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-		<script src="/js/script.js"></script>
-=======
-	<script src="/js/script.js"></script>
-
->>>>>>> 72b43265c9b50b7824f1c79f07684b176f3e81db
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
 </head>
 
 <body>
-
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
+    <nav class="">
+        <div class="nav-wrapper">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="/myProfile">My Profile</a></li>
+                <li><a href="/messages">Messages</a></li>
+                <li><a href="/contactUs">Contact Us</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+            <a href="#" data-activates="dropdown1" class="button-collapse right dropdown-button"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
                 <li><a href="/myProfile">My Profile</a></li>
                 <li><a href="/messages">Messages</a></li>
                 <li><a href="/contactUs">Contact Us</a></li>
@@ -46,15 +46,15 @@
     {{{body}}}
     <!-- CONTENT END -->
 
-		<!-- BOTTOM NAVIGATION BAR -->
-			<nav id="btmNav" class="navbar navbar-default navbar-fixed-bottom center" role="navigation">
-					<ul class="nav navbar-nav center-nav">
-							<li><a href="/createEvents">Create</a></li>
-							<li><a href="/index">Home</a></li>
-							<li><a href="/findEvents">Find</a></li>
-					</ul>
-			</nav>
-			<!-- BOTTOM NAVIGATION BAR END-->
+    <!-- BOTTOM NAVIGATION BAR -->
+    <nav id="btmNav" class="navbar navbar-default navbar-fixed-bottom center" role="navigation">
+        <ul class="nav navbar-nav center-nav">
+            <li><a href="/createEvents">Create</a></li>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/findEvents">Find</a></li>
+        </ul>
+    </nav>
+    <!-- BOTTOM NAVIGATION BAR END-->
 
 </body>
 
