@@ -6,8 +6,8 @@ exports.addEvent = function(req, res) {
 	var endTime = req.param('endTime');
   var description = req.param('description');
 	var category = req.param('category');
-	
-	var newEvent = 
+
+	var newEvent =
 		{
 			"imageURL": "/images/profile-placeholder.png",
 			"name": name,
@@ -20,4 +20,4 @@ exports.addEvent = function(req, res) {
 
 	data.events.push(newEvent);
 	console.log(newEvent);
-}E
+}
