@@ -1,42 +1,47 @@
 <div id="editProfile" class="container">
-	
-	<center><img src="{{myProfile.imageURL}}" class="img-circle img-responsive profile-image"></center>
-	<h3><center>{{myProfile.username}}</center></h3>
-	
-	<div class="form-group margin-top">
-		<label for="name" class="col-xs-2"><strong>Name: </strong></label>
-		<div class="col-xs-10">
-			<input type="text" class="form-control" id="profile_name" value="{{myProfile.name}}" name="name">
-		</div>
-	</div>
-	
-	<div class="form-group">
-		<label for="expertise" class="col-xs-3 margin-top"><strong>Expertise: </strong></label>
-		<div class="col-xs-9">
-			<input type="text" class="form-control margin-top" id="profile_expertise" value="{{myProfile.expertise}}" name="expertise">
-		</div>
-	</div>
-	
 
-	<div class="margin-top col-xs-12">
-		<span><strong>Events Mentored: </strong></span>
-	</div>
-	
-	<div class="event-container col-xs-12">
-		{{#each myProfile.eventsMentored}}
-			<div class="profile-event">
-				<p>{{eventName}}<p>
-			</div>
-		{{/each}}
-	</div>
-	
-	<form class="form-inline col-xs-12">
-		<div class="form-group">
-			<label for="aboutMe"><strong>About Me: </strong></label>
-			<textarea type="text" class="form-control" id="profile_aboutMe" name="aboutMe">{{myProfile.aboutMe}}</textarea>
-		</div>
-	</form>
-	<a href="/myProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Update Profile</button></a>
+    <div class="row">
+        <center><img src="{{myProfile.imageURL}}" class="img-circle img-responsive profile-image"></center>
+        <h3><center>{{myProfile.username}}</center></h3>
+    </div>
 
-	<a href="/myProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel Changes</button></a>
+    <div class="row">
+        <div class="form-group col-xs-12">
+            <label for="name"><strong>Name: </strong></label>
+            <input type="text" class="form-control" id="profile_name" value="{{myProfile.name}}" name="name">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-xs-12">
+            <label for="expertise" ><strong>Expertise: </strong></label>
+            <input type="text" class="form-control" id="profile_expertise" value="{{myProfile.expertise}}" name="expertise">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=" col-xs-12">
+            <span><strong>Events Mentored: </strong></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="event-container col-xs-12">
+            {{#each myProfile.eventsMentored}}
+            <div class="profile-event">
+                <p>{{eventName}}<p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="row">
+            <form class="form-inline col-xs-12">
+                <div class="form-group">
+                    <label for="aboutMe"><strong>About Me: </strong></label>
+                    <textarea type="text" class="form-control" id="profile_aboutMe" name="aboutMe">{{myProfile.aboutMe}}</textarea>
+                </div>
+            </form>
+            <a href="/myProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Update Profile</button></a>
+            <a href="/myProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel Changes</button></a>
+    </div>
 </div>
