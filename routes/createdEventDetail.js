@@ -1,17 +1,15 @@
-var data = require('../data.json');
+var Events = require('../models/event');
 
 exports.viewCreatedEventDetail = function(req, res) {
-	var eventName = req.params.name;
-	var startTime = req.params.startTime;
-	var endTime = req.params.endTime;
-	var category = req.params.category;
-	var description = req.params.description;
+	var eventId = req.params.eventId;
 	
-	res.render('createdEventDetail', {
-		"eventName": eventName,
-		"startTime": startTime,
-		"endTime": endTime,
-		"category": category,
-		"description": description
-	});
+	Events
+		.find({"eventId": eventId})
+		.exec(renderEvents);
+	
+	function renderEvents(err, events) {
+		console.log(events);
+		res.render('createdEventDetail', { 'events': events });
+	}
+
 };

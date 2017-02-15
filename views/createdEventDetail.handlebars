@@ -1,7 +1,8 @@
 <div id="createdEventDetail" class="container col-xs-12">
 
-		<h3><center>{{eventName}}</center></h3>
-		<center><img src="/images/profile-placeholder.png" class=" img-responsive"></center>
+	{{#each events}}
+		<h3><center>{{name}}</center></h3>
+		<center><img src="{{imageURL}}" class=" img-responsive"></center>
 
 		<div class="col-xs-12 margin-top">
 			<span><strong>Time: </strong></span>
@@ -17,7 +18,7 @@
 			<span><strong>Description: </strong></span>
 			{{description}}
 		</div>
-
+	{{/each}}
 
 
 	<a href="/editEvent"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Event</button></a>

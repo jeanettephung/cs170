@@ -8,10 +8,11 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var mongoose = require("mongoose");
 
-//var mongoose = require('mongoose');
-//mongoose.connect('mongodb://localhost/myappdatabase');
-
+mongoose.connect('localhost:27017/cs170',function(){
+  console.log('mongoose connected on server');
+});
 var index = require('./routes/index');
 var myProfile = require('./routes/myProfile');
 var editProfile = require('./routes/editProfile');
@@ -60,6 +61,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+//app.get('/index', index.view);
 app.get('/index', index.view);
 app.get('/profile', profile.view);
 app.get('/myProfile', myProfile.view);
@@ -81,7 +83,7 @@ app.get('/createEvents', function (req, res) {
     res.render('createEvents');
 });
 
-app.get('/createdEventDetail/:name/:startTime/:endTime/:category/:description', createdEventDetail.viewCreatedEventDetail);
+app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
 
 app.get('/editEvent', editEvent.view);
 
