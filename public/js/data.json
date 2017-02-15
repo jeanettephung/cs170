@@ -17,10 +17,9 @@
 		{
 			"eventId": "eventid1",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-			"name": "c. Petting farm",
+			"name": "created one",
 			"startTime": "1am",
 			"endTime": "1pm",
-			"category": "zoology",
 			"description": "Has awesome pet mice",
 			"mentoring": "yes",
 			"created": true,
@@ -42,10 +41,9 @@
 		{
 			"eventId": "eventid2",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
-			"name": "c. Drawing at Geisel",
+			"name": "created two",
 			"startTime": "2am",
 			"endTime": "2pm",
-			"category": "art",
 			"description": "Great at sketching",
 			"mentoring": "yes",
 			"created": true,
@@ -67,11 +65,10 @@
 		{
 			"eventId": "eventid3",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg",
-			"name": "c. Shores Beach",
+			"name": "created three",
 			"startTime": "3am",
 			"endTime": "3pm",
-			"category": "marine",
-			"description": "Loves boating",
+			"description": "Loves Trukese navigators",
 			"mentoring": "no",
 			"created": true,
 			"joined": false,
@@ -92,10 +89,9 @@
 		{
 			"eventId": "eventid4",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
-			"name": "j. Memory",
+			"name": "join one",
 			"startTime": "4am",
 			"endTime": "4pm",
-			"category": "neurology",
 			"description": "Has stellar associative memory",
 			"mentoring": "no",
 			"created": false,
@@ -117,10 +113,9 @@
 		{
 			"eventId": "eventid5",
 			"imageURL": "https://adventurejunkies-theadventurejunk.netdna-ssl.com/wp-content/uploads/hiking-1.jpg",
-			"name": "j. Hike at Grand Canyon",
+			"name": "join two",
 			"startTime": "5am",
 			"endTime": "5pm",
-			"category": "hike",
 			"description": "Let's see who stands last",
 			"mentoring": "no",
 			"created": false,
@@ -140,10 +135,9 @@
 		{
 			"eventId": "eventid6",
 			"imageURL": "http://i.huffpost.com/gen/1408503/images/o-PSYCHOLOGY-EXPERIMENT-facebook.jpg",
-			"name": " j. Psych walk through woods",
+			"name": " join three: Psych walk through woods",
 			"startTime": "6am",
 			"endTime": "6pm",
-			"category" : "hike and psychology",
 			"description": "Really into psychology",
 			"mentoring": "no",
 			"created": false,
@@ -168,7 +162,6 @@
 			"name": "Allen Newell",
 			"startTime": "7am",
 			"endTime": "7pm",
-			"category" : "psychology",
 			"description": "Really into psychology",
 			"mentoring": "no",
 			"created": false,
@@ -191,7 +184,6 @@
 			"name": "Wine tasting",
 			"startTime": "8am",
 			"endTime": "8pm",
-			"category" : "wine",
 			"description": "Let's not get drunk",
 			"mentoring": "no",
 			"created": false,
@@ -216,7 +208,6 @@
 			"name": "Golfing",
 			"startTime": "9am",
 			"endTime": "9pm",
-			"category" : "golfing",
 			"description": "Birdie",
 			"mentoring": "no",
 			"created": false,
@@ -237,27 +228,26 @@
 	],
     "editEvent":[
         {
-					"name": "Hiking with Botanist" ,
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus vel mauris blandit egestas et ut leo. Phasellus vel orci ante. Nulla vestibulum risus ut libero ultrices varius. Proin maximus justo nec ex efficitur mollis. Nunc sit amet justo id nisi tristique dictum sed sit amet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent quis est nec nulla rhoncus tempor id eget ligula. Nullam leo dui, condimentum tempus odio in, porttitor cconsectetur nisi. Nullam venenatis dui ac tristique bibendum. Duis facilisis mauris pulvinar nibh cursus, vitae sagittis mauris consequat. Aenean sapien mauris, ultrices ac urna ut, ullamcorper varius velit. Aenean sed sem ac ligula vulputate posuere. Nam ac purus tincidunt,I consequat sapien vel, commodo ipsum.",
-					"start time": "1am",
-					"end time": "1pm",
-					"category" : "hike and botany",
-					"mentoring": "yes",
-					"created": "yes",
-					"joined": "no",
-					"creator":
-						{
-							"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
-							"name": "Rodney Pepperbottom",
-							"username": "donkeyMan",
-							"expertise": "food",
-							"aboutMe": "I like to eat sushi",
-							"eventsMentored": [
-								{"eventName": "Sushi Ki"},
-								{"eventName": "Gin Sushi"},
-								{"eventName": "Sushi Stop"}
-							]
-						}
+            "name": "Hiking with Botanist" ,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis risus vel mauris blandit egestas et ut leo. Phasellus vel orci ante. Nulla vestibulum risus ut libero ultrices varius. Proin maximus justo nec ex efficitur mollis. Nunc sit amet justo id nisi tristique dictum sed sit amet nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent quis est nec nulla rhoncus tempor id eget ligula. Nullam leo dui, condimentum tempus odio in, porttitor cconsectetur nisi. Nullam venenatis dui ac tristique bibendum. Duis facilisis mauris pulvinar nibh cursus, vitae sagittis mauris consequat. Aenean sapien mauris, ultrices ac urna ut, ullamcorper varius velit. Aenean sed sem ac ligula vulputate posuere. Nam ac purus tincidunt,I consequat sapien vel, commodo ipsum.",
+			"start time": "1am",
+			"end time": "1pm",
+			"mentoring": "yes",
+			"created": "yes",
+			"joined": "no",
+			"creator":
+				{
+					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
+					"name": "Rodney Pepperbottom",
+					"username": "donkeyMan",
+					"expertise": "food",
+					"aboutMe": "I like to eat sushi",
+					"eventsMentored": [
+						{"eventName": "Sushi Ki"},
+						{"eventName": "Gin Sushi"},
+						{"eventName": "Sushi Stop"}
+					]
+				}
 
         }
 
