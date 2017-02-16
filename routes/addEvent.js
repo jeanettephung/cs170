@@ -1,11 +1,11 @@
-var data = require("../data.json");
+var events = require("../events.json");
 
 exports.addEvent = function(req, res) {
 	var name = req.param('name');
 	var startTime = req.param('startTime');
 	var endTime = req.param('endTime');
-  var description = req.param('description');
 	var category = req.param('category');
+  var description = req.param('description');
 
 	var newEvent =
 		{
@@ -18,6 +18,6 @@ exports.addEvent = function(req, res) {
 			"created": true
 		}
 
-	data.events.push(newEvent);
+	events.push(newEvent);
 	console.log(newEvent);
 }

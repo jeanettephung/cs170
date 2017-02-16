@@ -9,7 +9,7 @@ var data = require('../data.json');
 
 		res.render('createdEventDetail', 
 		{
-			"eventName": eventName,
+			"name": eventName,
 			"startTime": startTime,
 			"endTime": endTime,
 			"category": category,

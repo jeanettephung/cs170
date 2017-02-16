@@ -8,11 +8,44 @@ $(document).ready(function() {
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
+function initializePage() {	
 	$.validator.addMethod('customphone', function (value, element) {
 		return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
 	}, "Please enter a valid phone number");
 
+	$("#addCreatedEventForm").validate({
+		rules: {
+			create_name: "required",
+			create_startTime: {
+				required: true
+			},
+			create_endTime: {
+				required: true,
+			},
+			create_category: {
+				required: true
+			},
+			create_description: {
+				required: true
+			}
+		},
+		messages: {
+			create_name: "Please enter a name for your event",
+			create_startTime: {
+				required: "Please enter what time your event starts",
+			},
+			create_endTime: {
+				required: "Please enter what time your event ends"
+			},
+			create_category: {
+				required: "Please state what category your event falls under.",
+			},
+			create_description: {
+				required: "Please enter a short description about your event"
+			}
+		}
+	});
+	
 	$("#contact_form").validate({
 		rules: {
 			contact_name: "required",

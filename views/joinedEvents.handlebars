@@ -4,10 +4,10 @@
 				<li class="active"><a href="#">Joined Events</a></li>
 		</ul>
 
-	{{#each events}}
+	{{#each this}}
 		{{#if joined}}
 			<div class="event-container">
-				<a href="/joinedEventDetail">
+				<a href="/joinedEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}">
 					<div class="event">
 						<h4>{{name}}</h4>
 						<h5>{{startTime}} to {{endTime}}</h5>
