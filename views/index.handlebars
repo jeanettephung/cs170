@@ -6,7 +6,7 @@
 	
 	{{#each this}}
 		{{#if created}}
-			<div class="event-container">
+			<div class="event-container card-panel">
 				<a href="/createdEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}">
 					<div class="event">
 						<h4>{{name}}</h4>
@@ -17,5 +17,6 @@
 			</div>
 		{{/if}}
 	{{/each}}
+	
 	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
 </div>
