@@ -108,6 +108,7 @@ app.get('/successCreate', successCreate.view);
 var add = require('./routes/addEvent');
 app.get('/addEvent', add.addEvent)
 app.get('/event/:id', event.eventInfo);
+app.get('/loggingIn', login.login);
 
 
 // Example route
