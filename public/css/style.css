@@ -42,6 +42,10 @@ width: 100%;
   z-index: 1
 }
 
+a, a:hover, a:active, a:visited {
+    text-decoration:none;
+}
+
 /* EVENTS */
 .event {
 	padding: 5px 10px;
