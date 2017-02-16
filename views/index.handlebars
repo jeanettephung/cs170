@@ -3,8 +3,8 @@
 				<li class="active"><a href="#">Created Events</a></li>
 				<li><a href="/joinedEvents">Joined Events</a></li>
 		</ul>
-
-	{{#each events}}
+	
+	{{#each this}}
 		{{#if created}}
 			<div class="event-container card-panel">
 				<a href="/createdEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}">
@@ -17,5 +17,6 @@
 			</div>
 		{{/if}}
 	{{/each}}
+	
 	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
 </div>
