@@ -7,47 +7,57 @@
 
     </div>
     <form>
-        <div class="form-group row">
-            <div class="col-xs-12">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="User Name">
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="text" class="validate" id="userName" required>
+                <label for="userName">User Name</label>
             </div>
         </div>
 
-        <div class="form-group row">
-            <div class="col-xs-12">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email_Signup" type="email" class="validate" required>
+                <label for="email_SignUp" data-error="Enter a valid Email">Email</label>
             </div>
         </div>
 
-        <div class="form-group row">
-            <div class="col-xs-12">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="phone number">
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="tel" id="tel" class="validate" placeholder="xxx-xxx-xxxx" required>
+                <label for="tel">Phone Number</label>
             </div>
         </div>
 
-
-        <div class="form-group row">
-            <div class="col-xs-12">
-                <input type="password" id="inputPassword1" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="Password">
+        <div class=" row">
+            <div class="input-field col s12">
+                <input type="password" id="signUpPass" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" required>
+                <label for="signUpPass">Password</label>
                 <small id="passwordHelpInline" class="text-muted">
                     &nbsp Must be 8-20 characters long.
                 </small>
-
             </div>
         </div>
 
-        <div class="form-group row">
-            <div class="col-xs-12">
-                <input type="password" id="inputPassword2" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="Confirm Password">
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="password" id="confirmPass" class="validate" aria-describedby="passwordHelpInline"  required>
+                <label for="confirmPass">Confrim Password</label>
             </div>
+        </div>
+
+        <div class="row">
+            <button class="btn waves-effect waves-light col s12" type="submit" name="action">
+                Signup
+            </button>
         </div>
     </form>
 
-        {{!-- this should display a pop up confirmation --}}
-    <div class="form-group row">
-        <div class="col-xs-12">
-            <a href="/index"><button type="submit" class="btn btn-primary col-xs-4 col-xs-offset-4 btn-md ">Sign Up</button></a>
-        </div>
+    <div class="row">
+        <a href="/login">
+            <button class="btn waves-effect waves-light col s4 offset-s4">
+                Back
+            </button>
+        </a>
     </div>
 
 </div>

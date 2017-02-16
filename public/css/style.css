@@ -46,6 +46,10 @@ a, a:hover, a:active, a:visited {
     text-decoration:none;
 }
 
+.page-footer{
+    z-index: 100;
+}
+
 /* EVENTS */
 .event {
 	padding: 5px 10px;
