@@ -61,14 +61,16 @@ width: 100%;
 .margin-top {
 	margin-top: 15px;
 }
-
 .profile-image {
 	width: 50%;
 }
-
-.row{
+.row {
     margin-top: 3%;
 }
 .error {
 	color: red;
+}
+.loader {
+	margin-top: 25px;
+ 	height: 60px;
 }

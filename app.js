@@ -34,6 +34,7 @@ var findEvents = require('./routes/findEvents');
 var profile = require('./routes/profile');
 var event = require('./routes/event');
 var resultEvent = require('./routes/resultEvent');
+var successCreate = require('./routes/successCreate');
 
 // Example route
 // var user = require('./routes/user');
@@ -100,6 +101,8 @@ app.get('/forgotPassword', function (req, res) {
 });
 app.get('/resultEventDetail/:name/:startTime/:endTime/:category/:description', resultEventDetail.view);
 app.get('/resultEvent', resultEvent.view);
+app.get('/successCreate', successCreate.view);
+
 
 // routes (dealing with data)
 var add = require('./routes/addEvent');
