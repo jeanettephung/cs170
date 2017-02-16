@@ -19,9 +19,6 @@ function initializePage() {
 		return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
 	}, "Please enter a valid phone number");
 
-<<<<<<< HEAD
-	$('#contact_form').validate({
-=======
 	$("#addCreatedEventForm").validate({
 		rules: {
 			create_name: "required",
@@ -56,7 +53,6 @@ function initializePage() {
 	});
 	
 	$("#contact_form").validate({
->>>>>>> b3aeb919e1591a0286dca8cda0e6e910fdaed8dd
 		rules: {
 			contact_email: {
 				email: true

@@ -125,6 +125,7 @@
 		{
 			"eventId": 6,
 			"imageURL": "http://s.hswstatic.com/gif/how-to-hike-1.jpg",
+			"name": "Haunted Woods",
 			"startTime": "6am",
 			"endTime": "6pm",
 			"category" : "hike and psychology",

@@ -69,3 +69,6 @@ width: 100%;
 .row{
     margin-top: 3%;
 }
+.error {
+	color: red;
+}

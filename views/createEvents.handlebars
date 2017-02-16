@@ -1,23 +1,19 @@
 <div class="container" id="CreateEvents">
     <div class="row">
-        <div class="col-md-3"> </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
             <h1 class ="text-center lead"><strong>CREATE EVENT</strong></h1>
             <div class="panel-heading">
                 <p>insert picture</p>
             </div>
         </div>
-        <div class="col-md-3"> </div>
     </div>
     <div class="row">
-        <div class="col-md-3"> </div>
-        <div class="col-md-6">
-					
-            <form id="addCreatedEventForm" role="form" method="get" action="/addEvent" data-toggle="validator">
+        <div class="col-md-12">
+            <form id="addCreatedEventForm" class="form" role="form" method="get" action="/addEvent" data-toggle="validator">
 					
                 <div class="form-group">
                     <label for="name">Event Name </label>
-                    <input class="form-control" type="text" id="create_name" name="name">
+                    <input class="form-control" type="text" id="create_name" name="name" required>
                 </div>
 
                 <div class="form-group">
@@ -80,30 +76,22 @@
 
 							  <div class="form-group">
                     <label for="category">Category </label>
-                    <input class="form-control" type="text" id="create_category" name="category">
+                    <input class="form-control" type="text" id="create_category" name="category" required>
                 </div>
 							
                 <div class="form-group">
                     <label for="description">Event Description </label>
-                    <textarea class="form-control" id="create_description" name="description" rows="3"></textarea>
+                    <textarea class="form-control" id="create_description" name="description" rows="3" required></textarea>
                 </div>
+							
 
-                {{!-- <fieldset class="form-group">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="">
-                            I am mentoring
-                        </label>
-                    </div>
-                </fieldset> --}}
-							 <input type="submit" id="createEvent_submit" class="btn btn-primary btn-lg col-xs-12" value="Create Event"></input>
+								<input type="submit" id="createEvent_submit" class="btn btn-primary btn-lg col-xs-12" value="Create Event"></input>
 
             </form>
 <!--            <a href="/index"><button type="submit" class="btn btn-primary btn-lg col-xs-12" id="createEvents_submit">Create Event</button></a>-->
             <a href="/index"><button class="btn btn-primary btn-lg col-xs-12 margin-top">Cancel</button></a>
 
         </div>
-        <div class="col-md-3"> </div>
 
     </div>
 </div>
