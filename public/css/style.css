@@ -11,19 +11,35 @@
 
 /* BOTTOM NAVIGATION BAR */
 
-#btmNav .navbar-nav>li, #btmNav .navbar-nav {
-  float: none !important;
+body {
+  display: flex;
+  display: -webkit-flex;
+  min-height: 400px;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+
 }
 
-.nav.navbar-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin-bottom: 80px;
+
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -webkit-flex-basis: auto;
 }
-@media (min-width: 768px) {
-    .navbar-nav {
-        float: none;
-    }
+
+footer{
+margin-bottom: 0;
+bottom: 0;
+position: fixed;
+width: 100%;
+}
+
+#sidenav-overlay {
+  z-index: 1
 }
 
 /* EVENTS */
@@ -41,9 +57,6 @@
 }
 
 /* GENERAL STYLES */
-.container {
-	margin: 30px 0 100px 0;
-}
 
 .margin-top {
 	margin-top: 15px;

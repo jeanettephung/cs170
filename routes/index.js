@@ -1,9 +1,7 @@
-var data = require('../data.json');	
-
-var Events = require('../models/event');
+var events = require('../events.json');	
   		  
 exports.view = function(req, res){
-	res.render('index', data);
+	res.render('index', events);
 };
 
 
