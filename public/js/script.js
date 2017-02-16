@@ -4,7 +4,7 @@
 $(document).ready(function() {
     initializePage();
     $(".button-collapse").sideNav({
-        menuWidth: 300, // Default is 300
+        menuWidth: 150, // Default is 300
         edge: 'right', // Choose the horizontal origin
         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true // Choo
@@ -14,7 +14,7 @@ $(document).ready(function() {
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {	
+function initializePage() {
 	$.validator.addMethod('customphone', function (value, element) {
 		return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
 	}, "Please enter a valid phone number");
@@ -51,7 +51,7 @@ function initializePage() {
 			}
 		}
 	});
-	
+
 	$("#contact_form").validate({
 		rules: {
 			contact_email: {
