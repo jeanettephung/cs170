@@ -5,7 +5,8 @@ var events = require('../events.json');
 		var startTime = req.params.startTime;		
 		var endTime = req.params.endTime;		
 		var category = req.params.category;		
-		var description = req.params.description;		
+		var description = req.params.description;
+	  var creator = req.params.creator;
 
 		res.render('resultEventDetail', 
 		{
@@ -14,6 +15,7 @@ var events = require('../events.json');
 			"endTime": endTime,
 			"category": category,
 			"description": description,
-			"imageURL": "http://lorempixel.com/400/400/people",			
+			"imageURL": "http://lorempixel.com/400/400/people",
+			"creator": creator
 		});
  };

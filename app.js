@@ -87,7 +87,7 @@ app.get('/cancelEvent', function (req, res) {
     res.render('cancelEvent');
 });
 app.get('/joinedEvents', joinedEvents.view);
-app.get('/joinedEventDetail/:name/:startTime/:endTime/:category/:description', joinedEventDetail.view);
+app.get('/joinedEventDetail/:name/:startTime/:endTime/:category/:description/:creator', joinedEventDetail.view);
 app.get('/unjoinEvent', function (req, res) {
     res.render('unjoinEvent');
 });
@@ -99,7 +99,7 @@ app.get('/signup', signup.view);
 app.get('/forgotPassword', function (req, res) {
     res.render('forgotPassword');
 });
-app.get('/resultEventDetail/:name/:startTime/:endTime/:category/:description', resultEventDetail.view);
+app.get('/resultEventDetail/:name/:startTime/:endTime/:category/:description/:creator', resultEventDetail.view);
 app.get('/resultEvent', resultEvent.view);
 app.get('/successCreate', successCreate.view);
 
