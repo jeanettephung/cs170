@@ -3,10 +3,10 @@
 				<li class="active"><a href="#">Created Events</a></li>
 				<li><a href="/joinedEvents">Joined Events</a></li>
 		</ul>
-	
+
 	{{#each events}}
 		{{#if created}}
-			<div class="event-container">
+			<div class="event-container card-panel">
 				<a href="/createdEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}">
 					<div class="event">
 						<h4>{{name}}</h4>
