@@ -14,12 +14,15 @@
                 <label for="name"><strong>Name: </strong></label>
                 <input type="text" class="form-control" id="profile_name" value="{{myProfile.name}}" name="name" required>
             </div>
-        </div>
 
-        <div class="row">
             <div class="input-field col s12">
                 <label for="expertise" ><strong>Expertise: </strong></label>
                 <input type="text" class="form-control" id="profile_expertise" value="{{myProfile.expertise}}" name="expertise" required>
+            </div>
+
+            <div class="input-field col s12">
+                <label for="profile_aboutMe">About Me:</label>
+                <textarea type="text" class="materialize-textarea" id="profile_aboutMe">{{myProfile.aboutMe}}</textarea>
             </div>
         </div>
 
@@ -37,12 +40,6 @@
             {{/each}}
         </div>
 
-        <div class="row">
-            <div class="input-field col s12">
-                <label for="profile_aboutMe">About Me:</label>
-                <textarea type="text" class="materialize-textarea" id="profile_aboutMe">{{myProfile.aboutMe}}</textarea>
-            </div>
-        </div>
 
         <div class="row">
             <div class="col s12">
