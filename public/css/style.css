@@ -46,8 +46,9 @@ a, a:hover, a:active, a:visited {
     text-decoration:none;
 }
 
-.page-footer{
+footer.page-footer{
     z-index: 100;
+    padding-top: 1px;
 }
 
 /* EVENTS */

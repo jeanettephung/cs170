@@ -17,70 +17,56 @@
     <script src="/js/bootstrap.js"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
-
-
 </head>
 
 <body>
-
-<div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/myProfile">My Profile</a></li>
-                <li><a href="/messages">Messages</a></li>
-                <li><a href="/contactUs">Contact Us</a></li>
-                <li><a href="/logout">Logout</a></li>
-            </ul>
-            <ul class="side-nav center-align" id="mobile-demo">
-                <li><a href="/myProfile">My Profile</a></li>
-                <li><a href="/messages">Messages</a></li>
-                <li><a href="/contactUs">Contact Us</a></li>
-                <li><a href="/logout">Logout</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<!-- NAVIGATION BAR END-->
-
-<!-- CONTENT -->
-<main>
-    {{{body}}}
-</main>
-<!-- CONTENT END -->
-
-<!-- BOTTOM NAVIGATION BAR -->
-<footer class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col s4 right-align">
-                <a class="white-text" href="/createEvents">Create</a></li>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/myProfile">My Profile</a></li>
+                    <li><a href="/messages">Messages</a></li>
+                    <li><a href="/contactUs">Contact Us</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+                <ul class="side-nav center-align" id="mobile-demo">
+                    <li><a href="/myProfile">My Profile</a></li>
+                    <li><a href="/messages">Messages</a></li>
+                    <li><a href="/contactUs">Contact Us</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
             </div>
-            <div class="col s4 center-align">
-                <a class="white-text" href="/index">Home</a></li>
-            </div>
-            <div class="col s4 left-align ">
-                <a class="white-text" href="/findEvents">Find</a></li>
-            </div>
-        </div>
+        </nav>
     </div>
-</footer>
-<!-- BOTTOM NAVIGATION BAR END-->
+    <!-- NAVIGATION BAR END-->
 
-{{!-- OLD FOOTER --}}
-{{!-- <nav id="btmNav" class="navbar navbar-default navbar-fixed-bottom center" role="navigation">
-    <ul class="nav navbar-nav center-nav">
-        <li><a href="/createEvents">Create</a></li>
-        <li><a href="/index">Home</a></li>
-        <li><a href="/findEvents">Find</a></li>
-    </ul>
-</nav> --}}
+    <!-- CONTENT -->
+    <main>
+        {{{body}}}
+    </main>
+    <!-- CONTENT END -->
+
+    <!-- BOTTOM NAVIGATION BAR -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s4 right-align">
+                    <a class="white-text" href="/createEvents">Create</a></li>
+                </div>
+                <div class="col s4 center-align">
+                    <a class="white-text" href="/index">Home</a></li>
+                </div>
+                <div class="col s4 left-align ">
+                    <a class="white-text" href="/findEvents">Find</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
