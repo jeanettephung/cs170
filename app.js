@@ -86,9 +86,7 @@ app.get('/createEvents', function (req, res) {
 //-- save app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
 app.get('/createdEventDetail/:name/:startTime/:endTime/:category/:description', createdEventDetail.viewCreatedEventDetail);
 app.get('/editEvent/:name/:startTime/:endTime/:category/:description', editEvent.view);
-app.get('/cancelEvent', function (req, res) {
-    res.render('cancelEvent');
-});
+app.get('/cancelEvent/:name/:startTime/:endTime/:category/:description', cancelEvent.view);
 app.get('/joinedEvents', joinedEvents.view);
 app.get('/joinedEventDetail/:name/:startTime/:endTime/:category/:description/:creator', joinedEventDetail.view);
 app.get('/unjoinEvent', function (req, res) {
