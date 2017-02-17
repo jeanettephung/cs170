@@ -65,7 +65,29 @@ function initializePage() {
 		}
 	});
 
-	$("#contactUs_submit").click(function () {
+    $("#formValidation").validate({
+        rules: {
+            signUp_email: {
+                email: true
+            },
+            signUpPass: {
+                required: true,
+                minlength: 8
+            },
+            confirmPass: {
+                required: true,
+                minlength: 8,
+                equalTo: "#signUpPass"
+            }
+        },
+        messages: {
+            signUp_email: {
+                email: "Please enter a valid email address"
+            }
+        }
+    });
+
+    $("#contactUs_submit").click(function () {
 		$('#contact_form').submit();
 	});
 
