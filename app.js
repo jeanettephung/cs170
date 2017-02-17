@@ -35,6 +35,9 @@ var profile = require('./routes/profile');
 var event = require('./routes/event');
 var resultEvent = require('./routes/resultEvent');
 var successCreate = require('./routes/successCreate');
+var successJoin = require('./routes/successJoin');
+var successUnjoin = require('./routes/successUnjoin');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -102,14 +105,17 @@ app.get('/forgotPassword', function (req, res) {
 app.get('/resultEventDetail/:name/:startTime/:endTime/:category/:description/:creator', resultEventDetail.view);
 app.get('/resultEvent', resultEvent.view);
 app.get('/successCreate', successCreate.view);
-
+app.get('/successJoin', successJoin.view);
+app.get('/successUnjoin', successUnjoin.view);
 
 // routes (dealing with data)
 var add = require('./routes/addEvent');
 app.get('/addEvent', add.addEvent)
 app.get('/event/:id', event.eventInfo);
 app.get('/loggingIn', login.login);
-
+app.get('/joiningEvent/:name', joinedEventDetail.joining);
+app.get('/unjoiningevent/:name', unjoinEvent.unjoining);
+app.get('/signingup', signup.signingup);
 
 // Example route
 // app.get('/users', user.list);

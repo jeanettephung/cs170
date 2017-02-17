@@ -6,11 +6,10 @@
         </div>
 
     </div>
-    <form>
-        <div class="row">
-            <div class="input-field col s12">
-                <input type="text" class="validate" id="userName" required>
-                <label for="userName">User Name</label>
+    <form action="/signingup">
+        <div class="form-group row">
+            <div class="col-xs-12">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="User Name">
             </div>
         </div>
 
@@ -44,20 +43,8 @@
                 <label for="confirmPass">Confrim Password</label>
             </div>
         </div>
-
-        <div class="row">
-            <button class="btn waves-effect waves-light col s12" type="submit" name="action">
-                Signup
-            </button>
-        </div>
+			
+				<input type="submit" id="signup_submit" class="btn btn-primary btn-lg col-xs-12" value="SIGN UP">
     </form>
-
-    <div class="row">
-        <a href="/login">
-            <button class="btn waves-effect waves-light col s4 offset-s4">
-                Back
-            </button>
-        </a>
-    </div>
 
 </div>
