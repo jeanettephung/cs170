@@ -1,11 +1,16 @@
 <div id="myProfile" class="container">
 
     <div class="row">
+        <div class="col s12">
+            <center><img src={{myProfile.imageURL}} class="img-circle img-responsive profile-image"></center>
+        </div>
 
-        <center><img src={{myProfile.imageURL}} class="img-circle img-responsive profile-image"></center>
+        <div class="col s12">
+            <h3><center>{{myProfile.username}}</center></h3>
+        </div>
+    </div>
 
-        <h3><center>{{myProfile.username}}</center></h3>
-
+    <div class="row">
         <div class="col-xs-12">
             <span><strong>Name: </strong></span>
             {{myProfile.name}}
@@ -15,23 +20,29 @@
             <span><strong>Expertise: </strong></span>
             {{myProfile.expertise}}
         </div>
+        <div class="col-xs-12">
+            <span><strong>About Me: </strong></span>
+            {{myProfile.aboutMe}}
+        </div>
+    </div>
 
+
+    <div class="row">
         <div class="col-xs-12">
             <span><strong>Events Mentored: </strong></span>
         </div>
 
-        <div class="event-container col-xs-12">
-            {{#each myProfile.eventsMentored}}
-            <div class="profile-event">
-                <p>{{eventName}}<p>
+        {{#each myProfile.eventsMentored}}
+            <div class="col s6 offset-s3">
+                <div class="card-panel center-align">
+                    <h6>{{eventName}}</h6>
                 </div>
-                {{/each}}
             </div>
+        {{/each}}
+        <a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
 
-            <div class="col-xs-12">
-                <span><strong>About Me: </strong></span>
-                {{myProfile.aboutMe}}
-            </div>
-            <a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
-        </div>
+    </div>
+
+
+
     </div>
