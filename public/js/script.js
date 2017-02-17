@@ -67,5 +67,9 @@ function initializePage() {
 
 	$("#contactUs_submit").click(function () {
 		$('#contact_form').submit();
+	});
+
+	$("#openM").click(function (){
+		$(".modal").modal();
 	})
 }
