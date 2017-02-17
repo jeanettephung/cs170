@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-md-3"> </div>
         <div class="col-md-6">
-            <form data-toggle="validator">
+            <form data-toggle="validator" action="/updatingEvent/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}">
                 <div class="form-group">
                     <label for="example-text-input">Event Name </label>
                     <input class="form-control" type="text" value="{{name}}" id="edit_name">
@@ -87,8 +87,10 @@
                     >{{description}}</textarea>
                 </div>
 							
+								<input type="submit" value="UPDATE" class="btn btn-primary btn-lg col-xs-12 margin-top">
+							
             </form>
-            <a href="/index"><button type="submit" class="btn btn-primary btn-lg col-xs-12" id="editEvents_submit">Update Event</button></a>
+<!--            <a href="/index"><button type="submit" class="btn btn-primary btn-lg col-xs-12" id="editEvents_submit">Update Event</button></a>-->
 
             <a href="/index"><button class="btn btn-primary btn-lg col-xs-12 margin-top">Cancel</button></a>
 

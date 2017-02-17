@@ -116,6 +116,7 @@ app.get('/loggingIn', login.login);
 app.get('/joiningEvent/:name', joinedEventDetail.joining);
 app.get('/unjoiningevent/:name', unjoinEvent.unjoining);
 app.get('/signingup', signup.signingup);
+app.get('/updatingEvent/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
 
 // Example route
 // app.get('/users', user.list);
