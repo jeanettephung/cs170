@@ -1,3 +1,5 @@
+var events = require("../events.json");
+
 exports.view = function(req, res) {		
 		var eventName = req.params.name;		 	
 		var startTime = req.params.startTime;		
@@ -17,3 +19,19 @@ exports.view = function(req, res) {
 			"creator": creator
 		});
  };
+
+exports.joining = function(req, res) {
+	var eventName = req.params.name;		 	
+
+	console.log("Joined");
+		
+	for (var i = 0; i < events.length; i++){
+		if (events[i].name == eventName){
+			var joining = events[i];
+		}
+	}
+	
+	joining["joined"] = true;
+	res.redirect("/successJoin")
+	//res.redirect("/joinedEvents");
+}

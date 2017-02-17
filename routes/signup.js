@@ -3,3 +3,7 @@ exports.view = function(req, res){
      
   });
 };
+
+exports.signingup = function(req, res) {
+	res.redirect("/successCreate");
+}
