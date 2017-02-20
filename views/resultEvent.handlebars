@@ -2,6 +2,7 @@
 		<h4>Search Results</h4>
 		
 		{{#each this}}
+			{{#if eventId}}
 			<div class="event-container card-panel">
 				<a href="/resultEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}/{{creator.name}}">
 					<div class="event">
@@ -11,6 +12,7 @@
 					</div>
 				</a>
 			</div>
+	{{/if}}
 	{{/each}}
 	
 	<a href="/findEvents"><button class="btn btn-primary col-xs-12 btn-lg">Back</button></a>

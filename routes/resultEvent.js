@@ -1,19 +1,13 @@
 var events = require('../events.json');	
-var notCreated = [];
-var notCJ = [];
+var results = [];
 
 for (var i = 0; i < events.length; i++){
-	if (events[i].created == false){
-		notCreated.push(events[i]);
-	}
-}
-
-for (var i = 0; i < notCreated.length; i++){
-	if (notCreated[i].joined == false){
-		notCJ.push(notCreated[i]);
+	if (events[i].created == false && events[i].joined == false){
+		results.push(events[i]);
 	}
 }
 
 exports.view = function(req, res){
-	res.render('resultEvent', notCJ);
+	console.log(results);
+	res.render('resultEvent', results);
 };
