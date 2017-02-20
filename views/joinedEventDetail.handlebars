@@ -1,47 +1,67 @@
-<div class="container" id="event_detail">
+<div class="container" id="joinedEventDetail">
 
-    <div class="row">
+    <div class="row eventId" id="{{eventId}}">
         <div class="col-sm-12">
-            <h1 class ="text-center lead"><strong> {{name}}</strong></h1>
+            <h1 class ="text-center lead"><strong id="joinedEventDetail_name"> </strong></h1>
             <div class="rectangle">
-                <img class="center-block img-responsive" src="{{imageURL}}">
+                <img class="center-block img-responsive" id="joinedEventDetail_img">
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-12">
-            <strong>Event Description:</strong>
-            <span> {{ description }} </span>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-12">
-            <strong>Start Time:</strong>
-            <span> {{ startTime }} </span>
-        </div>
-    </div>
-
-    <div class="row">
         <div class="col-sm-12 col-lg-6">
-            <strong> Created By:</strong>
-            <span> {{ creator }} </span>
+            <strong> Created:</strong>
+            <span id="joinedEventDetail_creator"></span>
+        </div>
+    </div>
+	
+    <div class="row">
+        <div class="col-sm-12">
+            <strong>Time:</strong>
+            <span id="joinedEventDetail_time"></span>
+        </div>
+    </div>
+	
+		<div class="row">
+        <div class="col-sm-12">
+            <strong>Creator:</strong>
+            <span id="joinedEventDetail_catetgory"></span>
+        </div>
+    </div>
+ 
+		<div class="row">
+        <div class="col-sm-12">
+            <strong>Description:</strong>
+            <span id="joinedEventDetail_description"></span>
         </div>
     </div>
 
     <div class="row">
 			<div class="col-md-12">
-				<form action="/unjoiningEvent/{{name}}">
+				<form action="/unjoinEvent/{{eventId}}">
 					<input type="submit" value="UNJOIN" class="btn btn-primary btn-lg col-xs-12 margin-top">
 				</form>
 			</div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <a href="/resultEvent"><button class="btn btn-primary btn-lg col-xs-12 margin-top">BACK</button></a>
+            <a href="/joinedEvents"><button class="btn btn-primary btn-lg col-xs-12 margin-top">BACK</button></a>
         </div>
     </div>
-
-
 </div>
+
+<script>	
+	var eventId = $('.eventId').attr('id');
+	$.get("/event/"+eventId, addDetail);
+	
+	function addDetail(result) {
+		console.log(result);
+		$('#joinedEventDetail_name').html(result["name"]);
+		$('#joinedEventDetail_img').attr('src', result["imageURL"]);
+		$('#joinedEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
+		$('#joinedEventDetail_catetgory').html(result["category"]);
+		$('#joinedEventDetail_description').html(result["description"]);
+		$('#joinedEventDetail_creator').html(result["creator"]["name"]);
+	}
+</script>

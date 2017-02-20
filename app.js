@@ -59,6 +59,8 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+global.eventCounter = 10;
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
@@ -86,12 +88,9 @@ app.get('/createEvents', function (req, res) {
 app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
 app.get('/editEvent/:eventId', editEvent.view);
 app.get('/cancelEvent/:eventId', cancelEvent.view);
-app.get('/cancelEvent/:name/:startTime/:endTime/:category/:description', cancelEvent.view);
 app.get('/joinedEvents', joinedEvents.view);
-app.get('/joinedEventDetail/:name/:startTime/:endTime/:category/:description/:creator', joinedEventDetail.view);
-app.get('/unjoinEvent', function (req, res) {
-    res.render('unjoinEvent');
-});
+app.get('/joinedEventDetail/:eventId', joinedEventDetail.view);
+app.get('/unjoinEvent/:eventId', unjoinEvent.view);
 app.get('/findEvents', function (req, res) {
     res.render('findEvents');
 });
@@ -100,7 +99,7 @@ app.get('/signup', signup.view);
 app.get('/forgotPassword', function (req, res) {
     res.render('forgotPassword');
 });
-app.get('/resultEventDetail/:name/:startTime/:endTime/:category/:description/:creator', resultEventDetail.view);
+app.get('/resultEventDetail/:eventId', resultEventDetail.view);
 app.get('/resultEvent', resultEvent.view);
 app.get('/successCreate', successCreate.view);
 app.get('/successJoin', successJoin.view);
@@ -112,8 +111,8 @@ app.get('/addEvent', add.addEvent)
 app.get('/cancelling/:eventId', cancelEvent.cancelling)
 app.get('/event/:id', event.eventInfo);
 app.get('/loggingIn', login.login);
-app.get('/joiningEvent/:name', joinedEventDetail.joining);
-app.get('/unjoiningevent/:name', unjoinEvent.unjoining);
+app.get('/joiningEvent/:eventId', joinedEventDetail.joining);
+app.get('/unjoiningEvent/:eventId', unjoinEvent.unjoining);
 app.get('/signingup', signup.signingup);
 app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
 //app.get('/updatingEvent/:eventId', editEvent.updatingEvent);

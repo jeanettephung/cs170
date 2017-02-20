@@ -1,9 +1,9 @@
 <div id="resultEventDetail" class="container">
 
-    <div class="row">
+    <div class="row eventId" id="{{eventId}}">
         <div class="col-xs-12">
-            <h3><center>{{name}}</center></h3>
-            <center><img src="{{imageURL}}" class=" img-responsive"></center>
+						<center><h3 id="resultEventDetail_name"></h3></center>
+            <center><img id="resultEventDetail_img" class="img-responsive"></center>
         </div>
     </div>
 
@@ -11,22 +11,22 @@
 
 				<div class="col-xs-12 margin-top">
             <span><strong>Creator: </strong></span>
-            {{creator}}
+						<span id="resultEventDetail_creator"></span>
         </div>
 			
         <div class="col-xs-12">
             <span><strong>Time: </strong></span>
-            {{startTime}} to {{endTime}}
+            <span id="resultEventDetail_time"></span>
         </div>
 
         <div class="col-xs-12">
             <span><strong>Category: </strong></span>
-            {{category}}
+            <span id="resultEventDetail_category"></span>
         </div>
 
         <div class="col-xs-12">
             <span><strong>Description: </strong></span>
-            {{description}}
+            <span id="resultEventDetail_description"></span>
         </div>
 
     </div>
@@ -37,7 +37,7 @@
         </div>
 
 				<div class="col-xs-12">
-					<form action="/joiningEvent/{{name}}">
+					<form action="/joiningEvent/{{eventId}}">
 						<input type="submit" value="JOIN" class="btn btn-primary btn-lg col-xs-12 margin-top">
 					</form>
 				</div>
@@ -47,3 +47,18 @@
         </div>
     </div>
 </div>
+
+<script>	
+	var eventId = $('.eventId').attr('id');
+	$.get("/event/"+eventId, addDetail);
+	
+	function addDetail(result) {
+		console.log(result);
+		$('#resultEventDetail_name').html(result["name"]);
+		$('#resultEventDetail_img').attr('src', result["imageURL"]);
+		$('#resultEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
+		$('#resultEventDetail_catetgory').html(result["category"]);
+		$('#resultEventDetail_description').html(result["description"]);
+		$('#resultEventDetail_creator').html(result["creator"]["name"]);
+	}
+</script>
