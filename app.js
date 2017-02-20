@@ -33,6 +33,7 @@ var resultEventDetail = require('./routes/resultEventDetail');
 var findEvents = require('./routes/findEvents');
 var profile = require('./routes/profile');
 var event = require('./routes/event');
+var user = require('./routes/user');
 var resultEvent = require('./routes/resultEvent');
 var successCreate = require('./routes/successCreate');
 var successJoin = require('./routes/successJoin');
@@ -110,11 +111,13 @@ var add = require('./routes/addEvent');
 app.get('/addEvent', add.addEvent)
 app.get('/cancelling/:eventId', cancelEvent.cancelling)
 app.get('/event/:id', event.eventInfo);
+app.get('/user', user.userInfo);
 app.get('/loggingIn', login.login);
 app.get('/joiningEvent/:eventId', joinedEventDetail.joining);
 app.get('/unjoiningEvent/:eventId', unjoinEvent.unjoining);
 app.get('/signingup', signup.signingup);
 app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
+app.get('/updatingProfile/:name/:expertise/:aboutMe', editProfile.updatingProfile);
 //app.get('/updatingEvent/:eventId', editEvent.updatingEvent);
 
 // Example route

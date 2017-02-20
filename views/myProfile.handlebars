@@ -1,28 +1,27 @@
 <div id="myProfile" class="container">
-
     <div class="row">
         <div class="col s12">
-            <center><img src={{myProfile.imageURL}} class="img-circle img-responsive profile-image"></center>
+            <center><img src="{{imageURL}}" class="img-circle img-responsive profile-image"></center>
         </div>
 
         <div class="col s12">
-            <h3><center>{{myProfile.username}}</center></h3>
+            <h3><center>{{username}}</center></h3>
         </div>
     </div>
 
     <div class="row">
         <div class="col-xs-12">
             <span><strong>Name: </strong></span>
-            {{myProfile.name}}
+            {{name}}
         </div>
 
         <div class="col-xs-12">
             <span><strong>Expertise: </strong></span>
-            {{myProfile.expertise}}
+            {{expertise}}
         </div>
         <div class="col-xs-12">
             <span><strong>About Me: </strong></span>
-            {{myProfile.aboutMe}}
+            {{aboutMe}}
         </div>
     </div>
 
@@ -32,7 +31,7 @@
             <span><strong>Events Mentored: </strong></span>
         </div>
 
-        {{#each myProfile.eventsMentored}}
+        {{#each eventsMentored}}
             <div class="col s6 offset-s3">
                 <div class="card-panel center-align">
                     <h6>{{eventName}}</h6>
@@ -42,7 +41,4 @@
         <a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
 
     </div>
-
-
-
-    </div>
+</div>

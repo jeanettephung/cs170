@@ -1,0 +1,12 @@
+{
+	"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
+	"username": "itsjen",
+	"name": "Jen",
+	"expertise": "food",
+	"aboutMe": "I like to eat sushi",
+	"eventsMentored": [
+		{"eventName": "Sushi Ki"},
+		{"eventName": "Gin Sushi"},
+		{"eventName": "Sushi Stop"}
+	]
+}
