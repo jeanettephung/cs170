@@ -3,17 +3,17 @@
 		
 		{{#each this}}
 			{{#if eventId}}
-			<div class="event-container card-panel">
-				<a href="/resultEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}/{{creator.name}}">
-					<div class="event">
-						<h5>{{name}}</h5>
-						<h5>{{startTime}} to {{endTime}}</h5>
-						<p>{{description}}</p>
-					</div>
-				</a>
-			</div>
-	{{/if}}
-	{{/each}}
+				<div class="event-container card-panel">
+					<a href="/resultEventDetail/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}/{{creator.name}}">
+						<div class="event">
+							<h5>{{name}}</h5>
+							<h5>{{startTime}} to {{endTime}}</h5>
+							<p>{{description}}</p>
+						</div>
+					</a>
+				</div>
+			{{/if}}
+		{{/each}}
 	
 	<a href="/findEvents"><button class="btn btn-primary col-xs-12 btn-lg">Back</button></a>
 </div>

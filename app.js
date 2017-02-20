@@ -86,8 +86,6 @@ app.get('/createEvents', function (req, res) {
 app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
 app.get('/editEvent/:eventId', editEvent.view);
 app.get('/cancelEvent/:eventId', cancelEvent.view);
-//app.get('/createdEventDetail/:name/:startTime/:endTime/:category/:description', createdEventDetail.viewCreatedEventDetail);
-//app.get('/editEvent/:name/:startTime/:endTime/:category/:description', editEvent.view);
 app.get('/cancelEvent/:name/:startTime/:endTime/:category/:description', cancelEvent.view);
 app.get('/joinedEvents', joinedEvents.view);
 app.get('/joinedEventDetail/:name/:startTime/:endTime/:category/:description/:creator', joinedEventDetail.view);
