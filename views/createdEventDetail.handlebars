@@ -1,9 +1,9 @@
 <div id="createdEventDetail" class="container">
 
-    <div class="row">
+    <div class="row eventId" id="{{eventId}}">
         <div class="col-xs-12">
-            <h3><center>{{name}}</center></h3>
-            <center><img src="{{imageURL}}" class=" img-responsive"></center>
+            <h3 id="createdEventDetail_name"><center></center></h3>
+            <center><img id="createdEventDetail_img" class=" img-responsive"></center>
         </div>
     </div>
 
@@ -11,28 +11,28 @@
 
         <div class="col-xs-12 margin-top">
             <span><strong>Time: </strong></span>
-            {{startTime}} to {{endTime}}
+						<span id="createdEventDetail_time"></span>
         </div>
 
         <div class="col-xs-12">
             <span><strong>Category: </strong></span>
-            {{category}}
-        </div>
+						<span id="createdEventDetail_category"></span>
+				</div>
 
         <div class="col-xs-12">
             <span><strong>Description: </strong></span>
-            {{description}}
-        </div>
+						<span id="createdEventDetail_description"></span>
+			</div>
 
     </div>
 
     <div class="row">
         <div class="col-xs-12">
-            <a href="/editEvent/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Event</button></a>
+            <a href="/editEvent/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Event</button></a>
         </div>
 
         <div class="col-xs-12">
-            <a href="/cancelEvent/{{name}}/{{startTime}}/{{endTime}}/{{category}}/{{description}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel Event</button></a>
+            <a href="/cancelEvent/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel Event</button></a>
         </div>
 
         <div class="col-xs-12">
@@ -40,3 +40,17 @@
         </div>
     </div>
 </div>
+
+<script>	
+	var eventId = $('.eventId').attr('id');
+	$.get("/event/"+eventId, addDetail);
+
+	function addDetail(result) {
+		console.log(result);
+		$('#createdEventDetail_name').html(result["name"]);
+		$('#createdEventDetail_img').attr('src', result["imageURL"]);
+		$('#createdEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
+		$('#createdEventDetail_category').html(result["category"]);
+		$('#createdEventDetail_description').html(result["description"]);
+	}
+</script>

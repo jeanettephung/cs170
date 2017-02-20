@@ -2,24 +2,16 @@ var data = require('../data.json');
 var events = require('../events.json');		 
 
 exports.view = function(req, res) {		
-		var eventName = req.params.name;		 	
-		var startTime = req.params.startTime;		
-		var endTime = req.params.endTime;		
-		var category = req.params.category;		
-		var description = req.params.description;		
-
-		res.render('editEvent', 
-		{
-			"name": eventName,
-			"startTime": startTime,
-			"endTime": endTime,
-			"category": category,
-			"description": description,
-			"imageURL": "http://lorempixel.com/400/400/people",			
-		});
- };
+	var eventId = req.params.eventId;
+	
+	res.render('editEvent', 
+	{
+		"eventId": eventId
+	});
+}
 
 exports.updatingEvent = function(req, res) {
+	var eventId = req.params.eventId;
 	var eventName = req.params.name;		 	
 	var startTime = req.params.startTime;		
 	var endTime = req.params.endTime;		
@@ -29,7 +21,7 @@ exports.updatingEvent = function(req, res) {
 	console.log("Update");
 		
 	for (var i = 0; i < events.length; i++){
-		if (events[i].name == eventName){
+		if (events[i].eventId == eventId){
 			var updating = events[i];
 		}
 	}
@@ -43,5 +35,5 @@ exports.updatingEvent = function(req, res) {
 	console.log(events);
 	
 	console.log(eventName);
-	res.redirect("/createdEventDetail/"+eventName+"/"+startTime+"/"+endTime+"/"+category+"/"+description);
+	res.redirect("/createdEventDetail/"+eventId);
 }

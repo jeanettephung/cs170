@@ -83,9 +83,11 @@ app.get('/logout', function (req, res) {
 app.get('/createEvents', function (req, res) {
     res.render('createEvents');
 });
-//-- save app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
-app.get('/createdEventDetail/:name/:startTime/:endTime/:category/:description', createdEventDetail.viewCreatedEventDetail);
-app.get('/editEvent/:name/:startTime/:endTime/:category/:description', editEvent.view);
+app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
+app.get('/editEvent/:eventId', editEvent.view);
+app.get('/cancelEvent/:eventId', cancelEvent.view);
+//app.get('/createdEventDetail/:name/:startTime/:endTime/:category/:description', createdEventDetail.viewCreatedEventDetail);
+//app.get('/editEvent/:name/:startTime/:endTime/:category/:description', editEvent.view);
 app.get('/cancelEvent/:name/:startTime/:endTime/:category/:description', cancelEvent.view);
 app.get('/joinedEvents', joinedEvents.view);
 app.get('/joinedEventDetail/:name/:startTime/:endTime/:category/:description/:creator', joinedEventDetail.view);
@@ -109,12 +111,14 @@ app.get('/successUnjoin', successUnjoin.view);
 // routes (dealing with data)
 var add = require('./routes/addEvent');
 app.get('/addEvent', add.addEvent)
+app.get('/cancelling/:eventId', cancelEvent.cancelling)
 app.get('/event/:id', event.eventInfo);
 app.get('/loggingIn', login.login);
 app.get('/joiningEvent/:name', joinedEventDetail.joining);
 app.get('/unjoiningevent/:name', unjoinEvent.unjoining);
 app.get('/signingup', signup.signingup);
-app.get('/updatingEvent/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
+app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
+//app.get('/updatingEvent/:eventId', editEvent.updatingEvent);
 
 // Example route
 // app.get('/users', user.list);
