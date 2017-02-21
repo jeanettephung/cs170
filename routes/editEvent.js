@@ -17,9 +17,7 @@ exports.updatingEvent = function(req, res) {
 	var endTime = req.params.endTime;		
 	var category = req.params.category;		
 	var description = req.params.description;
-	
-	console.log("Update");
-		
+			
 	for (var i = 0; i < events.length; i++){
 		if (events[i].eventId == eventId){
 			var updating = events[i];
@@ -31,9 +29,6 @@ exports.updatingEvent = function(req, res) {
 	updating["endTime"] = endTime;
 	updating["category"] = category;
 	updating["description"] = description;
-	
-	console.log(events);
-	
-	console.log(eventName);
+		
 	res.redirect("/createdEventDetail/"+eventId);
 }

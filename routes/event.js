@@ -11,3 +11,14 @@ exports.eventInfo = function(req, res) {
   	var event = events[eventId-1]; // of by one, our first project has index 0
   	res.json(event);
 }
+
+exports.all = function(req, res) {
+  	var search = [];
+
+		for (var i = 0; i < events.length; i++){
+			if (events[i].created == false && events[i].joined == false){
+				search.push(events[i]);
+			}
+		}
+  	res.json(search);
+}

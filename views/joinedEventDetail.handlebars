@@ -58,7 +58,6 @@
 	$.get("/event/"+eventId, addDetail);
 	
 	function addDetail(result) {
-		console.log(result);
 		$('#joinedEventDetail_name').html(result["name"]);
 		$('#joinedEventDetail_img').attr('src', result["imageURL"]);
 		$('#joinedEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);

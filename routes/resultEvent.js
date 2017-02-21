@@ -8,6 +8,17 @@ for (var i = 0; i < events.length; i++){
 }
 
 exports.view = function(req, res){
-	console.log(results);
 	res.render('resultEvent', results);
+};
+
+exports.categoryView = function(req, res){
+	var filter = [];
+	var category = req.params.category;		 	
+	
+	for (var i = 0; i < results.length; i++){
+		if (results[i].category == category){
+			filter.push(results[i]);
+		}
+	}
+	res.render('resultEvent', filter);
 };

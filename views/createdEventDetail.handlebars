@@ -48,7 +48,6 @@
 	$.get("/event/"+eventId, addDetail);
 
 	function addDetail(result) {
-		console.log(result);
 		$('#createdEventDetail_name').html(result["name"]);
 		$('#createdEventDetail_img').attr('src', result["imageURL"]);
 		$('#createdEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);

@@ -102,6 +102,7 @@ app.get('/forgotPassword', function (req, res) {
 });
 app.get('/resultEventDetail/:eventId', resultEventDetail.view);
 app.get('/resultEvent', resultEvent.view);
+app.get('/resultEvent/:category', resultEvent.categoryView);
 app.get('/successCreate', successCreate.view);
 app.get('/successJoin', successJoin.view);
 app.get('/successUnjoin', successUnjoin.view);
@@ -111,6 +112,7 @@ var add = require('./routes/addEvent');
 app.get('/addEvent', add.addEvent)
 app.get('/cancelling/:eventId', cancelEvent.cancelling)
 app.get('/event/:id', event.eventInfo);
+app.get('/event', event.all);
 app.get('/user', user.userInfo);
 app.get('/loggingIn', login.login);
 app.get('/joiningEvent/:eventId', joinedEventDetail.joining);

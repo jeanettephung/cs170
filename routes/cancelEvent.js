@@ -10,9 +10,7 @@ exports.view = function(req, res){
 
 exports.cancelling = function(req, res) {
 	var eventId = req.params.eventId;
-		
-	console.log(eventId);
-	
+			
 	for (var i = 0; i < events.length; i++){
 		if (events[i].eventId == eventId){
 			var deleting = i;
@@ -21,6 +19,5 @@ exports.cancelling = function(req, res) {
 
 	var removed = events.splice(deleting, 1);
 	
-	console.log(removed);
 	res.redirect("/index");
 }

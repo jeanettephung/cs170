@@ -11,25 +11,59 @@
         <div class="col-md-6">
             <form>
                 <div class="form-group">
-                    <label for="exampleSelect1">Searching By: </label>
-                    <select class="form-control" id="exampleSelect1">
-                        <option>Professionalism</option>
-                        <option>Outdoor Activities</option>
-                        <option>Indoor Activities</option>
-                        <option>Time</option>
+                    <label for="exampleSelect1">Search By Category: </label>
+                    <select class="form-control" id="findEvent_options">
+                        <option>All Categories</option>
                     </select>
                 </div>
 
+<!--
                 <div class="form-group">
                     <label for="exampleTextarea">Keywords: </label>
                     <input type="text" class="form-control" id="exampleTextarea">
                 </div>
+-->
 
             </form>
-            <a href="/resultEvent"><button type="submit" class="btn btn-primary btn-lg col-xs-12" id="findEvents_submit">Find Event</button></a>
+            <button type="submit" class="btn btn-primary btn-lg col-xs-12" id="findEvents_submit">Find Event</button>
 
         </div>
         <div class="col-md-3"> </div>
 
     </div>
 </div>
+
+<script>	
+	$.get("/event", addDetail);
+
+	function addDetail(result) {	
+		var unique = [];
+				
+		for(var i = 0; i < result.length; i++) {
+			var event = result[i]['category'];
+			var exist = false;
+
+			for(var j = 0; j < unique.length; j++){
+				if (unique[j] == event) {
+					exist = true;
+				}
+			}
+			if (!exist) {
+				unique.push(event);
+			}
+		}
+		toAppend = unique.sort();
+		
+		for(var i = 0; i < toAppend.length; i++){
+			$('#findEvent_options').append("<option>"+toAppend[i]+"</option>");
+		}
+	}
+	
+	$("#findEvents_submit").click(function(e){
+		var category = $('#findEvent_options option:selected').html();
+		if (category == "All Categories") {
+			category="";
+		}
+		window.location = "/resultEvent/"+category;
+	});
+</script>
