@@ -160,13 +160,14 @@
 			"joined": false,
 			"creator":
 				{
-					"imageURL": "/images/profile-placeholder.png",
+					"imageURL": "http://www.npsd.k12.nj.us/cms/lib04/NJ01001216/Centricity/Domain/230/Math_Guy.jpg",
 					"name": "Joe",
 					"username": "GIjoe",
 					"expertise": "math",
 					"aboutMe": "I live off of math",
 					"eventsMentored": [
-						{"eventName": "Math test study group"}
+						{"eventName": "Math test study group"},
+						{"eventName": "Mathletes"}
 					]
 				}
 		},
@@ -183,7 +184,7 @@
 			"joined": false,
 			"creator":
 				{
-					"imageURL": "/images/profile-placeholder.png",
+					"imageURL": "https://img.clipartfest.com/27aa02479a5b5554a7a11eb080a3201d_girl-drinking-wine-clipart-wine-drinking-clipart_228-300.png",
 					"name": "Newll",
 					"username": "sonew",
 					"expertise": "wine",
@@ -208,7 +209,7 @@
 			"joined": false,
 			"creator":
 				{
-					"imageURL": "/images/profile-placeholder.png",
+					"imageURL": "http://www.webweaver.nu/clipart/img/entertainment/sports/golf/golf-swing.png",
 					"name": "Cynthia",
 					"username": "justCyn",
 					"expertise": "golf",

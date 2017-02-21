@@ -1,27 +1,48 @@
 <div id="profile" class="container col-xs-12">
-	
-	<center><img src="/images/profile-placeholder.png" class="img-circle img-responsive profile-image"></center>
-	<h3><center>{{username}}</center></h3>
+	<div class="eventId" id="{{eventId}}"></div>
+	<center><img id="profile_img" class="img-circle img-responsive profile-image"></center>
+	<center><h3 id="profile_username"></h3></center>
 	<div class="col-xs-12">
 		<span><strong>Name: </strong></span>
-		{{name}}
+		<span id="profile_name"></span>
 	</div>
 	<div class="col-xs-12">
 		<span><strong>Expertise: </strong></span>
-		Hiking
+		<span id="profile_expertise"></span>
 	</div>
 	<div class="col-xs-12">
 		<span><strong>Events Mentored: </strong></span>
 	</div>
-	<div class="event-container col-xs-12">
-		<div class="profile-event">
-			<p>Event Name<p>
-		</div>
+	<div class="event-container col-xs-12" id="profile_events">
+		
 	</div>
 	<div class="col-xs-12">
 		<span><strong>About Me: </strong></span>
-		{{aboutMe}}
+		<span id="profile_aboutMe"></span>
 	</div>
 	
-	<a href="/resultEventDetail"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back to Event Details</button></a>
+	<a href="/resultEventDetail/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back to Event Details</button></a>
 </div>
+
+<script>	
+	var eventId = $('.eventId').attr('id');
+	$.get("/event/"+eventId, addDetail);
+
+	function addDetail(result) {			
+		$('#profile_username').html(result["creator"]["username"]);
+		
+		$('#profile_name').html(result["creator"]["name"]);
+		
+		$('#profile_img').attr('src', result["creator"]["imageURL"]);
+		$('#profile_expertise').html(result["creator"]["expertise"]);
+		$('#profile_aboutMe').html(result["creator"]["aboutMe"]);
+		
+		var eventsMentored = result.creator.eventsMentored;
+		
+		for(var i = 0; i < eventsMentored.length; i++) {
+				var event = eventsMentored[i];
+				$('#profile_events').append("<div class='profile-event'><p>"+ event['eventName'] +"<p></div>");
+		}
+	}
+		
+</script>

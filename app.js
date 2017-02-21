@@ -70,7 +70,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/index', index.view);
-app.get('/profile', profile.view);
+app.get('/profile/:eventId', profile.view);
 app.get('/myProfile', myProfile.view);
 app.get('/editProfile', editProfile.view);
 app.get('/messages', function (req, res) {
@@ -118,7 +118,6 @@ app.get('/unjoiningEvent/:eventId', unjoinEvent.unjoining);
 app.get('/signingup', signup.signingup);
 app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
 app.get('/updatingProfile/:name/:expertise/:aboutMe', editProfile.updatingProfile);
-//app.get('/updatingEvent/:eventId', editEvent.updatingEvent);
 
 // Example route
 // app.get('/users', user.list);
