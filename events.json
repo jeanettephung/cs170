@@ -2,7 +2,7 @@
 		{
 			"eventId": 1,
 			"imageURL": "https://s-media-cache-ak0.pinimg.com/originals/32/a9/4e/32a94ef9ae5174de907be17f9f52915b.jpg",
-			"name": "c. Petting farm",
+			"name": "Petting farm",
 			"startTime": "1am",
 			"endTime": "1pm",
 			"category": "zoology",
@@ -27,7 +27,7 @@
 		{
 			"eventId": 2,
 			"imageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Geisel_Library3.jpg",
-			"name": "c. Drawing at Geisel",
+			"name": "Drawing at Geisel",
 			"startTime": "2am",
 			"endTime": "2pm",
 			"category": "art",
@@ -52,7 +52,7 @@
 		{
 			"eventId": 3,
 			"imageURL": "http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000006091233_small.jpg",
-			"name": "c. Shores Beach",
+			"name": "Shores Beach",
 			"startTime": "3am",
 			"endTime": "3pm",
 			"category": "marine",
@@ -77,7 +77,7 @@
 		{
 			"eventId": 4,
 			"imageURL": "http://kids.nationalgeographic.com/content/dam/kids/photos/articles/Science/A-G/brain.jpg",
-			"name": "j. Memory",
+			"name": "Memory",
 			"startTime": "4am",
 			"endTime": "4pm",
 			"category": "neurology",
@@ -102,7 +102,7 @@
 		{
 			"eventId": 5,
 			"imageURL": "http://www.outdoorproject.com/sites/default/files/styles/odp_comment_scale/public/comments/7338/1464170377/to_hike_or_not_to_hike.jpg?itok=Ti9tB_mP",
-			"name": "j. Hike at Grand Canyon",
+			"name": "Hike at Grand Canyon",
 			"startTime": "5am",
 			"endTime": "5pm",
 			"category": "hike",
@@ -150,7 +150,7 @@
 		{
 			"eventId": 7,
 			"imageURL": "http://www.all-about-psychology.com/psychology-fb.jpg",
-			"name": "Allen Newell",
+			"name": "Freud Theory",
 			"startTime": "7am",
 			"endTime": "7pm",
 			"category" : "psychology",
