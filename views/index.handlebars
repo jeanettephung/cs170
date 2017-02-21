@@ -6,15 +6,17 @@
 	
 	{{#each this}}
 		{{#if created}}
-			<div class="event-container card-panel">
-				<a href="/createdEventDetail/{{eventId}}">
-					<div class="event">
-						<h5>{{name}}</h5>
-						<h5>{{startTime}} to {{endTime}}</h5>
-						<p>{{description}}</p>
-					</div>
-				</a>
-			</div>
+			{{#if notCancelled}}
+				<div class="event-container card-panel">
+					<a href="/createdEventDetail/{{eventId}}">
+						<div class="event">
+							<h5>{{name}}</h5>
+							<h5>{{startTime}} to {{endTime}}</h5>
+							<p>{{description}}</p>
+						</div>
+					</a>
+				</div>
+			{{/if}}
 		{{/if}}
 	{{/each}}
 	

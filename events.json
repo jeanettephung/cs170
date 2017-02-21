@@ -10,6 +10,7 @@
 			"mentoring": "yes",
 			"created": true,
 			"joined": false,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -35,6 +36,7 @@
 			"mentoring": "yes",
 			"created": true,
 			"joined": false,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -60,6 +62,7 @@
 			"mentoring": "no",
 			"created": true,
 			"joined": false,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -85,6 +88,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
@@ -110,6 +114,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
@@ -133,6 +138,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
@@ -158,6 +164,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://www.npsd.k12.nj.us/cms/lib04/NJ01001216/Centricity/Domain/230/Math_Guy.jpg",
@@ -182,6 +189,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "https://img.clipartfest.com/27aa02479a5b5554a7a11eb080a3201d_girl-drinking-wine-clipart-wine-drinking-clipart_228-300.png",
@@ -207,6 +215,7 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
+			"notCancelled": true,
 			"creator":
 				{
 					"imageURL": "http://www.webweaver.nu/clipart/img/entertainment/sports/golf/golf-swing.png",

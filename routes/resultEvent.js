@@ -4,7 +4,7 @@ function getResult() {
 	var results = [];
 
 	for (var i = 0; i < events.length; i++){
-		if (events[i].created == false && 	events[i].joined == false){
+		if (events[i].created == false && 	events[i].joined == false && events[i].notCancelled == true){
 			results.push(events[i]);
 		}
 	}

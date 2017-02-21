@@ -20,6 +20,8 @@ exports.addEvent = function(req, res) {
 			"category": category,
 			"description": description,
 			"created": true,
+			"joined": false,
+			"notCancelled": true,
 			"creator": "Jen"
 		}
 
