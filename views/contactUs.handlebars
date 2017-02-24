@@ -1,6 +1,8 @@
 <div class="container" id="contactUs">
-    <h1 class ="text-center lead"><strong>CONTACT US</strong></h1>
-    <form class="form-group" id="contact_form">
+    <h1 class ="text-center lead">
+        <strong>Contact Us</strong></h1>
+
+    <form action="/" class="form-group" id="contact_form">
         <div class="row">
             <div class="col-md-4">
                 <label for="contact_name">Name: </label><input class="form-control validate" type="text" id="contact_name" required>
@@ -16,10 +18,12 @@
                     <label for="contact_message">Message: </label>
                     <textarea class="form-control" id="contact_message" rows="3" required></textarea>
                 </div>
+        {{!-- <input type="submit" class="btn btn-primary btn-lg col-xs-12" id="contactUs_submit"> --}}
         </div>
-        <input type="submit" class="btn btn-primary btn-lg col-xs-12" id="contactUs_submit">
+
+        <div class="row">
+            <button class="btn waves-effect waves-light col s4 offset-s4" >Submit </button>
+        </div>
+
     </form>
-
-
-
 </div>
