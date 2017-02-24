@@ -1,42 +1,40 @@
 
 {{!-- user name, email, tel, password, password --}}
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12 lead text-center">
-            <strong> Sign Up </strong>
-        </div>
 
+    <div class="row">
+        <div class="col-sm-12 ">
+            <h1 class= "lead text-center"><strong> Sign Up </strong></h1>
+        </div>
     </div>
+
     <form class="form-group" action="signingUp" id="formValidation">
         <div class="row">
-            <div class="col-md-4">
+            <div class="input-field col s12">
                 <label for="signUp_name">Name: </label><input class="form-control validate" type="text" id="signUp_name" required>
             </div>
 
-            <div class="col-md-4">
+            <div class="input-field col s12">
                 <label for="signUp_phone">Phone: </label><input class="form-control customphone validate" type="tel" id="signUp_phone" placeholder="xxx-xxx-xxxx" required>
             </div>
 
-            <div class="col-md-4">
+            <div class="input-field col s12">
                 <label for="signUp_email">Email: </label><input class="form-control validate" type="email" id="signUp_email" required>
             </div>
 
-            <div class="col-md-4">
+            <div class="input-field col s12">
                 <label for="signUpPass">Password: </label><input class="form-control validate" name="signUpPass" data-error=".errorTxt3" type="password" id="signUpPass" required>
                 <div class="errorTxt3"> </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="input-field col s12">
                 <label for="confirmPass">Confirm Password: </label><input class="form-control validate" type="password" name = "confirmPass" id="confirmPass" data-error=".errorTxt4" required>
                 <div class="errorTxt4"> </div>
             </div>
 
         </div>
         <div class="row">
-            <div class="col-sm-12">
-                <button class="btn waves-effect waves-light col s4 offset-s4" >Sign Up </button>
-
-            </div>
+            <button class="btn waves-effect waves-light col s6 offset-s3" >Sign Up </button>
         </div>
         {{!-- <input type="submit" class="btn btn-primary btn-lg col-xs-12" id="contactUs_submit"> --}}
     </form>
