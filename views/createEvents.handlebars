@@ -1,116 +1,108 @@
 <div class="container" id="CreateEvents">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class ="text-center lead">
-                <strong>Create Event</strong></h1>
-        </div>
-    </div>
-
-    {{!-- <form id="addCreatedEventForm" class="form" role="form" method="get" action="/addEvent" data-toggle="validator"> --}}
     <form class="form" role="form" method="get" action="/addEvent" data-toggle="validator">
-    <div class="row">
-        <div class="col s12 input-field">
-            <label for="name">Event Name </label>
-            <input class="form-control" type="text" id="create_name" name="name" required>
+        <div class="row">
+            <div class="col s12">
+                <h1 class ="text-center lead">
+                    <strong>Create Event</strong>
+                </h1>
+            </div>
+
+            <div class="col s12 input-field">
+                <label for="name">Event Name </label>
+                <input class="form-control" type="text" id="create_name" name="name" required>
+            </div>
+
+            <div class="col s12 input-field">
+                <label for="create_date">Date</label>
+                <input id ="create_date" type="text" class="datepicker"  required >
+            </div>
+
+            <div class="col s12 form-group">
+                <label for="startTime">Start Time</label>
+                <select class="form-control" id="create_startTime" name="startTime">
+                    <option>12pm</option>
+                    <option>1pm</option>
+                    <option>2pm</option>
+                    <option>3pm</option>
+                    <option>4pm</option>
+                    <option>5pm</option>
+                    <option>6pm</option>
+                    <option>7pm</option>
+                    <option>8pm</option>
+                    <option>9pm</option>
+                    <option>10pm</option>
+                    <option>11pm</option>
+                    <option>12am</option>
+                    <option>1am</option>
+                    <option>2am</option>
+                    <option>3am</option>
+                    <option>4am</option>
+                    <option>5am</option>
+                    <option>6am</option>
+                    <option>7am</option>
+                    <option>8am</option>
+                    <option>9am</option>
+                    <option>10am</option>
+                    <option>11am</option>
+                </select>
+            </div>
+
+            <div class="col s12 form-group">
+                <label for="endTime">End Time</label>
+                <select class="form-control" id="create_endTime" name="endTime">
+                    <option>12pm</option>
+                    <option>1pm</option>
+                    <option>2pm</option>
+                    <option>3pm</option>
+                    <option>4pm</option>
+                    <option>5pm</option>
+                    <option>6pm</option>
+                    <option>7pm</option>
+                    <option>8pm</option>
+                    <option>9pm</option>
+                    <option>10pm</option>
+                    <option>11pm</option>
+                    <option>12am</option>
+                    <option>1am</option>
+                    <option>2am</option>
+                    <option>3am</option>
+                    <option>4am</option>
+                    <option>5am</option>
+                    <option>6am</option>
+                    <option>7am</option>
+                    <option>8am</option>
+                    <option>9am</option>
+                    <option>10am</option>
+                    <option>11am</option>
+                </select>
+            </div>
+
+            <div class="col s12 input-field">
+                <label for="create-location">Location </label>
+                <input class="validate" type="text" id="create_location" name="location" required>
+            </div>
+
+            <div class="col s12 input-field">
+                <label for="create-category">Category </label>
+                <input class="validate" type="text" id="create_category" name="category" required>
+            </div>
+
+            <div class="col s12 form-group">
+                <label for="description">Event Description </label>
+                <textarea class="form-control" id="create_description" name="description" rows="3" required></textarea>
+            </div>
         </div>
 
-        <div class="col s12 input-field">
-              <label for="create_date">Date</label>
-              <input id ="create_date" type="text" class="datepicker"  required >
+        <div class="row">
+            <button id="createEvent_submit" class="btn waves-effect waves-light col s12" value = "Create Event" type="submit" name="action">
+                Create Event
+            </button>
         </div>
 
-        <div class="col s12 form-group">
-            <label for="startTime">Start Time</label>
-            <select class="form-control" id="create_startTime" name="startTime">
-                <option>12pm</option>
-                <option>1pm</option>
-                <option>2pm</option>
-                <option>3pm</option>
-                <option>4pm</option>
-                <option>5pm</option>
-                <option>6pm</option>
-                <option>7pm</option>
-                <option>8pm</option>
-                <option>9pm</option>
-                <option>10pm</option>
-                <option>11pm</option>
-                <option>12am</option>
-                <option>1am</option>
-                <option>2am</option>
-                <option>3am</option>
-                <option>4am</option>
-                <option>5am</option>
-                <option>6am</option>
-                <option>7am</option>
-                <option>8am</option>
-                <option>9am</option>
-                <option>10am</option>
-                <option>11am</option>
-            </select>
+        <div class="row">
+            <a href="/index">
+                <button class="btn btn-primary waves-effect waves-light col s12 ">Cancel</button>
+            </a>
         </div>
-
-        <div class="col s12 form-group">
-            <label for="endTime">End Time</label>
-            <select class="form-control" id="create_endTime" name="endTime">
-                <option>12pm</option>
-                <option>1pm</option>
-                <option>2pm</option>
-                <option>3pm</option>
-                <option>4pm</option>
-                <option>5pm</option>
-                <option>6pm</option>
-                <option>7pm</option>
-                <option>8pm</option>
-                <option>9pm</option>
-                <option>10pm</option>
-                <option>11pm</option>
-                <option>12am</option>
-                <option>1am</option>
-                <option>2am</option>
-                <option>3am</option>
-                <option>4am</option>
-                <option>5am</option>
-                <option>6am</option>
-                <option>7am</option>
-                <option>8am</option>
-                <option>9am</option>
-                <option>10am</option>
-                <option>11am</option>
-            </select>
-        </div>
-        {{!--
-        <div class="input-field col s12">
-        <input id="email" type="email" class="validate" required>
-        <label for="email" data-error="Enter a valid Email">Email</label>
-    </div> --}}
-    <div class="col s12 input-field">
-        <label for="create-location">Location </label>
-        <input class="validate" type="text" id="create_location" name="location" required>
-    </div>
-
-    <div class="col s12 input-field">
-        <label for="create-category">Category </label>
-        <input class="validate" type="text" id="create_category" name="category" required>
-    </div>
-
-    <div class="col s12 form-group">
-        <label for="description">Event Description </label>
-        <textarea class="form-control" id="create_description" name="description" rows="3" required></textarea>
-    </div>
-</div>
-
-<div class="row">
-        <button id="createEvent_submit" class="btn waves-effect waves-light col s12" value = "Create Event" type="submit" name="action">
-            Create Event
-        </button>
-
-</div>
-
-<div class="row">
-    <a href="/index">
-        <button class="btn btn-primary waves-effect waves-light col s12 ">Cancel</button>
-    </a>
-</div>
-
-</form>
+    </form>
 </div>
