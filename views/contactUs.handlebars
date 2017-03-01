@@ -2,7 +2,7 @@
     <h1 class ="text-center lead">
         <strong>Contact Us</strong></h1>
 
-    <form action="/" class="form-group" id="contact_form">
+    <form class="form-group" id="contact_form">
         <div class="row">
             <div class="col-md-4">
                 <label for="contact_name">Name* </label><input class="form-control validate" type="text" id="contact_name" required>
@@ -22,8 +22,27 @@
         </div>
 
         <div class="row">
-            <button class="btn waves-effect waves-light col s4 offset-s4" >Submit </button>
+            <button class="btn waves-effect waves-light col s4 offset-s4" data-toggle="modal" data-target=".contact_success">Submit </button>
         </div>
 
     </form>
 </div>
+
+<div class="modal fade contact_success" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+			<center>
+				<p>Message Successfully Sent!</p>
+				<p>Thank you!</p>
+				<button type="button" class="btn btn-primary" id="success_close">Close</button>
+			</center>
+    </div>
+  </div>
+</div>
+
+
+<script>
+	$("#success_close").click(function(){
+  	window.location.href = "/contactUs";
+	});
+</script>

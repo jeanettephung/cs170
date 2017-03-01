@@ -91,3 +91,10 @@ body > footer > div > div {
 	margin-top: 25px;
  	height: 60px;
 }
+
+.contact_success, .contact_success:focus, .contact_success:visited {
+  outline: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	-webkit-tap-highlight-color: transparent !important; 
+}
