@@ -1,0 +1,24 @@
+<div class="container">
+		<ul class="nav nav-tabs">
+				<li class="active"><a href="#">Created Events</a></li>
+				<li><a href="/joinedEvents">Joined Events</a></li>
+		</ul>
+	
+	{{#each this}}
+		{{#if created}}
+			{{#if notCancelled}}
+				<div class="event-container card-panel">
+					<a href="/createdEventDetail/{{eventId}}">
+						<div class="event">
+							<h5>{{name}}</h5>
+							<h5>{{startTime}} to {{endTime}}</h5>
+							<p>{{description}}</p>
+						</div>
+					</a>
+				</div>
+			{{/if}}
+		{{/if}}
+	{{/each}}
+	
+	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
+</div>

@@ -38,7 +38,8 @@ var resultEvent = require('./routes/resultEvent');
 var successCreate = require('./routes/successCreate');
 var successJoin = require('./routes/successJoin');
 var successUnjoin = require('./routes/successUnjoin');
-
+var index_A = require('./routes/index_A');
+var index_B = require('./routes/index_B');
 
 // Example route
 // var user = require('./routes/user');
@@ -120,6 +121,11 @@ app.get('/unjoiningEvent/:eventId', unjoinEvent.unjoining);
 app.get('/signingup', signup.signingup);
 app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description', editEvent.updatingEvent);
 app.get('/updatingProfile/:name/:expertise/:aboutMe', editProfile.updatingProfile);
+
+
+//routes for A/B Testing
+app.get('/index_A', index_A.view);
+app.get('/index_B', index_B.view);
 
 // Example route
 // app.get('/users', user.list);
