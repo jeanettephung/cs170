@@ -21,38 +21,43 @@ body {
 }
 
 main {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  margin-bottom: 80px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	margin-bottom: 80px;
 
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 0;
-  -webkit-flex-basis: auto;
+	-webkit-flex-grow: 1;
+	-webkit-flex-shrink: 0;
+	-webkit-flex-basis: auto;
 }
 
 footer{
-margin-bottom: 0;
-bottom: 0;
-position: fixed;
-width: 100%;
+	margin-bottom: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
 }
 
 #sidenav-overlay {
-  z-index: 1
+	z-index: 1
 }
 
 a, a:hover, a:active, a:visited {
-    text-decoration:none;
+	text-decoration:none;
 }
 
 footer.page-footer{
-    z-index: 100;
-    padding-top: 1px;
+	z-index: 100;
+	padding-top: 1px;
 }
 
+/*
 .right-align .fa-plus {
     margin-right: 7px;	
+}
+*/
+.material-icons.plus {
+	margin-right: 4px;
 }
 
 body > footer > div > div {

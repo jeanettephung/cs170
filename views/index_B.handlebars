@@ -1,38 +1,91 @@
 <div class="container index">
-		<ul class="nav nav-tabs">
-				<li id="createdB_tab" class="active"><a href="#">Created Events</a></li>
-				<li id="joinedB_tab"><a href="/joinedEvents">Joined Events</a></li>
-		</ul>
-	
-	{{#each this}}
-		{{#if created}}
-			{{#if notCancelled}}
+	 <ul id="index_tabs" class="tabs">
+    <li class="tab col s3"><a href="#created_tab">Created Events</a></li>
+    <li class="tab col s3"><a class="active" href="#joined_tab">Joined Events</a></li>
+  </ul>
+  <div id="created_tab" class="col s12">
+		<a id="createB_btn" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">add</i></a>
+
+		{{#each this}}
+			{{#if created}}
+				{{#if notCancelled}}
+					<div class="event-container card-panel">
+						<a href="/createdEventDetail/{{eventId}}">
+							<div class="event">
+								<h5>{{name}}</h5>
+								<h5>{{startTime}} to {{endTime}}</h5>
+								<p>{{description}}</p>
+							</div>
+						</a>
+					</div>
+				{{/if}}
+			{{/if}}
+		{{/each}}
+	</div>
+	<div id="joined_tab" class="col s12">
+		<a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">search</i></a>
+
+		{{#each this}}
+			{{#if joined}}
 				<div class="event-container card-panel">
-					<a href="/createdEventDetail/{{eventId}}">
+					<a href="/joinedEventDetail/{{eventId}}">
 						<div class="event">
-							<h5>{{name}}</h5>
+							<h4>{{name}}</h4>
 							<h5>{{startTime}} to {{endTime}}</h5>
 							<p>{{description}}</p>
 						</div>
 					</a>
 				</div>
 			{{/if}}
-		{{/if}}
-	{{/each}}
-	
-	<a href="/createEvents"><button id="createB_btn" class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
+		{{/each}}
+	</div>
 </div>
 
+<style>
+	.container.index {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	#index_tabs {
+		position: fixed;
+    top: 57px;
+    right: 3px;
+    background-color: white;
+		z-index: 9999;
+		
+		-webkit-box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
+		-moz-box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
+		box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
+	}
+	
+	#created_tab, #joined_tab {
+		position: relative;
+    top: 35px;
+	}
+	
+	.btn-floating {
+		position: fixed;
+    z-index: 10000;
+    right: 10px;
+    top: 112px;
+		
+	-webkit-box-shadow: 8px 7px 11px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 8px 7px 11px -4px rgba(0,0,0,0.75);
+	box-shadow: 8px 7px 11px -4px rgba(0,0,0,0.75);
+	}
+</style>
+
 <script>
-	$("#createdB_tab").click(){function(
-		ga("send", "event", "createdB_tab", "click");
-	)};
+	$("#created_tab").click(function() {
+		ga("send", "event", "createdA_tab", "click");
+	});
 	
-	$("#joinedB_tab").click(){function(
-		ga("send", "event", "joinedB_tab", "click");
-	)};
+	$("#joined_tab").click(function() {
+		ga("send", "event", "joinedA_tab", "click");
+	});
 	
-	$("#createB_btn").click(){function(
-		ga("send", "event", "createdB_btn", "click");
-	)};
+	$("#createB_btn").click(function() {
+		ga("send", "event", "createdA_btn", "click");
+	});
 </script>
