@@ -1,57 +1,57 @@
 <div id="createdEventDetail" class="container">
 
     <div class="row eventId" id="{{eventId}}">
-        <div class="col-xs-12">
-            <h3 id="createdEventDetail_name"><center></center></h3>
+        <div class="col s12 text-center">
+            <h3 id="createdEventDetail_name"></h3>
             <center><img id="createdEventDetail_img" class=" img-responsive"></center>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-xs-12 margin-top">
+        <div class="col s12 margin-top">
             <span><strong>Time: </strong></span>
-						<span id="createdEventDetail_time"></span>
+            <span id="createdEventDetail_time"></span>
         </div>
-		</div>
-	
-		<div class="row">
-        <div class="col-xs-12">
-            <span><strong>Category: </strong></span>
-						<span id="createdEventDetail_category"></span>
-				</div>
-		</div>
-
-		<div class="row">
-        <div class="col-xs-12">
-            <span><strong>Description: </strong></span>
-						<span id="createdEventDetail_description"></span>
-			</div>
     </div>
 
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col s12">
+            <span><strong>Category: </strong></span>
+            <span id="createdEventDetail_category"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <span><strong>Description: </strong></span>
+            <span id="createdEventDetail_description"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
             <a href="/editEvent/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Event</button></a>
         </div>
 
-        <div class="col-xs-12">
+        <div class="col s12">
             <a href="/cancelEvent/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel Event</button></a>
         </div>
 
-        <div class="col-xs-12">
+        <div class="col s12">
             <a href="/index"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back</button></a>
         </div>
     </div>
 </div>
 
-<script>	
-	var eventId = $('.eventId').attr('id');
-	$.get("/event/"+eventId, addDetail);
+<script>
+var eventId = $('.eventId').attr('id');
+$.get("/event/"+eventId, addDetail);
 
-	function addDetail(result) {
-		$('#createdEventDetail_name').html(result["name"]);
-		$('#createdEventDetail_img').attr('src', result["imageURL"]);
-		$('#createdEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
-		$('#createdEventDetail_category').html(result["category"]);
-		$('#createdEventDetail_description').html(result["description"]);
-	}
+function addDetail(result) {
+    $('#createdEventDetail_name').html(result["name"]);
+    $('#createdEventDetail_img').attr('src', result["imageURL"]);
+    $('#createdEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
+    $('#createdEventDetail_category').html(result["category"]);
+    $('#createdEventDetail_description').html(result["description"]);
+}
 </script>
