@@ -11,7 +11,7 @@ exports.addEvent = function(req, res) {
 	var date = req.param('date');
 	var eventId = global.eventCounter;
 	global.eventCounter++;
-	
+
 	var newEvent =
 		{
 			"eventId": eventId,
@@ -31,5 +31,5 @@ exports.addEvent = function(req, res) {
 
 	events.push(newEvent);
 console.log(newEvent);
-	//res.redirect("/successCreate");
+	res.redirect("/successCreate");
 }
