@@ -18,6 +18,20 @@
         </div>
     </div>
 	
+		<div class="row">
+        <div class="col-sm-12">
+            <strong>Location:</strong>
+            <span id="joinedEventDetail_location"></span>
+        </div>
+    </div>
+	
+		<div class="row">
+        <div class="col-sm-12">
+            <strong>Date:</strong>
+            <span id="joinedEventDetail_date"></span>
+        </div>
+    </div>
+	
     <div class="row">
         <div class="col-sm-12">
             <strong>Time:</strong>
@@ -58,6 +72,8 @@
 	$.get("/event/"+eventId, addDetail);
 	
 	function addDetail(result) {
+		$('#joinedEventDetail_location').html(result["location"]);
+		$('#joinedEventDetail_date').html(result["date"]);
 		$('#joinedEventDetail_name').html(result["name"]);
 		$('#joinedEventDetail_img').attr('src', result["imageURL"]);
 		$('#joinedEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);

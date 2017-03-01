@@ -14,6 +14,16 @@
 						<span id="resultEventDetail_creator"></span>
         </div>
 			
+				<div class="col-xs-12">
+            <span><strong>Location: </strong></span>
+            <span id="resultEventDetail_location"></span>
+        </div>
+			
+				<div class="col-xs-12">
+            <span><strong>Date: </strong></span>
+            <span id="resultEventDetail_date"></span>
+        </div>
+			
         <div class="col-xs-12">
             <span><strong>Time: </strong></span>
             <span id="resultEventDetail_time"></span>
@@ -54,6 +64,8 @@
 	
 	function addDetail(result) {
 		console.log(result);
+		$('#resultEventDetail_location').html(result["location"]);
+		$('#resultEventDetail_date').html(result["date"]);
 		$('#resultEventDetail_name').html(result["name"]);
 		$('#resultEventDetail_img').attr('src', result["imageURL"]);
 		$('#resultEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
