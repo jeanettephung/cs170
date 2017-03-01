@@ -8,18 +8,17 @@
         <div class="col-md-3"> </div>
     </div>
     <div class="row">
-        <div class="col-md-3"> </div>
-        <div class="col-md-6">
             <form data-toggle="validator" id="editEventForm">
-                <div class="form-group">
+
+                <div class="col s12 input-field form-group">
                     <label for="example-text-input">Event Name </label>
-                    <input class="form-control" type="text" id="editEvent_name">
+                    <input class="form-control" type="text" id="editEvent_name" required>
                 </div>
 
-                <div class="form-group">
+                <div class="col s12 form-group">
                     <label for="startTime">Start Time</label>
-                    <select class="form-control" id="editEvent_startTime" name="startTime">
-												<option value = "12pm">12pm</option>
+                    <select class="form-control" id="editEvent_startTime" name="startTime" required >
+						<option value = "12pm">12pm</option>
                         <option value = "1pm">1pm</option>
                         <option value = "2pm">2pm</option>
                         <option value = "3pm">3pm</option>
@@ -46,9 +45,9 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="col s12 form-group">
                     <label for="endTime">End Time</label>
-                    <select class="form-control" id="editEvent_endTime" name="endTime">
+                    <select class="form-control" id="editEvent_endTime" name="endTime" required>
                         <option value = "12pm">12pm</option>
                         <option value = "1pm">1pm</option>
                         <option value = "2pm">2pm</option>
@@ -76,18 +75,23 @@
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label for="category">Category </label>
-                    <input class="form-control" type="text" id="editEvent_category" name="category">
+                <div class="col s12 input-field">
+                    <label for="create-location">Location </label>
+                    <input class="validate" type="text" id="create_location" name="location" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleTextarea">Event Description </label>
-                    <textarea class="form-control" id="editEvent_description" rows="3"
-                    ></textarea>
+                <div class="col s12  input-field form-group">
+                    <label for="category">Category </label>
+                    <input class="form-control" type="text" id="editEvent_category" name="category" required>
                 </div>
-							
-								<input id="editEvent_submit" type="submit" value="UPDATE" class="btn btn-primary btn-lg col-xs-12 margin-top">
+
+                <div class="col s12  input-field form-group">
+                    <label for="exampleTextarea">Event Description </label>
+                    <textarea class="form-control" id="editEvent_description" rows="3" required>
+                    </textarea>
+                </div>
+
+					<input id="editEvent_submit" type="submit" value="UPDATE" class="btn btn-primary btn-lg col-xs-12 margin-top">
             </form>
 
             <a href="/createdEventDetail/{{eventId}}"><button class="btn btn-primary btn-lg col-xs-12 margin-top">Cancel</button></a>
@@ -111,7 +115,7 @@
 				break;
 			}
 		}
-		
+
 		var endValue = result["endTime"];
 		var endTime = document.getElementById("editEvent_endTime");
 		for(var i=0; i<endTime.options.length; i++) {
@@ -125,8 +129,8 @@
 		$('#editEvent_name').attr('value', result["name"]);
 		$('#editEvent_category').attr('value', result["category"]);
 		$('#editEvent_description').html(result["description"]);
-	}															 
-	
+	}
+
 	$("#editEvent_submit").click(function(e){
 		var eventId =  $('.eventId').attr('id');
 		var name = $('#editEvent_name').val();
