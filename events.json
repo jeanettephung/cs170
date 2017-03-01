@@ -11,6 +11,8 @@
 			"created": true,
 			"joined": false,
 			"notCancelled": true,
+			"date": "12, June 2017",
+			"location": "San Diego Zoo",
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -37,6 +39,8 @@
 			"created": true,
 			"joined": false,
 			"notCancelled": true,
+			"date": "7 July, 2017",
+			"location": "UCSD at Geisel",
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -63,6 +67,8 @@
 			"created": true,
 			"joined": false,
 			"notCancelled": true,
+			"date": "12, May 2017",
+			"location": "Shores Beach, San Diego",
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -89,6 +95,8 @@
 			"created": false,
 			"joined": true,
 			"notCancelled": true,
+			"date": "28, July 2017",
+			"location": "Scripps Neurology Center",
 			"creator":
 				{
 					"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
@@ -115,6 +123,8 @@
 			"created": false,
 			"joined": true,
 			"notCancelled": true,
+			"date": "7, June 2017",
+			"location": "Grand Canyon",
 			"creator":
 				{
 					"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
@@ -139,6 +149,8 @@
 			"created": false,
 			"joined": true,
 			"notCancelled": true,
+			"date": "1, June 2017",
+			"location": "1323 Ransom St. San Diego CA 92174",
 			"creator":
 				{
 					"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
@@ -165,6 +177,8 @@
 			"created": false,
 			"joined": false,
 			"notCancelled": true,
+			"date": "4, May 2017",
+			"location": "Counseling and Psychological Services (CAPS)",
 			"creator":
 				{
 					"imageURL": "http://www.npsd.k12.nj.us/cms/lib04/NJ01001216/Centricity/Domain/230/Math_Guy.jpg",
@@ -190,6 +204,8 @@
 			"created": false,
 			"joined": false,
 			"notCancelled": true,
+			"date": "17, May 2017",
+			"location": "6310 Greenwich Dr # 240, San Diego, CA 92122",
 			"creator":
 				{
 					"imageURL": "https://img.clipartfest.com/27aa02479a5b5554a7a11eb080a3201d_girl-drinking-wine-clipart-wine-drinking-clipart_228-300.png",
@@ -216,6 +232,8 @@
 			"created": false,
 			"joined": false,
 			"notCancelled": true,
+			"date": "20, June 2017",
+			"location": "Sorrento Canyon Driving Range",
 			"creator":
 				{
 					"imageURL": "http://www.webweaver.nu/clipart/img/entertainment/sports/golf/golf-swing.png",
