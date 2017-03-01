@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container index">
 		<ul class="nav nav-tabs">
-				<li class="active"><a href="#">Created Events</a></li>
-				<li><a href="/joinedEvents">Joined Events</a></li>
+				<li id="createdB_tab" class="active"><a href="#">Created Events</a></li>
+				<li id="joinedB_tab"><a href="/joinedEvents">Joined Events</a></li>
 		</ul>
 	
 	{{#each this}}
@@ -20,5 +20,19 @@
 		{{/if}}
 	{{/each}}
 	
-	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
+	<a href="/createEvents"><button id="createB_btn" class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
 </div>
+
+<script>
+	$("#createdB_tab").click(){function(
+		ga("send", "event", "createdB_tab", "click");
+	)};
+	
+	$("#createdB_tab").click(){function(
+		ga("send", "event", "joinedB_tab", "click");
+	)};
+	
+	$("#createB_btn").click(){function(
+		ga("send", "event", "createdB_btn", "click");
+	)};
+</script>

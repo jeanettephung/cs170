@@ -25,6 +25,8 @@
 			"mentoring": "yes",
 			"created": true,
 			"joined": false,
+			"date": "",
+			"location": "San Diego Zoo",
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -50,6 +52,8 @@
 			"mentoring": "yes",
 			"created": true,
 			"joined": false,
+			"date": "",
+			"location": "UCSD at Geisel",
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -75,6 +79,8 @@
 			"mentoring": "no",
 			"created": true,
 			"joined": false,
+			"date": "",
+			"location": "Shores Beach, San Diego",
 			"creator":
 				{
 					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
@@ -100,6 +106,8 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"date": "",
+			"location": "Scripps Neurology Center",
 			"creator":
 				{
 					"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
@@ -125,6 +133,8 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"date": "",
+			"location": "Grand Canyon",
 			"creator":
 				{
 					"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
@@ -148,6 +158,8 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"date": "",
+			"location": "1323 Ransom St. San Diego CA 92174",
 			"creator":
 				{
 					"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
@@ -173,6 +185,8 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
+			"date": "",
+			"location": "Counseling and Psychological Services (CAPS)",
 			"creator":
 				{
 					"imageURL": "/images/profile-placeholder.png",
@@ -196,6 +210,8 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": false,
+			"date": "",
+			"location": "6310 Greenwich Dr # 240, San Diego, CA 92122",
 			"creator":
 				{
 					"imageURL": "/images/profile-placeholder.png",
@@ -221,6 +237,8 @@
 			"mentoring": "no",
 			"created": false,
 			"joined": true,
+			"date": "",
+			"location": "Sorrento Canyon Driving Range",
 			"creator":
 				{
 					"imageURL": "/images/profile-placeholder.png",

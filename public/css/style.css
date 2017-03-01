@@ -98,3 +98,6 @@ body > footer > div > div {
 	box-shadow: none !important;
 	-webkit-tap-highlight-color: transparent !important; 
 }
+.index {
+	margin: 20px auto;
+}
