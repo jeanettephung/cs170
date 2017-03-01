@@ -7,6 +7,8 @@ exports.addEvent = function(req, res) {
 	var endTime = req.param('endTime');
 	var category = req.param('category');
   var description = req.param('description');
+	var location = req.param('location');
+	var date = req.param('date');
 	var eventId = global.eventCounter;
 	global.eventCounter++;
 	
@@ -22,10 +24,12 @@ exports.addEvent = function(req, res) {
 			"created": true,
 			"joined": false,
 			"notCancelled": true,
-			"creator": "Jen"
+			"creator": "Jen",
+			"location": location,
+			"date": date
 		}
 
 	events.push(newEvent);
-
-	res.redirect("/successCreate");
+console.log(newEvent);
+	//res.redirect("/successCreate");
 }
