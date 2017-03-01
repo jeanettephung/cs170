@@ -124,8 +124,8 @@ app.get('/updatingProfile/:name/:expertise/:aboutMe', editProfile.updatingProfil
 
 
 //routes for A/B Testing
-app.get('/index_A', index_A.view);
-app.get('/index_B', index_B.view);
+app.get('/index_a', index_A.viewA);
+app.get('/index_b', index_A.viewB);
 
 // Example route
 // app.get('/users', user.list);
