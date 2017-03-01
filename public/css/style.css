@@ -51,6 +51,14 @@ footer.page-footer{
     padding-top: 1px;
 }
 
+.right-align .fa-plus {
+    margin-right: 7px;	
+}
+
+body > footer > div > div {
+	margin-bottom: 0 !important;
+}
+
 /* EVENTS */
 .event {
 	padding: 5px 10px;
