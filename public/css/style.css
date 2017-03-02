@@ -42,6 +42,10 @@ footer{
 	z-index: 1
 }
 
+.title{
+    font-weight: 100;
+}
+
 a, a:hover, a:active, a:visited {
 	text-decoration:none;
 }
@@ -53,7 +57,7 @@ footer.page-footer{
 
 /*
 .right-align .fa-plus {
-    margin-right: 7px;	
+    margin-right: 7px;
 }
 */
 .material-icons.plus {
@@ -102,7 +106,7 @@ body > footer > div > div {
   outline: none !important;
 	background-color: transparent !important;
 	box-shadow: none !important;
-	-webkit-tap-highlight-color: transparent !important; 
+	-webkit-tap-highlight-color: transparent !important;
 }
 .index {
 	margin: 20px auto;
