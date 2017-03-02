@@ -16,8 +16,8 @@
 						</div>
 
 						<div class="col s12 input-field">
-							<label for="date">Date</label>
-							<input id ="editEvent_date" type="date" class="datepicker" name="date" required >
+                            <label for="date" class="active">Date</label>
+							<input id ="editEvent_date" type="text" class="datepicker" name="date" required >
 					</div>
 
 						<div class="col s12 form-group">
@@ -133,6 +133,7 @@
 		var $input = $('.datepicker').pickadate();
 		var picker = $input.pickadate('picker');
 		picker.set('select', result["date"]);
+
 		
 		$('#editEvent_img').attr('src', result["imageURL"]);
 		$('#editEvent_name').attr('value', result["name"]);
