@@ -2,33 +2,37 @@
     <h1 class ="text-center lead">
         <strong>Contact Us</strong></h1>
 
-    <form class="form-group" id="contact_form">
-        <div class="row">
-            <div class="col-md-4">
-                <label for="contact_name">Name* </label><input class="form-control validate" type="text" id="contact_name" required>
-            </div>
-            <div class="col-md-4">
-                <label for="contact_phone">Phone </label><input class="form-control customphone validate" type="text" id="contact_phone" placeholder="xxx-xxx-xxxx" required>
-            </div>
-            <div class="col-md-4">
-                <label for="contact_phone">Email </label><input class="form-control validate" type="email" id="contact_email" placeholder="email address" required>
-            </div>
 
-                <div class="col-md-12">
-                    <label for="contact_message">Message* </label>
-                    <textarea class="form-control" id="contact_message" rows="3" required></textarea>
-                </div>
-        {{!-- <input type="submit" class="btn btn-primary btn-lg col-xs-12" id="contactUs_submit"> --}}
+    <form action="">
+        <div class="row">
+            <div class="input-field col s12">
+                <input class="form-control" type="text" id="contact_name" name="name" required>
+                <label for="contact_name">Name* </label>
+            </div>
         </div>
 
         <div class="row">
-            <button class="btn waves-effect waves-light col s4 offset-s4" data-toggle="modal" data-target=".contact_success">Submit </button>
+            <div class="input-field col s12">
+                <label for="textarea1">Message* </label>
+                <textarea id="textarea1" class="materialize-textarea" required></textarea>
+            </div>
         </div>
 
+        <div class="row">
+            <button class="btn waves-effect waves-light col s12" type="submit" id = "contactUs_submit">
+                Submit
+            </button>
+        </div>
+
+        {{!-- <div class="row">
+            <button class="btn waves-effect waves-light col s4 offset-s4" type="submit" data-toggle="modal" data-target=".contact_success">Submit </button>
+        </div> --}}
     </form>
+
+    <form  id="contact_form" data-toggle="validator">
 </div>
 
-<div class="modal fade contact_success" tabindex="-1" role="dialog">
+<div class="modal fade contact_success" id="modal_submit" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
 			<center>
@@ -40,9 +44,9 @@
   </div>
 </div>
 
-
 <script>
 	$("#success_close").click(function(){
-  	window.location.href = "/contactUs";
+    $('#modal_submit').modal('toggle');
+  	window.location.href = "/";
 	});
 </script>

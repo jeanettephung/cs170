@@ -15,11 +15,12 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+    var submit = false;
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 15 // Creates a dropdown of 15 years to control year
     });
-    
+
 	$.validator.addMethod('customphone', function (value, element) {
 		return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
 	}, "Please enter a valid phone number");
@@ -57,18 +58,6 @@ function initializePage() {
 		}
 	});
 
-	$("#contact_form").validate({
-		rules: {
-			contact_email: {
-				email: true
-			}
-		},
-		messages: {
-			contact_email: {
-				email: "Please enter a valid email address"
-			}
-		}
-	});
 
     $("#formValidation").validate({
         rules: {
@@ -101,11 +90,29 @@ function initializePage() {
         }
     });
 
-    $("#contactUs_submit").click(function () {
-		$('#contact_form').submit();
-	});
 
 	$("#openM").click(function (){
 		$(".modal").modal();
 	})
+
+    $("#contactUs").submit(function (e) {
+        e.preventDefault();
+		$('#modal_submit').appendTo("body").modal('show');
+	});
+
+	// $("#contact_form").validate({
+	// 	rules: {
+	// 		contact_email: {
+	// 			email: true
+	// 		}
+	// 	},
+	// 	messages: {
+	// 		contact_email: {
+	// 			email: "Please enter a valid email address"
+	// 		}
+	// 	}
+	// }
+    //
+    //
+    // );
 }
