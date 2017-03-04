@@ -8,6 +8,9 @@
 	font-size: 25px;
 	margin: 20px;
 }
+#mobile-demo {
+	z-index: 9999;
+}
 
 /* BOTTOM NAVIGATION BAR */
 
@@ -39,7 +42,7 @@ footer{
 }
 
 #sidenav-overlay {
-	z-index: 1
+	z-index: 150;
 }
 
 .title{
