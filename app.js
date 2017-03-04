@@ -69,8 +69,11 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', index.view);
-app.get('/index', index.view);
+//app.get('/', index.view);
+//app.get('/index', index.view);
+app.get('/', index_A.viewA);
+app.get('/index', index_A.viewA);
+
 app.get('/profile/:eventId', profile.view);
 app.get('/myProfile', myProfile.view);
 app.get('/editProfile', editProfile.view);
