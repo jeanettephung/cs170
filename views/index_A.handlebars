@@ -1,87 +1,172 @@
-<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='141971054-1',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
+<!DOCTYPE html>
+<html>
 
+<head>
+		<!-- Google Analytics Content Experiment code -->
+		<script>function utmx_section(){}function utmx(){}(function(){var
+		k='141971054-1',d=document,l=d.location,c=d.cookie;
+		if(l.search.indexOf('utm_expid='+k)>0)return;
+		function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+		indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+		length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+		'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+		'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+		'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+		valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+		'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+		</script><script>utmx('url','A/B');</script>
+		<!-- End of Google Analytics Content Experiment code -->
+	
+    <title>CS170 APP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="container index">
+    {{!-- <script src="/js/jquery.min.js"></script> --}}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="/js/script.js"></script>
 
-	{{#if variant}}
-		<ul id="index_tabs" class="tabs">
-			<li class="tab col s3"><a class="active" href="#created_tab">Created Events</a></li>
-			<li class="tab col s3"><a href="#joined_tab">Joined Events</a></li>
-		</ul>
-		<div id="created_tab" class="col s12">
-			<a id="createB_btn" class="ab_test btn-floating btn-large waves-effect waves-light teal" href="/createEvents"><i class="material-icons">add</i></a>
-			{{#each this}}
-				{{#if created}}
-					{{#if notCancelled}}
-						<div class="event-container card-panel">
-							<a href="/createdEventDetail/{{eventId}}">
-								<div class="event">
-									<h5>{{name}}</h5>
-									<h5>{{startTime}} to {{endTime}}</h5>
-									<p>{{description}}</p>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/additional-methods.min.js"></script>
+
+</head>
+	
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/myProfile">My Profile</a></li>
+                    <li><a href="/messages">Messages</a></li>
+                    <li><a href="/contactUs">Contact Us</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+                <ul class="side-nav center-align" id="mobile-demo">
+                    <li><a href="/myProfile">My Profile</a></li>
+                    <li><a href="/messages">Messages</a></li>
+                    <li><a href="/contactUs">Contact Us</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- NAVIGATION BAR END-->
+
+    <!-- CONTENT -->
+    <main>
+			<div class="container index">
+
+				{{#if variant}}
+					<ul id="index_tabs" class="tabs">
+						<li class="tab col s3"><a class="active" href="#created_tab">Created Events</a></li>
+						<li class="tab col s3"><a href="#joined_tab">Joined Events</a></li>
+					</ul>
+					<div id="created_tab" class="col s12">
+						<a id="createB_btn" class="ab_test btn-floating btn-large waves-effect waves-light teal" href="/createEvents"><i class="material-icons">add</i></a>
+						{{#each event}}
+							{{#if created}}
+								{{#if notCancelled}}
+									<div class="event-container card-panel">
+										<a href="/createdEventDetail/{{eventId}}">
+											<div class="event">
+												<h5>{{name}}</h5>
+												<h5>{{startTime}} to {{endTime}}</h5>
+												<p>{{description}}</p>
+											</div>
+										</a>
+									</div>
+								{{/if}}
+							{{/if}}
+						{{/each}}
+					</div>
+					<div id="joined_tab" class="col s12">
+						<a class="btn-floating btn-large waves-effect waves-light teal" href="/findEvents"><i class="material-icons">search</i></a>
+						{{#each event}}
+							{{#if joined}}
+								<div class="event-container card-panel">
+									<a href="/joinedEventDetail/{{eventId}}">
+										<div class="event">
+											<h4>{{name}}</h4>
+											<h5>{{startTime}} to {{endTime}}</h5>
+											<p>{{description}}</p>
+										</div>
+									</a>
 								</div>
-							</a>
-						</div>
-					{{/if}}
-				{{/if}}
-			{{/each}}
-		</div>
-		<div id="joined_tab" class="col s12">
-			<a class="btn-floating btn-large waves-effect waves-light teal" href="/findEvents"><i class="material-icons">search</i></a>
-			{{#each this}}
-				{{#if joined}}
-					<div class="event-container card-panel">
-						<a href="/joinedEventDetail/{{eventId}}">
-							<div class="event">
-								<h4>{{name}}</h4>
-								<h5>{{startTime}} to {{endTime}}</h5>
-								<p>{{description}}</p>
-							</div>
-						</a>
+							{{/if}}
+						{{/each}}
 					</div>
-				{{/if}}
-			{{/each}}
-		</div>
-	
-	{{else}}
-	
-		<ul class="nav nav-tabs">
-					<li id="createdA_tab" class="active"><a href="#">Created Events</a></li>
-					<li id="joinedA_tab"><a href="/joinedEvents">Joined Events</a></li>
-			</ul>
-		{{#each this}}
-			{{#if created}}
-				{{#if notCancelled}}
-					<div class="event-container card-panel">
-						<a href="/createdEventDetail/{{eventId}}">
-							<div class="event">
-								<h5>{{name}}</h5>
-								<h5>{{startTime}} to {{endTime}}</h5>
-								<p>{{description}}</p>
-							</div>
-						</a>
-					</div>
-				{{/if}}
-			{{/if}}
-		{{/each}}
-		<a href="/createEvents"><button id="createdA_btn" class="ab_test btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
-	{{/if}}
-	
-</div>
 
+				{{else}}
+
+					<ul class="nav nav-tabs">
+								<li id="createdA_tab" class="active"><a href="#">Created Events</a></li>
+								<li id="joinedA_tab"><a href="/joinedEvents">Joined Events</a></li>
+						</ul>
+					{{#each event}}
+						{{#if created}}
+							{{#if notCancelled}}
+								<div class="event-container card-panel">
+									<a href="/createdEventDetail/{{eventId}}">
+										<div class="event">
+											<h5>{{name}}</h5>
+											<h5>{{startTime}} to {{endTime}}</h5>
+											<p>{{description}}</p>
+										</div>
+									</a>
+								</div>
+							{{/if}}
+						{{/if}}
+					{{/each}}
+					<a href="/createEvents"><button id="createdA_btn" class="ab_test btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
+				{{/if}}
+
+			</div>
+
+			</main>
+    <!-- CONTENT END -->
+
+    <!-- BOTTOM NAVIGATION BAR -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s4 right-align">
+									<a class="white-text" href="/createEvents">
+<!--										<i class="fa fa-plus fa-2x"></i>-->
+										<i class="material-icons plus small">add</i>
+<!--										<p>Create</p>-->
+									</a>
+                </div>
+                <div class="col s4 center-align">
+                    <a class="white-text" href="/index">
+<!--											<i class="fa fa-home fa-2x"></i>-->
+											<i class="material-icons small">home</i>
+<!--											<p>Home</p>-->
+									</a>
+                </div>
+                <div class="col s4 left-align ">
+									<a class="white-text" href="/findEvents">
+<!--										<i class="fa fa-search fa-2x"></i>-->
+										<i class="material-icons small">search</i>
+<!--										<p>Find</p>-->
+									</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+</body>
+
+</html>
+					
 <style>
 	.container.index {
 		padding-left: 0 !important;
@@ -118,6 +203,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </style>
 
 <script>
+	$(".ab_test").click(function() {
+		ga("send", "event", "create", "click");
+	});
+</script>
+
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -125,10 +216,4 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
   ga('create', 'UA-92493109-2', 'auto');
   ga('send', 'pageview');
-</script>
-
-<script>
-	$(".ab_test").click(function() {
-		ga("send", "event", "create", "click");
-	});
 </script>

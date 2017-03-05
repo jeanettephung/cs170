@@ -1,12 +1,12 @@
-var events = require('../events.json');	
+var data = require('../events.json');	
   		  
 exports.viewA = function(req, res){
-		events["variant"] = false;
-		console.log(events)
-  	res.render('index_A', events);
+		data["variant"] = false;
+  	res.render('index_A', {event: data, layout: false});
 };
 
 exports.viewB = function(req, res){
-		events["variant"] = true;
-		res.render('index_A', events);
+	var data = {events};
+		data["variant"] = true;
+		res.render('index_B', {event: data, layout: false});
 };
