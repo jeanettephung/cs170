@@ -21,7 +21,7 @@ function initializePage() {
         selectYears: 15 // Creates a dropdown of 15 years to control year
     });
 
-	$(.validator).addMethod('customphone', function (value, element) {
+	$('.validator').addMethod('customphone', function (value, element) {
 		return this.optional(element) || /^\d{3}-\d{3}-\d{4}$/.test(value);
 	}, "Please enter a valid phone number in the format: xxx-xxx-xxxx");
 
