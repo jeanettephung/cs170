@@ -15,7 +15,7 @@
 			"location": "San Diego Zoo",
 			"creator":
 				{
-					"imageURL": "https://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
+					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 					"name": "Jen",
 					"username": "itsjen",
 					"expertise": "food",
@@ -43,7 +43,7 @@
 			"location": "UCSD at Geisel",
 			"creator":
 				{
-					"imageURL": "https://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
+					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 					"name": "Jen",
 					"username": "itsjen",
 					"expertise": "food",
@@ -57,7 +57,7 @@
 		},
 		{
 			"eventId": 3,
-			"imageURL": "https://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000006091233_small.jpg",
+			"imageURL": "http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/istock_000006091233_small.jpg",
 			"name": "Shores Beach",
 			"startTime": "3am",
 			"endTime": "3pm",
@@ -71,7 +71,7 @@
 			"location": "Shores Beach, San Diego",
 			"creator":
 				{
-					"imageURL": "https://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
+					"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
 					"name": "Jen",
 					"username": "itsjen",
 					"expertise": "food",
@@ -85,7 +85,7 @@
 		},
 		{
 			"eventId": 4,
-			"imageURL": "https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Science/A-G/brain.jpg",
+			"imageURL": "http://kids.nationalgeographic.com/content/dam/kids/photos/articles/Science/A-G/brain.jpg",
 			"name": "Memory",
 			"startTime": "4am",
 			"endTime": "4pm",
@@ -99,7 +99,7 @@
 			"location": "Scripps Neurology Center",
 			"creator":
 				{
-					"imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
+					"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
 					"name": "ONE",
 					"username": "onetwo",
 					"expertise": "ONE",
@@ -113,7 +113,7 @@
 		},
 		{
 			"eventId": 5,
-			"imageURL": "https://www.outdoorproject.com/sites/default/files/styles/odp_comment_scale/public/comments/7338/1464170377/to_hike_or_not_to_hike.jpg?itok=Ti9tB_mP",
+			"imageURL": "http://www.outdoorproject.com/sites/default/files/styles/odp_comment_scale/public/comments/7338/1464170377/to_hike_or_not_to_hike.jpg?itok=Ti9tB_mP",
 			"name": "Hike at Grand Canyon",
 			"startTime": "5am",
 			"endTime": "5pm",
@@ -127,7 +127,7 @@
 			"location": "Grand Canyon",
 			"creator":
 				{
-					"imageURL": "https://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
+					"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg",
 					"name": "Grace",
 					"username": "graceful",
 					"expertise": "hiking",
@@ -139,7 +139,7 @@
 		},
 		{
 			"eventId": 6,
-			"imageURL": "https://s.hswstatic.com/gif/how-to-hike-1.jpg",
+			"imageURL": "http://s.hswstatic.com/gif/how-to-hike-1.jpg",
 			"name": "Haunted Woods",
 			"startTime": "6am",
 			"endTime": "6pm",
@@ -153,7 +153,7 @@
 			"location": "1323 Ransom St. San Diego CA 92174",
 			"creator":
 				{
-					"imageURL": "https://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
+					"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg",
 					"name": "Allen",
 					"username": "timallen",
 					"expertise": "psychology",
@@ -167,7 +167,7 @@
 		},
 		{
 			"eventId": 7,
-			"imageURL": "https://www.all-about-psychology.com/psychology-fb.jpg",
+			"imageURL": "http://www.all-about-psychology.com/psychology-fb.jpg",
 			"name": "Freud Theory",
 			"startTime": "7am",
 			"endTime": "7pm",
@@ -181,7 +181,7 @@
 			"location": "Counseling and Psychological Services (CAPS)",
 			"creator":
 				{
-					"imageURL": "https://www.npsd.k12.nj.us/cms/lib04/NJ01001216/Centricity/Domain/230/Math_Guy.jpg",
+					"imageURL": "http://www.npsd.k12.nj.us/cms/lib04/NJ01001216/Centricity/Domain/230/Math_Guy.jpg",
 					"name": "Joe",
 					"username": "GIjoe",
 					"expertise": "math",
@@ -194,7 +194,7 @@
 		},
 		{
 			"eventId": 8,
-			"imageURL": "https://discovermagazine.com/~/media/Images/Issues/2016/September/wine.jpg",
+			"imageURL": "http://discovermagazine.com/~/media/Images/Issues/2016/September/wine.jpg",
 			"name": "Wine tasting",
 			"startTime": "8am",
 			"endTime": "8pm",
@@ -222,7 +222,7 @@
 		},
 		{
 			"eventId": 9,
-			"imageURL": "https://smock.foreuphosting5.com/wp-content/uploads/2015/04/tight.jpg",
+			"imageURL": "http://smock.foreuphosting5.com/wp-content/uploads/2015/04/tight.jpg",
 			"name": "Golfing",
 			"startTime": "9am",
 			"endTime": "9pm",
@@ -236,7 +236,7 @@
 			"location": "Sorrento Canyon Driving Range",
 			"creator":
 				{
-					"imageURL": "https://www.webweaver.nu/clipart/img/entertainment/sports/golf/golf-swing.png",
+					"imageURL": "http://www.webweaver.nu/clipart/img/entertainment/sports/golf/golf-swing.png",
 					"name": "Cynthia",
 					"username": "justCyn",
 					"expertise": "golf",
