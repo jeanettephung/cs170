@@ -149,7 +149,10 @@
 		var endTime = $('#editEvent_endTime option:selected').attr('value');
 		var category = $('#editEvent_category').val();
 		var description = $('#editEvent_description').val();
-		var updateAction = "/updatingEvent/"+eventId+"/"+name+"/"+startTime+"/"+endTime+"/"+category+"/"+description;
+		var date = $('#editEvent_date').val();
+		var location = $('#editEvent_location').val();
+
+		var updateAction = "/updatingEvent/"+eventId+"/"+name+"/"+startTime+"/"+endTime+"/"+category+"/"+description+"/"+date+"/"+location;
 		$('#editEventForm').attr('action', updateAction);
 	});
 </script>
