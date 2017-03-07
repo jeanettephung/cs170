@@ -30,6 +30,6 @@ exports.addEvent = function(req, res) {
 		}
 
 	events.push(newEvent);
-console.log(newEvent);
+
 	res.redirect("/successCreate");
 }
