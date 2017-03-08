@@ -1,24 +1,45 @@
+<link rel="stylesheet" href="/css/index.css" />
+
 <div class="container index">
-		<ul class="nav nav-tabs">
-				<li class="active"><a href="#">Created Events</a></li>
-				<li><a href="/joinedEvents">Joined Events</a></li>
-		</ul>
-	
-	{{#each this}}
-		{{#if created}}
-			{{#if notCancelled}}
+	 <ul id="index_tabs" class="tabs">
+    <li class="tab col s3"><a class="active" href="#created_tab">Created Events</a></li>
+    <li class="tab col s3"><a href="#joined_tab">Joined Events</a></li>
+  </ul>
+  <div id="created_tab" class="col s12">
+		<a href="/createEvents"><button class="dash-btn btn btn-primary btn-lg">Create An Event</button></a>
+
+
+		{{#each this}}
+			{{#if created}}
+				{{#if notCancelled}}
+					<div class="event-container card-panel">
+						<a href="/createdEventDetail/{{eventId}}">
+							<div class="event">
+								<h5>{{name}}</h5>
+								<h5>{{startTime}} to {{endTime}}</h5>
+								<p>{{description}}</p>
+							</div>
+						</a>
+					</div>
+				{{/if}}
+			{{/if}}
+		{{/each}}
+	</div>
+	<div id="joined_tab" class="col s12">
+		<a href="/findEvents"><button class="dash-btn btn btn-primary btn-lg">Join An Event</button></a>
+
+		{{#each this}}
+			{{#if joined}}
 				<div class="event-container card-panel">
-					<a href="/createdEventDetail/{{eventId}}">
+					<a href="/joinedEventDetail/{{eventId}}">
 						<div class="event">
-							<h5>{{name}}</h5>
+							<h4>{{name}}</h4>
 							<h5>{{startTime}} to {{endTime}}</h5>
 							<p>{{description}}</p>
 						</div>
 					</a>
 				</div>
 			{{/if}}
-		{{/if}}
-	{{/each}}
-	
-	<a href="/createEvents"><button class="btn btn-primary col-xs-12 btn-lg">Create An Event</button></a>
+		{{/each}}
+	</div>
 </div>
