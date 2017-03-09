@@ -1,0 +1,211 @@
+ $titleFont : Rita;
+ $Hell : Hell;
+ $iconColor: black;
+ $btnColor: #fc4a1b;
+ $blueberry: #6b7a8f;
+ $apricot: #f7882f;
+ $citrus: #f7c331;
+ $core: #dcc7aa;
+
+ @font-face { font-family: test; src: url('/fonts/aery.ttf'); }
+ @font-face { font-family: Rita; src: url('/fonts/Rita.otf'); }
+ @font-face {
+     font-family: Hell; src: url('/fonts/HelveticaNeue.ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ // @import "../materialize-src/sass/components/mixins";
+ // @import "../materialize-src/sass/components/palette"; // palette must be previous to color
+
+ nav, footer{
+     background-color: $blueberry !important;
+     .nav-wrapper {
+        // @extend .grey,.lighten-4;
+        font-family: $Hell;
+     }
+     .brand-logo{
+         color: $core;
+         font-family: $titleFont
+     }
+ }
+ .index{
+     color:$blueberry;
+ }
+ .tabs{
+     font-family: Hell;
+     font-weight: 600;
+     .tab{
+
+         a{
+            //  color:$apricot;
+             color:$apricot;
+             text-decoration: none;
+         }
+         a.active{
+            //  color:$blueberry;
+             color:$apricot;
+             text-decoration: none;
+         }
+         a:hover{
+             text-decoration: none;
+             color:$apricot;
+            //  color:$blueberry;
+         }
+     }
+     .indicator{
+         background-color: $blueberry;
+     }
+ }
+
+
+ .event{
+     text-decoration: none;
+     color:$blueberry;
+     font-family: $Hell;
+     h4{
+         font-family:Hell;
+     }
+     h5{
+         font-family:Hell;
+     }
+ }
+ .btn{
+     background-color: $core;
+     color: $apricot;
+     font-family: $Hell;
+     font-weight:bold;
+ }
+
+ i.material-icons{
+     color:$core;
+ }
+
+/* NAVIVATION BAR */
+.title2 {
+    font-family: $Hell,Roboto;
+    font-size:40px;
+    /*font-weight: 400;*/
+
+}
+// .navbar-right {
+// 	padding-top: 5px;
+// 	padding-right: 30px;
+// }
+// .navbar-collapse.collapse.in ul li, .navbar-collapse.collapsing ul li {
+// 	text-align: center;
+// 	font-size: 25px;
+// 	margin: 20px;
+// }
+#mobile-demo {
+	z-index: 9999;
+}
+
+/* BOTTOM NAVIGATION BAR */
+
+body {
+    @extend .grey,.lighten-5;
+  display: flex;
+  display: -webkit-flex;
+  min-height: 400px;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+
+}
+
+main {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	margin-bottom: 80px;
+
+	-webkit-flex-grow: 1;
+	-webkit-flex-shrink: 0;
+	-webkit-flex-basis: auto;
+}
+
+footer{
+	margin-bottom: 0;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+#sidenav-overlay {
+	z-index: 150;
+}
+
+.title{
+    font-weight: 100;
+}
+
+a, a:hover, a:active, a:visited {
+	text-decoration:none;
+}
+
+footer.page-footer{
+	z-index: 100;
+	padding-top: 1px;
+}
+
+/*
+.right-align .fa-plus {
+    margin-right: 7px;
+}
+*/
+.material-icons.plus {
+	margin-right: 4px;
+}
+
+body > footer > div > div {
+/*	margin-bottom: 0 !important;*/
+	margin-bottom: 10px !important;
+}
+
+/* EVENTS */
+.event {
+	padding: 5px 10px;
+	border: solid 1px;
+}
+.event-container {
+	margin: 10px 0;
+}
+.profile-event {
+	border: solid 1px black;
+	padding: 7px 5px 0 15px;
+	background-color: #ededed;
+}
+
+/* GENERAL STYLES */
+
+.margin-top {
+	margin-top: 15px;
+}
+.profile-image {
+	width: 50%;
+}
+.row {
+    margin-top: 3%;
+}
+.error {
+	color: red;
+}
+.loader {
+	margin-top: 25px;
+ 	height: 60px;
+}
+
+.contact_success, .contact_success:focus, .contact_success:visited {
+  outline: none !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+}
+.index {
+	margin: 20px auto;
+}
+
+// ******************** MATERIALIZE IMPORTS *********************//
+
+
+@import "../materialize-src/sass/components/color";
