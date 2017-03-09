@@ -2,28 +2,28 @@
 
     <div class="row eventId" id="{{eventId}}">
         <div class="col-xs-12">
-						<center><h3 id="resultEventDetail_name"></h3></center>
+            <center><h3 id="resultEventDetail_name"></h3></center>
             <center><img id="resultEventDetail_img" class="img-responsive"></center>
         </div>
     </div>
 
     <div class="row">
 
-				<div class="col-xs-12 margin-top">
+        <div class="col-xs-12 margin-top">
             <span><strong>Creator: </strong></span>
-						<span id="resultEventDetail_creator"></span>
+            <span id="resultEventDetail_creator"></span>
         </div>
-			
-				<div class="col-xs-12">
+
+        <div class="col-xs-12">
             <span><strong>Location: </strong></span>
             <span id="resultEventDetail_location"></span>
         </div>
-			
-				<div class="col-xs-12">
+
+        <div class="col-xs-12">
             <span><strong>Date: </strong></span>
             <span id="resultEventDetail_date"></span>
         </div>
-			
+
         <div class="col-xs-12">
             <span><strong>Time: </strong></span>
             <span id="resultEventDetail_time"></span>
@@ -46,11 +46,11 @@
             <a href="/profile/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Mentor's Profile</button></a>
         </div>
 
-				<div class="col-xs-12">
-					<form action="/joiningEvent/{{eventId}}">
-						<input type="submit" value="JOIN" class="btn btn-primary btn-lg col-xs-12 margin-top">
-					</form>
-				</div>
+        <div class="col-xs-12">
+            <form action="/joiningEvent/{{eventId}}">
+                <input type="submit" value="JOIN" class="btn btn-primary btn-lg col-xs-12 margin-top">
+            </form>
+        </div>
 
         <div class="col-xs-12">
             <a href="/resultEvent"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back</button></a>
@@ -58,19 +58,19 @@
     </div>
 </div>
 
-<script>	
-	var eventId = $('.eventId').attr('id');
-	$.get("/event/"+eventId, addDetail);
-	
-	function addDetail(result) {
-		console.log(result);
-		$('#resultEventDetail_location').html(result["location"]);
-		$('#resultEventDetail_date').html(result["date"]);
-		$('#resultEventDetail_name').html(result["name"]);
-		$('#resultEventDetail_img').attr('src', result["imageURL"]);
-		$('#resultEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
-		$('#resultEventDetail_category').html(result["category"]);
-		$('#resultEventDetail_description').html(result["description"]);
-		$('#resultEventDetail_creator').html(result["creator"]["name"]);
-	}
+<script>
+var eventId = $('.eventId').attr('id');
+$.get("/event/"+eventId, addDetail);
+
+function addDetail(result) {
+    console.log(result);
+    $('#resultEventDetail_location').html(result["location"]);
+    $('#resultEventDetail_date').html(result["date"]);
+    $('#resultEventDetail_name').html(result["name"]);
+    $('#resultEventDetail_img').attr('src', result["imageURL"]);
+    $('#resultEventDetail_time').html(result["startTime"]+" to "+result["endTime"]);
+    $('#resultEventDetail_category').html(result["category"]);
+    $('#resultEventDetail_description').html(result["description"]);
+    $('#resultEventDetail_creator').html(result["creator"]["name"]);
+}
 </script>

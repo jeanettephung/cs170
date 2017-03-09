@@ -1,12 +1,14 @@
 <div class="container" id="signup">
-
     <div class="row">
-        <div class="col s12 ">
-            <h1 class= "lead text-center"><strong> Sign Up </strong></h1>
+        <div class="col s12">
+            <div class="title2 text-center">
+                Sign Up
+            </div>
         </div>
     </div>
 
-		<form class="form" role="form" method="get" data-toggle="validator" id="createAccForm">
+
+    <form class="form" role="form" method="get" data-toggle="validator" id="createAccForm">
         <div class="row">
             <div class="input-field col s12">
                 <label for="name">Name: </label><input class="form-control validate" type="text" id="signUp_name" name="name" required>
@@ -40,14 +42,14 @@
 
 <script>
 
-	$("#signup_btn").click(function(e){
-		var name = $('#signUp_name').val();
-		var username = $('#signUp_userName').val();
-		var email = $('#signUp_email').val();
-		var password = $('#signUpPass').val();
+$("#signup_btn").click(function(e){
+    var name = $('#signUp_name').val();
+    var username = $('#signUp_userName').val();
+    var email = $('#signUp_email').val();
+    var password = $('#signUpPass').val();
 
-		var createAction = "/signingup/"+name+"/"+username+"/"+email+"/"+password;
-		$('#createAccForm').attr('action', createAction);
-	});
+    var createAction = "/signingup/"+name+"/"+username+"/"+email+"/"+password;
+    $('#createAccForm').attr('action', createAction);
+});
 
 </script>

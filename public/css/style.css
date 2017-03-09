@@ -1,4 +1,18 @@
+ @font-face { font-family: test; src: url('/fonts/aery.ttf'); }
+ @font-face {
+     font-family: Hell; src: url('/fonts/HelveticaNeue.ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+
 /* NAVIVATION BAR */
+.title2 {
+    font-family: Hell;
+    font-size:40px;
+    /*font-weight: 400;*/
+
+}
 .navbar-right {
 	padding-top: 5px;
 	padding-right: 30px;

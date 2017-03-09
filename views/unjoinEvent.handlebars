@@ -1,17 +1,17 @@
 <div class="container" id="unjoinEvent">
-	<div class="row">
-		<div class="col-xs-12">
-			<h1 class ="text-center lead"><strong>	Are you sure you want to unjoin the event?
-</strong></h1>
-		</div>
-	</div>
-	
-	<div class="row">
-				<div class="col-xs-12">
-					<form action="/unjoiningEvent/{{eventId}}">
-						<input type="submit" value="CONFIRM" class="btn btn-primary btn-lg col-xs-12 margin-top">
-					</form>
-				</div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class ="text-center lead"><strong>	Are you sure you want to unjoin the event?
+            </strong></h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <form action="/unjoiningEvent/{{eventId}}">
+                <input type="submit" value="CONFIRM" class="btn btn-primary btn-lg col-xs-12 margin-top">
+            </form>
+        </div>
 
         <div class="col-xs-12">
             <a href="/joinedEventDetail/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Cancel</button></a>
