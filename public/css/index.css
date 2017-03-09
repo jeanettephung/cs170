@@ -9,31 +9,32 @@
 	right: 3px;
 	background-color: white;
 	z-index: 50;
+    text-decoration: none;
 
-	-webkit-box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
+	/*-webkit-box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
-	box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);
+	box-shadow: 0px 18px 29px 2px rgba(255,255,255,1);*/
 }
 
 #created_tab, #joined_tab {
 	position: relative;
-	top: 75px;
-	margin-bottom: 50px;
+	top: 15px;
+	/*margin-bottom: 20px;*/
 }
 
-.dash-btn {
+/*.dash-btn {
 	position: fixed;
 	z-index: 50;
 	top: 112px;
 	-webkit-box-shadow: 8px 7px 11px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 8px 7px 11px -4px rgba(0,0,0,0.75);
 	box-shadow: 8px 7px 11px -4px rgba(0,0,0,0.75);
-}
+}*/
 
-#joined_tab .dash-btn {
+/*#joined_tab .dash-btn {
 	right: 17%;
 }
 
 #created_tab .dash-btn {
 	right: 15%;
-}
+}*/
