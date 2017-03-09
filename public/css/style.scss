@@ -6,6 +6,8 @@
  $apricot: #f7882f;
  $citrus: #f7c331;
  $core: #dcc7aa;
+ $papaya: #ec4e42;
+ $aqua: #008f95;
 
  @font-face { font-family: test; src: url('/fonts/aery.ttf'); }
  @font-face { font-family: Rita; src: url('/fonts/Rita.otf'); }
@@ -14,19 +16,24 @@
      font-weight: normal;
      font-style: normal;
  }
+ @font-face {
+     font-family: abril; src: url('/fonts/AbrilFatface-Regular.ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
 
  // @import "../materialize-src/sass/components/mixins";
  // @import "../materialize-src/sass/components/palette"; // palette must be previous to color
 
  nav, footer{
-     background-color: $blueberry !important;
+     background-color: $blueberry  !important;
      .nav-wrapper {
         // @extend .grey,.lighten-4;
         font-family: $Hell;
      }
      .brand-logo{
-         color: $core;
-         font-family: $titleFont
+         color: white;
+         font-family: abril;
      }
  }
  .index{
@@ -54,7 +61,8 @@
          }
      }
      .indicator{
-         background-color: $blueberry;
+         @extend .deep-orange,.lighten-1;
+        //  background-color: $blueberry;
      }
  }
 
@@ -71,8 +79,9 @@
      }
  }
  .btn{
-     background-color: $core;
-     color: $apricot;
+     @extend .deep-orange,.lighten-1;
+    //  background-color: $papaya;
+     color: white;
      font-family: $Hell;
      font-weight:bold;
  }
