@@ -1,9 +1,4 @@
 @font-face {
-    font-family: test;
-    src: url("/fonts/aery.ttf");
-}
-
-@font-face {
     font-family: Rita;
     src: url("/fonts/Rita.otf");
 }
@@ -11,6 +6,13 @@
 @font-face {
     font-family: Hell;
     src: url("/fonts/HelveticaNeue.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Hell_Bold;
+    src: url("/fonts/HelveticaNeue-Bold.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -33,6 +35,7 @@ nav .nav-wrapper, footer .nav-wrapper {
 nav .brand-logo, footer .brand-logo {
     color: white;
     font-family: abril;
+    padding-left: 5%;
 }
 
 .index {
@@ -80,7 +83,7 @@ nav .brand-logo, footer .brand-logo {
 }
 
 i.material-icons {
-    color: #dcc7aa;
+    color: white;
 }
 
 /* NAVIVATION BAR */
@@ -198,6 +201,19 @@ body > footer > div > div {
 
 .index {
     margin: 20px auto;
+}
+
+#createdEventDetail .details {
+    padding-left: 5%;
+    font-size: 15px;
+}
+
+#createdEventDetail .details .detail_Light {
+    font-family: Hell;
+}
+
+#createdEventDetail .details .detail_Bold {
+    font-family: Hell_Bold;
 }
 
 .materialize-red {

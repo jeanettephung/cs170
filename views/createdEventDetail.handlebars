@@ -7,39 +7,41 @@
         </div>
     </div>
 
-		<div class="row">
-        <div class="col s12 ">
-            <span><strong>Location: </strong></span>
-            <span id="createdEventDetail_location"></span>
-        </div>
-    </div>
+		<div class="row details">
+            <div class="col s12 m5 offset-m1">
+                <div class ="detail_Bold">
+                    Location
+                    <span class = "detail_Light"id="createdEventDetail_location"></span>
+                </div>
+            </div>
 
-		<div class="row">
-        <div class="col s12 ">
-            <span><strong>Date: </strong></span>
-            <span id="createdEventDetail_date"></span>
-        </div>
-    </div>
+            <div class="col s12 m6">
+                <div class="detail_Bold">
+                    Date
+                    <span class="detail_Light" id="createdEventDetail_date"></span>
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col s12 ">
-            <span><strong>Time: </strong></span>
-            <span id="createdEventDetail_time"></span>
-        </div>
-    </div>
+            <div class="col s12 m5 offset-m1 ">
+                <div class="detail_Bold">
+                    Time
+                    <span class="detail_Light" id="createdEventDetail_time"></span>
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col s12">
-            <span><strong>Expertises offering: </strong></span>
-            <span id="createdEventDetail_category"></span>
-        </div>
-    </div>
+            <div class="col s12 m6">
+                <div class="detail_Bold">
+                    Expertise
+                    <span class ="detail_Light" id="createdEventDetail_category"></span>
+                </div>
+            </div>
 
-    <div class="row">
-        <div class="col s12">
-            <span><strong>Description: </strong></span>
-            <span id="createdEventDetail_description"></span>
-        </div>
+            <div class="col s12 m11 offset-m1">
+                <div class="detail_Bold">
+                    Description
+                    <span class="detail_Light" id="createdEventDetail_description"></span>
+                </div>
+            </div>
     </div>
 
     <div class="row">
@@ -63,7 +65,7 @@ var eventId = $('.eventId').attr('id');
 $.get("/event/"+eventId, addDetail);
 
 function addDetail(result) {
-	  $('#createdEventDetail_location').html(result["location"]);
+	$('#createdEventDetail_location').html(result["location"]);
     $('#createdEventDetail_date').html(result["date"]);
     $('#createdEventDetail_name').html(result["name"]);
     $('#createdEventDetail_img').attr('src', result["imageURL"]);

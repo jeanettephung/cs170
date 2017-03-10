@@ -9,10 +9,14 @@
  $papaya: #ec4e42;
  $aqua: #008f95;
 
- @font-face { font-family: test; src: url('/fonts/aery.ttf'); }
  @font-face { font-family: Rita; src: url('/fonts/Rita.otf'); }
  @font-face {
      font-family: Hell; src: url('/fonts/HelveticaNeue.ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: Hell_Bold; src: url('/fonts/HelveticaNeue-Bold.otf');
      font-weight: normal;
      font-style: normal;
  }
@@ -34,6 +38,7 @@
      .brand-logo{
          color: white;
          font-family: abril;
+         padding-left: 5%;
      }
  }
  .index{
@@ -66,7 +71,6 @@
      }
  }
 
-
  .event{
      text-decoration: none;
      color:$blueberry;
@@ -87,7 +91,7 @@
  }
 
  i.material-icons{
-     color:$core;
+     color: white;
  }
 
 /* NAVIVATION BAR */
@@ -213,6 +217,8 @@ body > footer > div > div {
 .index {
 	margin: 20px auto;
 }
+
+@import "createdEventDetails";
 
 // ******************** MATERIALIZE IMPORTS *********************//
 
