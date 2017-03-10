@@ -203,16 +203,17 @@ body > footer > div > div {
     margin: 20px auto;
 }
 
-#createdEventDetail .details {
+.eventDetails .details {
     padding-left: 5%;
     font-size: 15px;
 }
 
-#createdEventDetail .details .detail_Light {
+.eventDetails .details .detail_Light {
     font-family: Hell;
+    font-weight: bolder;
 }
 
-#createdEventDetail .details .detail_Bold {
+.eventDetails .details .detail_Bold {
     font-family: Hell_Bold;
 }
 

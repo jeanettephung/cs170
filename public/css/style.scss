@@ -26,9 +26,6 @@
      font-style: normal;
  }
 
- // @import "../materialize-src/sass/components/mixins";
- // @import "../materialize-src/sass/components/palette"; // palette must be previous to color
-
  nav, footer{
      background-color: $blueberry  !important;
      .nav-wrapper {
@@ -218,7 +215,7 @@ body > footer > div > div {
 	margin: 20px auto;
 }
 
-@import "createdEventDetails";
+@import "eventDetails";
 
 // ******************** MATERIALIZE IMPORTS *********************//
 

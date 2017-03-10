@@ -1,55 +1,55 @@
-<div class="container" id="joinedEventDetail">
+<div class="container eventDetails" id="joinedEventDetail">
 
     <div class="row eventId" id="{{eventId}}">
-        <div class="col-sm-12">
-            <h1 class ="text-center lead"><strong id="joinedEventDetail_name"> </strong></h1>
-            <div class="rectangle">
-                <img class="center-block img-responsive" id="joinedEventDetail_img">
-            </div>
+        <div class="col s12 text-center">
+            <h1 class ="title2" id="joinedEventDetail_name"> </h3>
+            <center> <img class="img-responsive" id="joinedEventDetail_img"> </center>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-12 col-lg-6">
-            <strong> Created:</strong>
-						<a href="/profile/{{eventId}}">
-            	<span id="joinedEventDetail_creator"></span>
-						</a>
+    <div class="row details">
+        <div class="col s12 m5 offset-m1">
+            <div class="detail_Bold">
+                Created by
+				<a href="/profile/{{eventId}}">
+                    <span class="details_Light" id="joinedEventDetail_creator"></span>
+                </a>
+            </div>
         </div>
-    </div>
-	
-		<div class="row">
-        <div class="col-sm-12">
-            <strong>Location:</strong>
-            <span id="joinedEventDetail_location"></span>
+
+            <div class="col s12 m6">
+                <div class="detail_Bold">
+                    Location
+                    <span class="detail_Light" id="joinedEventDetail_location"></span>
+                </div>
+            </div>
+
+        <div class="col s12 m5 offset-m1">
+            <div class="detail_Bold">
+                Date
+                <span class = "detail_Light" id="joinedEventDetail_date"></span>
+            </div>
         </div>
-    </div>
-	
-		<div class="row">
-        <div class="col-sm-12">
-            <strong>Date:</strong>
-            <span id="joinedEventDetail_date"></span>
+
+        <div class="col s12 m6">
+            <div class="detail_Bold">
+                Time
+                <span class="detail_Light" id="joinedEventDetail_time"></span>
+            </div>
         </div>
-    </div>
-	
-    <div class="row">
-        <div class="col-sm-12">
-            <strong>Time:</strong>
-            <span id="joinedEventDetail_time"></span>
+
+        <div class="col s12 m5 offset-m1">
+            <div class="detail_Bold">
+                Expertise
+                <span class="detail_Light" id="joinedEventDetail_catetgory"></span>
+            </div>
         </div>
-    </div>
-	
-		<div class="row">
-        <div class="col-sm-12">
-            <strong>Expertises Offering:</strong>
-            <span id="joinedEventDetail_catetgory"></span>
-        </div>
-    </div>
- 
-		<div class="row">
-        <div class="col-sm-12">
-            <strong>Description:</strong>
-            <span id="joinedEventDetail_description"></span>
+
+        <div class="col s12 m11 offset-m1">
+            <div class="detail_Bold">
+                <strong>Description:</strong>
+                <span class="detail_Light" id="joinedEventDetail_description"></span>
+            </div>
         </div>
     </div>
 
@@ -67,10 +67,10 @@
     </div>
 </div>
 
-<script>	
+<script>
 	var eventId = $('.eventId').attr('id');
 	$.get("/event/"+eventId, addDetail);
-	
+
 	function addDetail(result) {
 		$('#joinedEventDetail_location').html(result["location"]);
 		$('#joinedEventDetail_date').html(result["date"]);
