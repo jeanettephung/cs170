@@ -32,7 +32,7 @@ exports.updatingEvent = function(req, res) {
 	updating["category"] = category;
 	updating["description"] = description;
 	updating["date"] = date;
-	updating["location"] = req.params.location;
+	updating["location"] = location;
 		
 	res.redirect("/createdEventDetail/"+eventId);
 }

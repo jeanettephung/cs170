@@ -122,7 +122,7 @@ app.get('/loggingIn', login.login);
 app.get('/joiningEvent/:eventId', joinedEventDetail.joining);
 app.get('/unjoiningEvent/:eventId', unjoinEvent.unjoining);
 app.get('/signingup/:name/:username/:email/:password', signup.signingup);
-app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description/:location/:date', editEvent.updatingEvent);
+app.get('/updatingEvent/:eventId/:name/:startTime/:endTime/:category/:description/:date/:location', editEvent.updatingEvent);
 app.get('/updatingProfile/:name/:expertise/:aboutMe', editProfile.updatingProfile);
 
 
