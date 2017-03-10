@@ -71,6 +71,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/index', index.view);
+app.get('/joinedEvents', index.join);
+
 //app.get('/', index_A.viewA);
 //app.get('/index', index_A.viewA);
 
@@ -93,7 +95,6 @@ app.get('/createEvents', function (req, res) {
 app.get('/createdEventDetail/:eventId', createdEventDetail.viewCreatedEventDetail);
 app.get('/editEvent/:eventId', editEvent.view);
 app.get('/cancelEvent/:eventId', cancelEvent.view);
-app.get('/joinedEvents', joinedEvents.view);
 app.get('/joinedEventDetail/:eventId', joinedEventDetail.view);
 app.get('/unjoinEvent/:eventId', unjoinEvent.view);
 app.get('/findEvents', function (req, res) {

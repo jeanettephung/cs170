@@ -3,8 +3,13 @@
 <div class="container index">
     <div class="row">
         <ul id="index_tabs" class="tabs">
-            <li class="tab col s6"><a class="active" href="#created_tab">I offered</a></li>
-            <li class="tab col s6"><a href="#joined_tab">I Joined</a></li>
+						{{#if index}}
+							<li class="tab col s6"><a class="active" href="#created_tab">I offered</a></li>
+							<li class="tab col s6"><a href="#joined_tab">I Joined</a></li>
+						{{else}}
+							<li class="tab col s6"><a href="#created_tab">I offered</a></li>
+							<li class="tab col s6"><a class="active" href="#joined_tab">I Joined</a></li>
+						{{/if}}
         </ul>
     </div>
 
