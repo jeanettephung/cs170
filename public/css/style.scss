@@ -127,6 +127,10 @@ body {
 
 }
 
+.fixed-action-btn{
+    z-index: 995 !important;
+}
+
 main {
 	flex-grow: 1;
 	flex-shrink: 0;
