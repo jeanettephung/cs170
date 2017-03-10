@@ -38,6 +38,14 @@
          padding-left: 5%;
      }
  }
+
+ nav{
+     .side-nav{
+         a:hover{
+             background-color: $citrus
+         }
+     }
+ }
  .index{
      color:$blueberry;
  }
@@ -98,17 +106,13 @@
     /*font-weight: 400;*/
 
 }
-// .navbar-right {
-// 	padding-top: 5px;
-// 	padding-right: 30px;
-// }
-// .navbar-collapse.collapse.in ul li, .navbar-collapse.collapsing ul li {
-// 	text-align: center;
-// 	font-size: 25px;
-// 	margin: 20px;
-// }
+
 #mobile-demo {
 	z-index: 9999;
+}
+
+#openM{
+    color:$apricot;
 }
 
 /* BOTTOM NAVIGATION BAR */

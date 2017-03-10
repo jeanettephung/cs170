@@ -38,6 +38,10 @@ nav .brand-logo, footer .brand-logo {
     padding-left: 5%;
 }
 
+nav .side-nav a:hover {
+    background-color: #f7c331;
+}
+
 .index {
     color: #6b7a8f;
 }
@@ -95,6 +99,10 @@ i.material-icons {
 
 #mobile-demo {
     z-index: 9999;
+}
+
+#openM {
+    color: #f7882f;
 }
 
 /* BOTTOM NAVIGATION BAR */
