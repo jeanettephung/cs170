@@ -1,32 +1,52 @@
-<div id="profile" class="container col-xs-12">
-	<div class="eventId" id="{{eventId}}"></div>
-	<center><img id="profile_img" class="img-circle img-responsive profile-image"></center>
-	<center><h3 id="profile_username"></h3></center>
-	<div class="col-xs-12">
-		<span><strong>Name: </strong></span>
-		<span id="profile_name"></span>
-	</div>
-	<div class="col-xs-12">
-		<span><strong>Expertise: </strong></span>
-		<span id="profile_expertise"></span>
-	</div>
-	<div class="col-xs-12">
-		<span><strong>Events Mentored: </strong></span>
-	</div>
-	<div class="event-container col-xs-12" id="profile_events">
-		
-	</div>
-	<div class="col-xs-12">
-		<span><strong>About Me: </strong></span>
-		<span id="profile_aboutMe"></span>
-	</div>
+<div id="profile" class="container">
+
+    <div class="row">
+        <div class="col s12">
+        	<div class="eventId" id="{{eventId}}"></div>
+        	<center><img id="profile_img" class="img-responsive profile-image"></center>
+        	<center><h3 id="profile_username"></h3></center>
+        </div>
+    </div>
+
+    <div class="row details">
+    	<div class="col s12 m5 offset-m1">
+            <div class="detail_Bold">
+        		Name
+        		<span class="detail_Light" id="profile_name"></span>
+            </div>
+    	</div>
+
+    	<div class="col s12 m6">
+            <div class="detail_Bold">
+        		Expertise
+        		<span class='detail_Light' id="profile_expertise"></span>
+            </div>
+    	</div>
+
+    	<div class="col s12 m11 offset-m1">
+            <div class="detail_Bold">
+        		About
+        		<span class='detail_Light' id="profile_aboutMe"></span>
+            </div>
+    	</div>
+    </div>
+
+    {{!-- <div class="row details text-center">
+    	<div class="col s12">
+            <div class="detail_Bold">
+        		Events Mentored
+            </div>
+    	</div>
+    	<div class="event-container col s8 offset-s2 text-center" id="profile_events"> </div>
+    </div> --}}
 
 	<a href="/resultEventDetail/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back to Event Details</button></a>
+
 
     <div class="fixed-action-btn">
         <div>
             <a class="btn-floating btn-large modal-action modal-close" id="openM" href="#modal1">
-                <i class="large material-icons">chat</i>
+                <i class="large material-icons" id="chat">chat</i>
             </a>
         </div>
     </div>
@@ -47,25 +67,25 @@
     </div>
 </div>
 
-<script>	
+<script>
 	var eventId = $('.eventId').attr('id');
 	$.get("/event/"+eventId, addDetail);
 
-	function addDetail(result) {			
+	function addDetail(result) {
 		$('#profile_username').html(result["creator"]["username"]);
-		
+
 		$('#profile_name').html(result["creator"]["name"]);
-		
+
 		$('#profile_img').attr('src', result["creator"]["imageURL"]);
 		$('#profile_expertise').html(result["creator"]["expertise"]);
 		$('#profile_aboutMe').html(result["creator"]["aboutMe"]);
-		
+
 		var eventsMentored = result.creator.eventsMentored;
-		
+
 		for(var i = 0; i < eventsMentored.length; i++) {
 				var event = eventsMentored[i];
-				$('#profile_events').append("<div class='profile-event'><p>"+ event['eventName'] +"<p></div>");
+				$('#profile_events').append("<div class='profile-event card-panel'><p>"+ event['eventName'] +"<p></div>");
 		}
 	}
-		
+
 </script>

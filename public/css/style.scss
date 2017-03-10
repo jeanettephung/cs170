@@ -180,19 +180,33 @@ body > footer > div > div {
 .event-container {
 	margin: 10px 0;
 }
-.profile-event {
-	border: solid 1px black;
-	padding: 7px 5px 0 15px;
-	background-color: #ededed;
+
+
+#profile{
+    .profile-event {
+    	// border: solid 1px black;
+    	// padding: 7px 5px 0 15px;
+    	background-color: white;
+    }
+
+    .profile-image {
+    	width: 50%;
+    }
+
+    #chat{
+        background-color: $citrus;
+    }
+
+    #profile_username{
+        font-family: Hell;
+    }
+
 }
 
 /* GENERAL STYLES */
 
 .margin-top {
 	margin-top: 15px;
-}
-.profile-image {
-	width: 50%;
 }
 .row {
     margin-top: 3%;

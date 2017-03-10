@@ -1,18 +1,14 @@
-.eventDetails{
+.details{
 
+    padding-left: 5%;
 
-    .details{
+    font-size: 15px;
+    .detail_Light{
+        font-family: Hell;
+        font-weight: bolder;
+    }
 
-        padding-left: 5%;
-
-        font-size: 15px;
-        .detail_Light{
-            font-family: Hell;
-            font-weight: bolder;
-        }
-
-        .detail_Bold{
-            font-family: Hell_Bold;
-        }
+    .detail_Bold{
+        font-family: Hell_Bold;
     }
 }
