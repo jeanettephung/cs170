@@ -1,32 +1,39 @@
 <div id="myProfile" class="container">
+
     <div class="row">
         <div class="col s12">
             <center><img src="{{imageURL}}" class="img-circle img-responsive profile-image"></center>
         </div>
 
         <div class="col s12">
-            <h3><center>{{username}}</center></h3>
+            <h3 class='title2 text-center'>{{username}}</h3>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12">
-            <span><strong>Name: </strong></span>
-            {{name}}
+    <div class="row details">
+        <div class="col s12">
+            <div class="detail_Bold">
+            Name
+            <span class="detail_Light">{{name}}</span>
+            </div>
         </div>
 
-        <div class="col-xs-12">
-            <span><strong>Expertise: </strong></span>
-            {{expertise}}
+        <div class="col s12">
+            <div class="detail_Bold">
+                Expertise
+                <span class='detail_Light'>{{expertise}}</span>
+            </div>
         </div>
-        <div class="col-xs-12">
-            <span><strong>About Me: </strong></span>
-            {{aboutMe}}
+
+        <div class="col s12">
+            <div class="detail_Bold">
+                About Me
+                <span class='detail_Light'> {{aboutMe}}</span>
+            </div>
         </div>
     </div>
 
-
-    <div class="row">
+    {{!-- <div class="row">
         <div class="col-xs-12">
             <span><strong>Events Mentored: </strong></span>
         </div>
@@ -44,7 +51,7 @@
                 </div>
             </div>
         {{/each}}
-        <a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
 
-    </div>
+    </div> --}}
+    <a href="/editProfile"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Edit Profile</button></a>
 </div>
