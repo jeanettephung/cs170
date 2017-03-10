@@ -45,6 +45,12 @@
              background-color: $citrus
          }
      }
+     ul{
+         a:hover{
+             background-color: $blueberry;
+             color:$apricot;
+         }
+     }
  }
  .index{
      color:$blueberry;
