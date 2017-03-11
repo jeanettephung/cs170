@@ -1,15 +1,12 @@
 var event = require('../events.json');	
   		  
 exports.view = function(req, res){
-	res.render('index', event);
 	event["index"] = true;
-		console.log(event);
-
+	res.render('index', event);
 };
 
 exports.join = function(req, res){
 	event["index"] = false;
-	console.log(event);
 	res.render('index', event);
 };
 
