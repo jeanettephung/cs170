@@ -1,5 +1,6 @@
  $titleFont : Rita;
  $Hell : Hell;
+
  $iconColor: black;
  $btnColor: #fc4a1b;
  $blueberry: #6b7a8f;
@@ -9,7 +10,12 @@
  $papaya: #ec4e42;
  $aqua: #008f95;
 
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
  @font-face { font-family: Rita; src: url('/fonts/Rita.otf'); }
+ @font-face { font-family: OpenSans; src: url('/fonts/Open_Sans/OpenSans-Light.ttf'); }
+ @font-face { font-family: OpenSansBold; src: url('/fonts/Open_Sans/OpenSans-Bold.ttf'); }
+ @font-face { font-family: hellMed; src: url('/fonts/HelveticaNeueMed.ttf'); }
  @font-face {
      font-family: Hell; src: url('/fonts/HelveticaNeue.ttf');
      font-weight: normal;
@@ -31,6 +37,8 @@
      .nav-wrapper {
         // @extend .grey,.lighten-4;
         font-family: $Hell;
+        font-family: OpenSans
+        // font-family: hellMed
      }
      .brand-logo{
          color: white;
@@ -43,6 +51,7 @@
      .side-nav{
          a:hover{
              background-color: $citrus
+            //  color: #000;
          }
      }
      ul{
@@ -50,6 +59,9 @@
              background-color: $blueberry;
              color:$citrus;
          }
+     }
+     .side-nav{
+         font-weight: bold;
      }
  }
  .index{

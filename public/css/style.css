@@ -1,6 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @font-face {
     font-family: Rita;
     src: url("/fonts/Rita.otf");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("/fonts/Open_Sans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url("/fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: hellMed;
+    src: url("/fonts/HelveticaNeueMed.ttf");
 }
 
 @font-face {
@@ -30,6 +46,7 @@ nav, footer {
 
 nav .nav-wrapper, footer .nav-wrapper {
     font-family: Hell;
+    font-family: OpenSans;
 }
 
 nav .brand-logo, footer .brand-logo {
@@ -45,6 +62,10 @@ nav .side-nav a:hover {
 nav ul a:hover {
     background-color: #6b7a8f;
     color: #f7c331;
+}
+
+nav .side-nav {
+    font-weight: bold;
 }
 
 .index {
@@ -232,7 +253,7 @@ body > footer > div > div {
 }
 
 .details .detail_Light {
-    font-family: Hell;
+    font-family: OpenSans;
     font-weight: bolder;
 }
 
