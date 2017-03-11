@@ -1,14 +1,14 @@
 {
-	"imageURL": "http://i407.photobucket.com/albums/pp158/jsatabla/Kawaii_Sushi_by_The_8th_Sin-1.jpg",
-	"username": "itsjen",
-	"email": "jen@ucsd.edu",
-	"name": "Jen",
-	"expertise": "food",
-	"aboutMe": "I like to eat sushi",
+	"imageURL": "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc6/188069_519481501412529_1239943536_n.jpg",
+	"username": "pip187",
+	"email": "pip@ucsd.edu",
+	"name": "Piper Greens",
+	"expertise": "Pottery",
+	"aboutMe": "I started when I took a ceramics class in high school. Over the years, it has been a hobby of mine. I create pots on a monthly basis, taken courses to improve my skills, and have had some of my pots showcased. Sometimes, you may see me joining other pottery mentorship to learn about the different techniques. Other time, I might even host my own mentorship and teach others interested in how I make my pots!",
 	"password": "123",
 	"eventsMentored": [
-		{"eventName": "Sushi Ki"},
-		{"eventName": "Gin Sushi"},
-		{"eventName": "Sushi Stop"}
+		{"eventName": "Create Your First Pot"},
+		{"eventName": "Master Potter"},
+		{"eventName": "Coil Potting"}
 	]
 }

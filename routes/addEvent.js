@@ -15,7 +15,7 @@ exports.addEvent = function(req, res) {
 	var newEvent =
 		{
 			"eventId": eventId,
-			"imageURL": "/images/profile-placeholder.png",
+			"imageURL": "/images/placeholder.png",
 			"name": name,
 			"startTime": startTime,
 			"endTime": endTime,
