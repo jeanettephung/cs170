@@ -66,5 +66,66 @@
             </div>
         </div>
     </div>
-
 </div>
+
+<div id="modalJoin" class="modal" style="background-color: transparent; box-shadow: none">
+    <div class="modal-content">
+        <div class="row">
+          <p class="center">You successfuly joined a mentorship.</p>
+					<button class="margin-top btn btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<div id="modalCreate" class="modal" style="background-color: transparent; box-shadow: none">
+    <div class="modal-content">
+        <div class="row">
+          <p class="center">You successfuly created a mentorship.</p>
+					<button class="margin-top btn btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<div id="modalUnjoin" class="modal" style="background-color: transparent; box-shadow: none">
+    <div class="modal-content">
+        <div class="row">
+          <p class="center">You successfuly unjoined a mentorship.</p>
+					<button class="margin-top btn btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<div id="modalCancel" class="modal" style="background-color: transparent; box-shadow: none">
+    <div class="modal-content">
+        <div class="row">
+          <p class="center">You successfuly cancelled a mentorship.</p>
+					<button class="margin-top btn btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+	{{#if join}}
+		$(document).ready(function () {
+			$('#modalJoin').modal('show');
+		});
+	{{/if}}
+	
+	{{#if create}}
+		$(document).ready(function () {
+			$('#modalCreate').modal('show');
+		});
+	{{/if}}
+	
+	{{#if unjoin}}
+		$(document).ready(function () {
+			$('#modalUnjoin').modal('show');
+		});
+	{{/if}}
+	
+	{{#if cancel}}
+		$(document).ready(function () {
+			$('#modalCancel').modal('show');
+		});
+	{{/if}}
+</script>

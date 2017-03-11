@@ -19,5 +19,5 @@ exports.cancelling = function(req, res) {
 	
 	cancelling["notCancelled"] = false;
 	
-	res.redirect("/index");
+	res.redirect("/confirmCancel");
 }

@@ -31,5 +31,5 @@ exports.addEvent = function(req, res) {
 
 	events.push(newEvent);
 
-	res.redirect("/successCreate");
+	res.redirect("/confirmCreate");
 }

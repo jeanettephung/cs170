@@ -19,5 +19,5 @@ exports.joining = function(req, res) {
 	}
 	
 	joining["joined"] = true;
-	res.redirect("/successJoin")
+	  res.redirect("/confirmJoin")
 }

@@ -72,6 +72,10 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/joinedEvents', index.join);
+app.get('/confirmJoin', index.confirmJoin);
+app.get('/confirmCreate', index.confirmCreate);
+app.get('/confirmUnjoin', index.confirmUnjoin);
+app.get('/confirmCancel', index.confirmCancel);
 
 //app.get('/', index_A.viewA);
 //app.get('/index', index_A.viewA);

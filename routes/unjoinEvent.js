@@ -18,5 +18,5 @@ exports.unjoining = function(req, res) {
 	}
 	
 	unjoining["joined"] = false;
-	res.redirect("/successUnjoin")
+	res.redirect("/confirmUnjoin")
 }
