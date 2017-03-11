@@ -244,5 +244,32 @@
 						{"eventName": "bowling"}
 					]
 				}
+		},
+		{
+			"eventId": 10,
+			"imageURL": "http://static.panoramio.com/photos/large/41142490.jpg",
+			"name": "Computer Science for Women",
+			"startTime": "12pm",
+			"endTime": "3pm",
+			"category" : "Computer Science",
+			"description": "Come join me if you are interested in computer science!",
+			"mentoring": "no",
+			"created": false,
+			"joined": false,
+			"notCancelled": true,
+			"date": "22, March 2017",
+			"location": "UCSD SuperComputer Center",
+			"creator":
+				{
+					"imageURL": "http://www.webweaver.nu/clipart/img/entertainment/sports/golf/golf-swing.png",
+					"name": "Cynthia",
+					"username": "justCyn",
+					"expertise": "Golf",
+					"aboutMe": "Hole-in-one! Just kidding. I play golf professionally and also coach little league for young golfers. However, I am opening my services to everyone.",
+					"eventsMentored": [
+						{"eventName": "miniture golfing"},
+						{"eventName": "bowling"}
+					]
+				}
 		}
 	]
