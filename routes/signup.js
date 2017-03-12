@@ -1,9 +1,7 @@
 var user = require("../user.json");
 
 exports.view = function(req, res){
-  res.render('signup', {
-     
-  });
+  res.render('signup', {layout: 'title'});
 };
 
 exports.signingup = function(req, res) {
@@ -12,7 +10,6 @@ exports.signingup = function(req, res) {
 	var name = req.params.name;		 	
 	var password = req.params.password;	
 
-	console.log(username);
 	user["username"] = username;
 	user["email"] = email;
 	user["name"] = name;
@@ -21,6 +18,5 @@ exports.signingup = function(req, res) {
 	user["password"] = password;
 	user["eventsMentored"] = "";
 	
-	console.log(user);
 	res.redirect("/findEvents");
 }

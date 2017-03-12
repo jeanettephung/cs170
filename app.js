@@ -28,7 +28,7 @@ var joinedEvents = require('./routes/joinedEvents');
 var joinedEventDetail = require('./routes/joinedEventDetail');
 var unjoinEvent = require('./routes/unjoinEvent');
 var signup = require('./routes/signup');
-var forgetPassword = require('./routes/forgotPassword');
+var forgotPassword = require('./routes/forgotPassword');
 var resultEventDetail = require('./routes/resultEventDetail');
 var findEvents = require('./routes/findEvents');
 var profile = require('./routes/profile');
@@ -91,7 +91,7 @@ app.get('/contactUs', function (req, res) {
 });
 app.get('/login',login.view);
 app.get('/logout', function (req, res) {
-    res.render('logout');
+    res.render('logout', {layout: 'title'});
 });
 app.get('/createEvents', function (req, res) {
     res.render('createEvents');
@@ -106,9 +106,8 @@ app.get('/findEvents', function (req, res) {
 });
 app.get('/signup', signup.view);
 
-app.get('/forgotPassword', function (req, res) {
-    res.render('forgotPassword');
-});
+app.get('/forgotPassword', forgotPassword.view);
+app.get('/sendPassword', forgotPassword.sendPW);
 app.get('/resultEventDetail/:eventId', resultEventDetail.view);
 app.get('/resultEvent', resultEvent.view);
 app.get('/resultEvent/:category', resultEvent.categoryView);
