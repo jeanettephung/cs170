@@ -12,7 +12,7 @@
         <div class="col s12 m10 offset-m1">
             <div class="detail_Bold">
                 Creator
-                <span class ="detail_Light" id="resultEventDetail_creator"></span>
+                <a href="/profile/{{eventId}}><span class ="detail_Light" id="resultEventDetail_creator"></span></a>
             </div>
         </div>
 
@@ -56,10 +56,6 @@
     </div>
 
     <div class="row">
-        <div class="col-xs-12">
-            <a href="/profile/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Mentor's Profile</button></a>
-        </div>
-
         <div class="col-xs-12">
             <form action="/joiningEvent/{{eventId}}">
                 <input type="submit" value="JOIN" class="btn btn-primary btn-lg col-xs-12 margin-top">
