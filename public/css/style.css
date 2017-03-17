@@ -20,6 +20,21 @@
 }
 
 @font-face {
+    font-family: hell_ultraLight;
+    src: url("/fonts/HelveticaNeue_UltraLight.otf");
+}
+
+@font-face {
+    font-family: hell_lt;
+    src: url("/fonts/HelveticaNeuelt.ttf");
+}
+
+@font-face {
+    font-family: hellLt;
+    src: url("/fonts/HelveticaNeueLt.ttf");
+}
+
+@font-face {
     font-family: Hell;
     src: url("/fonts/HelveticaNeue.ttf");
     font-weight: normal;
@@ -68,6 +83,10 @@ nav .side-nav {
     font-weight: bold;
 }
 
+#createdEventDetail_img {
+    width: 100%;
+}
+
 .index {
     color: #6b7a8f;
 }
@@ -95,15 +114,15 @@ nav .side-nav {
 .event {
     text-decoration: none;
     color: #6b7a8f;
-    font-family: Hell;
+    font-family: hellLt;
 }
 
 .event h4 {
-    font-family: Hell;
+    font-family: HellLt;
 }
 
 .event h5 {
-    font-family: Hell;
+    font-family: hellLt;
 }
 
 .btn {

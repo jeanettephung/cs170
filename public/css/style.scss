@@ -16,6 +16,9 @@
  @font-face { font-family: OpenSans; src: url('/fonts/Open_Sans/OpenSans-Light.ttf'); }
  @font-face { font-family: OpenSansBold; src: url('/fonts/Open_Sans/OpenSans-Bold.ttf'); }
  @font-face { font-family: hellMed; src: url('/fonts/HelveticaNeueMed.ttf'); }
+ @font-face { font-family: hell_ultraLight; src: url('/fonts/HelveticaNeue_UltraLight.otf'); }
+ @font-face { font-family: hell_lt; src: url('/fonts/HelveticaNeuelt.ttf'); }
+ @font-face { font-family: hellLt; src: url('/fonts/HelveticaNeueLt.ttf'); }
  @font-face {
      font-family: Hell; src: url('/fonts/HelveticaNeue.ttf');
      font-weight: normal;
@@ -65,6 +68,9 @@
          font-weight: bold;
      }
  }
+ #createdEventDetail_img{
+     width: 100%;
+ }
  .index{
      color:$blueberry;
  }
@@ -98,12 +104,14 @@
  .event{
      text-decoration: none;
      color:$blueberry;
-     font-family: $Hell;
+     font-family: hellLt;
      h4{
-         font-family:Hell;
+         font-family:HellLt;
+        //  font-weight: bold;
      }
      h5{
-         font-family:Hell;
+         font-family:hellLt;
+        //  font-weight: bold;
      }
  }
  .btn{
