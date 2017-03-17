@@ -92,13 +92,15 @@ function initializePage() {
 
 
 	$("#openM").click(function (){
-		$(".modal").modal();
+		$(".modal1").modal();
 	})
 
     $("#contactUs").submit(function (e) {
         e.preventDefault();
 		$('#modal_submit').appendTo("body").modal('show');
 	});
+    
+    //$("#message_submit").click(click_clean);
 
 	// $("#contact_form").validate({
 	// 	rules: {
@@ -115,4 +117,9 @@ function initializePage() {
     //
     //
     // );
+}
+
+function click_clean(){
+    $("#message_to").val("");
+    $("#message_message").val("");
 }
