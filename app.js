@@ -61,7 +61,7 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-global.eventCounter = 10;
+global.eventCounter = 11;
 
 // development only
 if ('development' == app.get('env')) {
