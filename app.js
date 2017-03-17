@@ -76,6 +76,7 @@ app.get('/confirmJoin', index.confirmJoin);
 app.get('/confirmCreate', index.confirmCreate);
 app.get('/confirmUnjoin', index.confirmUnjoin);
 app.get('/confirmCancel', index.confirmCancel);
+app.get('/confirmMessage', messages.confirmMessage);
 
 //app.get('/', index_A.viewA);
 //app.get('/index', index_A.viewA);
@@ -83,9 +84,7 @@ app.get('/confirmCancel', index.confirmCancel);
 app.get('/profile/:eventId', profile.view);
 app.get('/myProfile', myProfile.view);
 app.get('/editProfile', editProfile.view);
-app.get('/messages', function (req, res) {
-    res.render('messages');
-});
+app.get('/messages', messages.view);
 app.get('/contactUs', function (req, res) {
     res.render('contactUs');
 });

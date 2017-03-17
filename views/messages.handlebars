@@ -22,16 +22,35 @@
 
 </div>
 
-<div id="modal1" class="modal" style="background-color: transparent; box-shadow: none">
+<div id="modal1" class="modal modal1" style="background-color: transparent; box-shadow: none">
     <div class="modal-content">
         <div class="row">
-            <form>
-                <label for="message_to">To: </label><input class="form-control validate" type="email" id="message_to" required>
+            <form action = "/confirmMessage">
+                <label for="message_to">To: </label><input class="form-control validate" type="text" id="message_to" required>
                 <label for="message_message">Message: </label>
                 <textarea class="form-control" id="message_message" rows="4" required></textarea><br>
                 <button type="submit" class="btn btn-primary btn-lg col-xs-12" id="message_submit">Send</button>
-				<button class="margin-top btn btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
+				<button class="margin-top btn modal-action modal-close btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
             </form>
         </div>
     </div>
 </div>
+
+<div id="modalMessage" class="modal" style="background-color: transparent; box-shadow: none">
+    <div class="modal-content">
+        <div class="row">
+            <p class="center">You successfuly sent a message.</p>
+            <button class="margin-top btn btn-primary btn-lg col-xs-12" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    {{#if confirm}}
+        $(document).ready(function () {
+        $('#modalMessage').modal('show');
+        });
+    {{/if}}
+</script>
+
+
