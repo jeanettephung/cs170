@@ -81,7 +81,9 @@ app.get('/confirmMessage', messages.confirmMessage);
 //app.get('/', index_A.viewA);
 //app.get('/index', index_A.viewA);
 
-app.get('/profile/:eventId', profile.view);
+app.get('/rprofile/:eventId', profile.result);
+app.get('/jprofile/:eventId', profile.join);
+
 app.get('/myProfile', myProfile.view);
 app.get('/editProfile', editProfile.view);
 app.get('/messages', messages.view);

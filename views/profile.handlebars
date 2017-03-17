@@ -40,8 +40,12 @@
     	<div class="event-container col s8 offset-s2 text-center" id="profile_events"> </div>
     </div> --}}
 
-	<a href="/resultEventDetail/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back to Event Details</button></a>
-
+	{{#if result}}
+		<a href="/resultEventDetail/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back to Event Details</button></a>
+	{{/if}}
+	{{#if join}}
+		<a href="/joinedEventDetail/{{eventId}}"><button class="btn btn-primary col-xs-12 btn-lg margin-top">Back to Event Details</button></a>
+	{{/if}}
 
     <div class="fixed-action-btn">
         <div>
